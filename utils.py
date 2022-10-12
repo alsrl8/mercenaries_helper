@@ -24,7 +24,7 @@ def read_wiki_sources(wiki_source_filename, data_filename):
                 mercenary_names.append(name)
 
 
-def read_all_mercenary_names():
+def read_all_mercenary_names_from_wiki():
     url = 'https://hearthstone.fandom.com/wiki/Special:RunQuery?form=Mercs%2FMerc&target=&pfRunQueryFormName=Mercs%2FMerc&wpRunQuery=Run%2Bquery&MMQ%5Blayout%5D=Image&MMQ%5Bcollectible%5D=Yes&MMQ%5Bshows4%5D=SQL+Order+by&MMQ%5Bis_mercenary%5D=Yes&MMQ%5BmercenaryDefaultVariation%5D=Yes&MMQ%5BorderBy%5D=mercenaryId&MMQ%5Blevel%5D=max&MMQ%5Blimit%5D=500&MMQ%5Boffset%5D=0&pf_free_text='
     page = requests.get(url)
     soup = BeautifulSoup(page.content, 'html.parser')
@@ -40,8 +40,19 @@ def read_all_mercenary_names():
     return mercenary_names
 
 
+def read_all_mercenary_names_from_local():
+    mercenary_names = []
+    with open('./mercenaries/All.txt', 'r') as file:
+        while True:
+            name = file.readline()
+            if not name:
+                break
+            mercenary_names.append(name.rstrip())
+    return mercenary_names
+
+
 def write_all_mercenary_names():
-    mercenary_names = read_all_mercenary_names()
+    mercenary_names = read_all_mercenary_names_from_wiki()
     with open('./mercenaries/All.txt', 'w') as file:
         for name in mercenary_names:
             file.write(name + '\n')
