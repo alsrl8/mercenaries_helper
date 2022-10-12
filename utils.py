@@ -40,6 +40,13 @@ def read_all_mercenary_names():
     return mercenary_names
 
 
+def write_all_mercenary_names():
+    mercenary_names = read_all_mercenary_names()
+    with open('./mercenaries/All.txt', 'w') as file:
+        for name in mercenary_names:
+            file.write(name + '\n')
+
+
 def read_wiki_mercenary(mercenary_name):
     BASE_URL = "https://hearthstone.fandom.com/wiki/Mercenaries/"
     url = BASE_URL + mercenary_name
