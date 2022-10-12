@@ -17,7 +17,6 @@ def get_users(db: Session, skip: int = 0, limit: int = 100):
 
 def create_user(db: Session, user: schemas.UserCreate):
     fake_hashed_password = user.password + "notreallyhashed"
-    print(f'{fake_hashed_password=}')
     db_user = models.User(email=user.email, hashed_password=fake_hashed_password)
     db.add(db_user)
     db.commit()
@@ -35,3 +34,18 @@ def create_user_item(db: Session, item: schemas.ItemCreate, user_id: int):
     db.commit()
     db.refresh(db_item)
     return db_item
+
+def get_mercenaries(db: Session):
+    return db.query(models.Mercenary).all()
+
+
+def create_mercenary(db: Session, mercenary: schemas.MercenaryCreate):
+    db_mercenary = models.Mercenary(name=mercenary.name)
+    db.add(db_mercenary)
+    db.commit()
+    db.refresh(db_mercenary)
+    print(f'{db_mercenary=}')
+    print(f'id: {db_mercenary.id}, name: {db_mercenary.name}')
+    print(f'type(db_user): {type(db_mercenary)}')
+    return db_mercenary
+

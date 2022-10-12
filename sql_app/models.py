@@ -24,3 +24,10 @@ class Item(Base):
     owner_id = Column(Integer, ForeignKey("users.id"))
 
     owner = relationship("User", back_populates="items")
+
+
+class Mercenary(Base):
+    __tablename__ = "mercenaries"
+
+    id = Column(Integer, primary_key=True, index=True)
+    name = Column(String, index=True)

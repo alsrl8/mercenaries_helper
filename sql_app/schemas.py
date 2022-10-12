@@ -34,3 +34,18 @@ class User(UserBase):
 
     class Config:
         orm_mode = True
+
+
+class MercenaryBase(BaseModel):
+    name: str
+
+
+class MercenaryCreate(MercenaryBase):
+    pass
+
+
+class Mercenary(MercenaryBase):
+    id: int
+
+    class Config:
+        orm_mode = True
