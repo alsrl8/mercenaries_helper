@@ -91,3 +91,10 @@ def write_mercenary_info(mercenary_name, info_filename=None):
     with open('./mercenaries/' + info_filename, 'w') as file:
         for col, val in data.items():
             file.write(f'{col}: {val}\n')
+
+
+def write_all_mercenaries():
+    write_all_mercenary_names()
+    mercenary_names = read_all_mercenary_names_from_local()
+    for name in mercenary_names:
+        write_mercenary_info(name)
