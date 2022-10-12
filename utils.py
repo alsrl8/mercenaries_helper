@@ -45,6 +45,7 @@ def read_wiki_mercenary(mercenary_name):
     mercenary_info = soup.find_all(class_='merc-infobox-flex')
 
     data = {
+        'Name': mercenary_name,
         'Card type': None,
         'Role': None,
         'Rarity': None,
