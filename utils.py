@@ -77,7 +77,7 @@ def read_mercenary_from_local(mercenary_name):
             s = file.readline()
             if not s:
                 break
-            key, val = s.split(": ")
+            key, val = s.rstrip().split(": ")
             if key in data:
                 data[key] = val
     return data
