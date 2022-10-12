@@ -40,11 +40,10 @@ def read_wiki_mercenary(mercenary_name):
         'Faction': None,
         'mercenaryId': None
     }
+
     for info in mercenary_info:
         for d in info.find_all('li'):
             key, val = d.text.strip().split(': ')
             if key in data:
                 data[key] = val
-
-    print(f'{data=}')
-    # data={'Card type': 'Mercenary', 'Role': 'Fighter', 'Rarity': 'Legendary', 'Minion type': 'Half-Orc', 'Faction': 'Horde', 'mercenaryId': '1'}
+    return data
