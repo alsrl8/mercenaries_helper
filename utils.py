@@ -24,10 +24,25 @@ def read_wiki_sources(wiki_source_filename, data_filename):
                 mercenary_names.append(name)
 
 
+def read_all_mercenary_names():
+    url = 'https://hearthstone.fandom.com/wiki/Special:RunQuery?form=Mercs%2FMerc&target=&pfRunQueryFormName=Mercs%2FMerc&wpRunQuery=Run%2Bquery&MMQ%5Blayout%5D=Image&MMQ%5Bcollectible%5D=Yes&MMQ%5Bshows4%5D=SQL+Order+by&MMQ%5Bis_mercenary%5D=Yes&MMQ%5BmercenaryDefaultVariation%5D=Yes&MMQ%5BorderBy%5D=mercenaryId&MMQ%5Blevel%5D=max&MMQ%5Blimit%5D=500&MMQ%5Boffset%5D=0&pf_free_text='
+    page = requests.get(url)
+    soup = BeautifulSoup(page.content, 'html.parser')
+    mercenary_info = soup.find_all('div', class_='card-hover card-div')
+
+    mercenary_names = []
+    for info in mercenary_info:
+        s = str(info.find('a'))
+        i = s.find('title="')
+        j = s.find('"', i + 7)
+        mercenary_name = s[i + 7:j]
+        mercenary_names.append(mercenary_name)
+    return mercenary_names
+
+
 def read_wiki_mercenary(mercenary_name):
     BASE_URL = "https://hearthstone.fandom.com/wiki/Mercenaries/"
     url = BASE_URL + mercenary_name
-
     page = requests.get(url)
     soup = BeautifulSoup(page.content, 'html.parser')
     mercenary_info = soup.find_all(class_='merc-infobox-flex')
