@@ -2,28 +2,6 @@ import requests
 from bs4 import BeautifulSoup
 
 
-def read_wiki_sources(wiki_source_filename, data_filename):
-    print('Scraping wiki page sources')
-    mercenary_names = []
-    with open(wiki_source_filename, 'r') as wiki:
-        while True:
-            s = wiki.readline()
-            if not s:
-                print(f'Finished scraping wiki page sources. number of cards: {len(mercenary_names)}')
-                with open(data_filename, 'w') as w_data:
-                    for name in mercenary_names:
-                        w_data.write(name + '\n')
-                break
-            else:
-                i = s.find('alt=')
-                if i == -1:
-                    continue
-                j = s.find('"', i + len('alt="'))
-                name = s[i + 5:j]
-                name = name.replace('&#39;', '\'')  # fix apostrophe correctly
-                mercenary_names.append(name)
-
-
 def read_all_mercenary_names_from_wiki():
     url = 'https://hearthstone.fandom.com/wiki/Special:RunQuery?form=Mercs%2FMerc&target=&pfRunQueryFormName=Mercs%2FMerc&wpRunQuery=Run%2Bquery&MMQ%5Blayout%5D=Image&MMQ%5Bcollectible%5D=Yes&MMQ%5Bshows4%5D=SQL+Order+by&MMQ%5Bis_mercenary%5D=Yes&MMQ%5BmercenaryDefaultVariation%5D=Yes&MMQ%5BorderBy%5D=mercenaryId&MMQ%5Blevel%5D=max&MMQ%5Blimit%5D=500&MMQ%5Boffset%5D=0&pf_free_text='
     page = requests.get(url)
