@@ -78,8 +78,10 @@ def str2bool(v):
 
 
 def main(args):
-    if args.wiki:
-        utils.read_wiki_sources(wiki_source_filename='wiki_sources.txt', data_filename='cards_list.txt')
+    utils.write_all_mercenary_names()
+    mercenary_names = utils.read_all_mercenary_names_from_local()
+    for name in mercenary_names:
+        utils.write_mercenary_info(name)
 
 
 if __name__ == '__main__':
