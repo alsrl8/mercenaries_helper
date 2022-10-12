@@ -47,3 +47,14 @@ def read_wiki_mercenary(mercenary_name):
             if key in data:
                 data[key] = val
     return data
+
+
+def write_mercenary_info(mercenary_name, info_filename=None):
+    if not info_filename:
+        info_filename = mercenary_name + '.txt'
+
+    data = read_wiki_mercenary(mercenary_name)
+    with open('./mercenaries/' + info_filename, 'w') as file:
+        file.write(f'Name: {mercenary_name}\n')
+        for col, val in data.items():
+            file.write(f'{col}: {val}\n')
