@@ -1,11 +1,11 @@
 def read_wiki_sources(wiki_source_filename, data_filename):
-    print('Reading wiki page sources')
+    print('Scraping wiki page sources')
     mercenary_names = []
     with open(wiki_source_filename, 'r') as wiki:
         while True:
             s = wiki.readline()
             if not s:
-                print(f'Finished reading wiki page sources. number of cards: {len(mercenary_names)}')
+                print(f'Finished scraping wiki page sources. number of cards: {len(mercenary_names)}')
                 with open(data_filename, 'w') as w_data:
                     for name in mercenary_names:
                         w_data.write(name + '\n')
