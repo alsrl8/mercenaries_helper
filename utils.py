@@ -1,3 +1,7 @@
+import requests
+from bs4 import BeautifulSoup
+
+
 def read_wiki_sources(wiki_source_filename, data_filename):
     print('Scraping wiki page sources')
     mercenary_names = []
@@ -18,3 +22,29 @@ def read_wiki_sources(wiki_source_filename, data_filename):
                 name = s[i + 5:j]
                 name = name.replace('&#39;', '\'')  # fix apostrophe correctly
                 mercenary_names.append(name)
+
+
+def read_wiki_mercenary(mercenary_name):
+    BASE_URL = "https://hearthstone.fandom.com/wiki/Mercenaries/"
+    url = BASE_URL + mercenary_name
+
+    page = requests.get(url)
+    soup = BeautifulSoup(page.content, 'html.parser')
+    mercenary_info = soup.find_all(class_='merc-infobox-flex')
+
+    data = {
+        'Card type': None,
+        'Role': None,
+        'Rarity': None,
+        'Minion type': None,
+        'Faction': None,
+        'mercenaryId': None
+    }
+    for info in mercenary_info:
+        for d in info.find_all('li'):
+            key, val = d.text.strip().split(': ')
+            if key in data:
+                data[key] = val
+
+    print(f'{data=}')
+    # data={'Card type': 'Mercenary', 'Role': 'Fighter', 'Rarity': 'Legendary', 'Minion type': 'Half-Orc', 'Faction': 'Horde', 'mercenaryId': '1'}
