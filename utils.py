@@ -11,9 +11,10 @@ def read_all_mercenary_names_from_wiki():
     mercenary_names = []
     for info in mercenary_info:
         s = str(info.find('a'))
-        i = s.find('title="')
-        j = s.find('"', i + 7)
-        mercenary_name = s[i + 7:j]
+        offset = 'title="'
+        i = s.find(offset)
+        j = s.find('"', i + len(offset))
+        mercenary_name = s[i + len(offset):j]
         mercenary_names.append(mercenary_name)
     return mercenary_names
 
