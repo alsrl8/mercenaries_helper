@@ -16,5 +16,5 @@ def read_wiki_sources(wiki_source_filename, data_filename):
                     continue
                 j = s.find('"', i + len('alt="'))
                 name = s[i + 5:j]
-                name = name.replace('&#39;', '\'')
+                name = name.replace('&#39;', '\'')  # fix apostrophe correctly
                 mercenary_names.append(name)
