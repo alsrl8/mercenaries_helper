@@ -37,7 +37,7 @@ def write_all_mercenary_names():
             file.write(name + '\n')
 
 
-def read_wiki_mercenary(mercenary_name):
+def read_mercenary_from_wiki(mercenary_name):
     BASE_URL = "https://hearthstone.fandom.com/wiki/Mercenaries/"
     url = BASE_URL + mercenary_name
     page = requests.get(url)
@@ -62,12 +62,32 @@ def read_wiki_mercenary(mercenary_name):
     return data
 
 
+def read_mercenary_from_local(mercenary_name):
+    data = {
+        'Name': mercenary_name,
+        'Card type': None,
+        'Role': None,
+        'Rarity': None,
+        'Minion type': None,
+        'Faction': None,
+        'mercenaryId': None
+    }
+    with open(f'./mercenaries/{mercenary_name}.txt', 'r') as file:
+        while True:
+            s = file.readline()
+            if not s:
+                break
+            key, val = s.split(": ")
+            if key in data:
+                data[key] = val
+    return data
+
+
 def write_mercenary_info(mercenary_name, info_filename=None):
     if not info_filename:
         info_filename = mercenary_name + '.txt'
 
-    data = read_wiki_mercenary(mercenary_name)
+    data = read_mercenary_from_wiki(mercenary_name)
     with open('./mercenaries/' + info_filename, 'w') as file:
-        file.write(f'Name: {mercenary_name}\n')
         for col, val in data.items():
             file.write(f'{col}: {val}\n')
