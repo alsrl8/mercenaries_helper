@@ -20,7 +20,4 @@ def create_mercenary(db: Session, mercenary: schemas.MercenaryCreate):
     db.add(db_mercenary)
     db.commit()
     db.refresh(db_mercenary)
-    print(f'{db_mercenary=}')
-    print(f'id: {db_mercenary.id}, name: {db_mercenary.name}')
-    print(f'type(db_user): {type(db_mercenary)}')
     return db_mercenary
