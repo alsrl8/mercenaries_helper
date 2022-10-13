@@ -1,6 +1,8 @@
+import sqlite3
 import sys
 
 import pytest
+import sqlalchemy.exc
 
 sys.path.append('..')
 
@@ -48,3 +50,20 @@ def test_create_mercenary(test_db):
     response = client.get('/mercenaries/')
     assert len(response.json()) == 2
     assert response.json() == [{'name': 'my_name1', 'id': 1}, {'name': 'my_name2', 'id': 2}]
+
+
+def test_create_duplicate_mercenary(test_db):
+    client.post('/mercenaries/', json={
+        'name': 'duplicated_name'
+    })
+    response = client.get('/mercenaries/')
+    assert len(response.json()) == 1
+    assert response.json() == [{'name': 'duplicated_name', 'id': 1}]
+
+    with pytest.raises(sqlalchemy.exc.IntegrityError):
+        client.post('/mercenaries/', json={
+            'name': 'duplicated_name'
+        })
+    response = client.get('/mercenaries/')
+    assert len(response.json()) == 1
+    assert response.json() == [{'name': 'duplicated_name', 'id': 1}]
