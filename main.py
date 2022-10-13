@@ -4,6 +4,7 @@ from typing import List
 from fastapi import FastAPI, Depends
 from sqlalchemy.orm import Session
 
+import utils
 from utils import read_all_mercenary_names_from_local, read_mercenary_from_local
 from sql_app import crud, models, schemas
 from sql_app.database import SessionLocal, engine
@@ -39,8 +40,9 @@ def input_all_mercenaries():
     for name in mercenary_names:
         mercenary = read_mercenary_from_local(name)
         db_mercenary = MercenaryCreate(name=mercenary['Name'])
-        crud.create_mercenary(db=SessionLocal(), mercenary=db_mercenary)
-
+        find_mercenary = crud.get_mercenary_by_name(db=SessionLocal(), name=name)
+        if not find_mercenary:
+            crud.create_mercenary(db=SessionLocal(), mercenary=db_mercenary)
 
 
 def str2bool(v):
@@ -55,12 +57,17 @@ def str2bool(v):
 
 
 def main(args):
-    input_all_mercenaries()
+    if args.wiki:
+        utils.write_all_mercenaries()
+    if args.init:
+        input_all_mercenaries()
 
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('--wiki', type=str2bool, default=False, required=False,
                         help='Read text file of wiki page sources to make dataset')
+    parser.add_argument('--init', type=str2bool, default=False, required=False,
+                        help='Input all mercenaries information into database')
 
     main(parser.parse_args())
