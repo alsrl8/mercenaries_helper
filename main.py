@@ -1,7 +1,8 @@
 import argparse
-from fastapi import FastAPI, Depends, HTTPException
-from sqlalchemy.orm import Session
 from typing import List
+
+from fastapi import FastAPI, Depends
+from sqlalchemy.orm import Session
 
 from sql_app import crud, models, schemas
 from sql_app.database import SessionLocal, engine
