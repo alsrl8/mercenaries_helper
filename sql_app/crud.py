@@ -7,6 +7,10 @@ def get_mercenaries(db: Session):
     return db.query(models.Mercenary).all()
 
 
+def get_mercenary_by_name(db: Session, name: str):
+    return db.query(models.Mercenary).filter(models.Mercenary.name == name).first()
+
+
 def create_mercenary(db: Session, mercenary: schemas.MercenaryCreate):
     db_mercenary = models.Mercenary(name=mercenary.name)
     db.add(db_mercenary)
