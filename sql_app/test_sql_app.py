@@ -6,7 +6,7 @@ sys.path.append('..')
 
 from fastapi.testclient import TestClient
 from sqlalchemy import create_engine
-from sqlalchemy.orm import sessionmaker, Session
+from sqlalchemy.orm import sessionmaker
 
 from main import app, get_db
 from sql_app import models
@@ -45,6 +45,6 @@ def test_create_mercenary(test_db):
     client.post('/mercenaries/', json={
         'name': 'my_name2'
     })
-
     response = client.get('/mercenaries/')
-    
+    assert len(response.json()) == 2
+    assert response.json() == [{'name': 'my_name1', 'id': 1}, {'name': 'my_name2', 'id': 2}]
