@@ -1,15 +1,12 @@
-import sqlite3
 import sys
-
 import pytest
 import sqlalchemy.exc
-
-sys.path.append('..')
 
 from fastapi.testclient import TestClient
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 
+sys.path.append('..')
 from main import app, get_db
 from sql_app import models
 
