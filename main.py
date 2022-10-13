@@ -4,8 +4,10 @@ from typing import List
 from fastapi import FastAPI, Depends
 from sqlalchemy.orm import Session
 
+from utils import read_all_mercenary_names_from_local, read_mercenary_from_local
 from sql_app import crud, models, schemas
 from sql_app.database import SessionLocal, engine
+from sql_app.schemas import MercenaryCreate
 
 models.Base.metadata.create_all(bind=engine)
 app = FastAPI()
@@ -32,6 +34,15 @@ def create_mercenary(mercenary: schemas.MercenaryCreate, db: Session = Depends(g
     return db_mercenary
 
 
+def input_all_mercenaries():
+    mercenary_names = read_all_mercenary_names_from_local()
+    for name in mercenary_names:
+        mercenary = read_mercenary_from_local(name)
+        db_mercenary = MercenaryCreate(name=mercenary['Name'])
+        crud.create_mercenary(db=SessionLocal(), mercenary=db_mercenary)
+
+
+
 def str2bool(v):
     if isinstance(v, bool):
         return v
@@ -44,7 +55,7 @@ def str2bool(v):
 
 
 def main(args):
-    pass
+    input_all_mercenaries()
 
 
 if __name__ == '__main__':
