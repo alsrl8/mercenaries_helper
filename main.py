@@ -58,8 +58,10 @@ def str2bool(v):
 
 def main(args):
     if args.wiki:
+        print(f'Scraping mercenaries from hearthstone wiki')
         utils.write_all_mercenaries()
     if args.init:
+        print(f'Inserting mercenaries into database')
         input_all_mercenaries()
 
 

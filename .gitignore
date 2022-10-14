@@ -1,2 +1,3 @@
 mercenaries/
 *.db
+*.pyc
