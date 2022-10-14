@@ -39,28 +39,39 @@ client = TestClient(app)
 
 def test_create_mercenary(test_db):
     client.post('/mercenaries/', json={
-        'name': 'my_name1'
+        'name': 'my_name1', 'role': 'Protector', 'rarity': 'Rare', 'minion_type': 'Tauren', 'faction': 'Horde'
     })
     client.post('/mercenaries/', json={
-        'name': 'my_name2'
+        'name': 'my_name2', 'role': 'Caster', 'rarity': 'Epic', 'minion_type': 'Human', 'faction': 'Alliance'
     })
     response = client.get('/mercenaries/')
     assert len(response.json()) == 2
-    assert response.json() == [{'name': 'my_name1', 'id': 1}, {'name': 'my_name2', 'id': 2}]
+    assert response.json() == [{'faction': 'Horde',
+                                'id': 1,
+                                'minion_type': 'Tauren',
+                                'name': 'my_name1',
+                                'rarity': 'Rare',
+                                'role': 'Protector'},
+                               {'faction': 'Alliance',
+                                'id': 2,
+                                'minion_type': 'Human',
+                                'name': 'my_name2',
+                                'rarity': 'Epic',
+                                'role': 'Caster'}]
 
 
 def test_create_duplicate_mercenary(test_db):
     client.post('/mercenaries/', json={
-        'name': 'duplicated_name'
+        'name': 'duplicated_name', 'role': 'Protector', 'rarity': 'Rare', 'minion_type': 'Tauren', 'faction': 'Horde'
     })
     response = client.get('/mercenaries/')
     assert len(response.json()) == 1
-    assert response.json() == [{'name': 'duplicated_name', 'id': 1}]
+    assert response.json() == [{'name': 'duplicated_name', 'role': 'Protector', 'rarity': 'Rare', 'minion_type': 'Tauren', 'faction': 'Horde', 'id': 1}]
 
     with pytest.raises(sqlalchemy.exc.IntegrityError):
         client.post('/mercenaries/', json={
-            'name': 'duplicated_name'
+            'name': 'duplicated_name', 'role': 'Caster', 'rarity': 'Epic', 'minion_type': 'Human', 'faction': 'Alliance'
         })
     response = client.get('/mercenaries/')
     assert len(response.json()) == 1
-    assert response.json() == [{'name': 'duplicated_name', 'id': 1}]
+    assert response.json() == [{'name': 'duplicated_name', 'role': 'Protector', 'rarity': 'Rare', 'minion_type': 'Tauren', 'faction': 'Horde', 'id': 1}]
