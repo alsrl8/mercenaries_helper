@@ -29,6 +29,12 @@ def read_mercenaries(db: Session = Depends(get_db)):
     return mercenaries
 
 
+@app.get("/mercenary/", response_model=schemas.Mercenary)
+def read_mercenary(id: int = 0, name: str = '', db: Session = Depends(get_db)):
+    mercenary = crud.get_mercenary(db=db, id=id, name=name)
+    return mercenary if mercenary else schemas.Mercenary()
+
+
 @app.post("/mercenaries/", response_model=schemas.Mercenary)
 def create_mercenary(mercenary: schemas.MercenaryCreate, db: Session = Depends(get_db)):
     db_mercenary = crud.create_mercenary(db, mercenary)
