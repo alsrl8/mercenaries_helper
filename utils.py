@@ -1,5 +1,6 @@
 import requests
 from bs4 import BeautifulSoup
+import os
 
 
 def read_all_mercenary_names_from_wiki():
@@ -32,6 +33,8 @@ def read_all_mercenary_names_from_local():
 
 def write_all_mercenary_names():
     mercenary_names = read_all_mercenary_names_from_wiki()
+    if not os.path.exists('./mercenaries/'):
+        os.mkdir('./mercenaries/')
     with open('./mercenaries/All.txt', 'w') as file:
         for name in mercenary_names:
             file.write(name + '\n')
@@ -88,6 +91,9 @@ def write_mercenary_info(mercenary_name, info_filename=None):
         info_filename = mercenary_name + '.txt'
 
     data = read_mercenary_from_wiki(mercenary_name)
+
+    if not os.path.exists('./mercenaries/'):
+        os.mkdir('./mercenaries/')
     with open('./mercenaries/' + info_filename, 'w') as file:
         for col, val in data.items():
             file.write(f'{col}: {val}\n')
