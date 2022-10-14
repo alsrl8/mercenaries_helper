@@ -8,3 +8,7 @@ class Mercenary(Base):
 
     id = Column(Integer, primary_key=True, index=True)
     name = Column(String, unique=True, index=True)
+    role = Column(String)
+    rarity = Column(String)
+    minion_type = Column(String)
+    faction = Column(String)
