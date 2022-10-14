@@ -2,11 +2,11 @@ from pydantic import BaseModel
 
 
 class MercenaryBase(BaseModel):
-    name: str
-    role: str
-    rarity: str
-    minion_type: str
-    faction: str
+    name: str = ''
+    role: str = ''
+    rarity: str = ''
+    minion_type: str = ''
+    faction: str = ''
 
 
 class MercenaryCreate(MercenaryBase):
@@ -14,7 +14,7 @@ class MercenaryCreate(MercenaryBase):
 
 
 class Mercenary(MercenaryBase):
-    id: int
+    id: int = 0
 
     class Config:
         orm_mode = True
