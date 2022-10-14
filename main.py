@@ -39,7 +39,12 @@ def input_all_mercenaries():
     mercenary_names = read_all_mercenary_names_from_local()
     for name in mercenary_names:
         mercenary = read_mercenary_from_local(name)
-        db_mercenary = MercenaryCreate(name=mercenary['Name'])
+        db_mercenary = MercenaryCreate(name=mercenary['Name'],
+                                       role=mercenary['Role'],
+                                       rarity=mercenary['Rarity'],
+                                       minion_type=mercenary['Minion type'],
+                                       faction=mercenary['Faction']
+                                       )
         find_mercenary = crud.get_mercenary_by_name(db=SessionLocal(), name=name)
         if not find_mercenary:
             crud.create_mercenary(db=SessionLocal(), mercenary=db_mercenary)
