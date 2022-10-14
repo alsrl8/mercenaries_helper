@@ -53,7 +53,7 @@ def str2bool(v):
     elif v.lower() in ('no', 'n', 'false', 'f', '0'):
         return False
     else:
-        raise argparse.ArgumentParser('Boolean value is expected')
+        raise argparse.ArgumentError()
 
 
 def main(args):
