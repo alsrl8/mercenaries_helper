@@ -11,7 +11,6 @@ import utils
 from sql_app import crud, models, schemas
 from sql_app.database import SessionLocal, engine
 from sql_app.schemas import MercenaryCreate
-from utils import read_all_mercenary_names_from_local, read_mercenary_from_local
 
 models.Base.metadata.create_all(bind=engine)
 app = FastAPI()
@@ -55,9 +54,9 @@ def create_mercenary(mercenary: schemas.MercenaryCreate, db: Session = Depends(g
 
 
 def input_all_mercenaries():
-    mercenary_names = read_all_mercenary_names_from_local()
+    mercenary_names = utils.read_all_mercenary_names_from_local()
     for name in mercenary_names:
-        mercenary = read_mercenary_from_local(name)
+        mercenary = utils.read_mercenary_from_local(name)
         db_mercenary = MercenaryCreate(name=mercenary['Name'],
                                        role=mercenary['Role'],
                                        rarity=mercenary['Rarity'],
