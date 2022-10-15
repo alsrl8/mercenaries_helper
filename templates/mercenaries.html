@@ -16,7 +16,7 @@
             <tr>
                 <td>
                     <a href="{{ '/mercenary/?id=' + (i+1)|string }}"/>
-                    <img alt="" src="{{ url_for('static', path ='images/' + mercenaries[i].name + '.png') }}" width="400" height="520">
+                    <img class="lazyload" alt="" src="{{ url_for('static', path ='images/' + mercenaries[i].name + '.png') }}" width="400" height="520">
                 </td>
             </tr>
         {% endfor%}
