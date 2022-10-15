@@ -64,9 +64,13 @@ def read_mercenary_from_wiki(mercenary_name):
             if key in data:
                 data[key] = val
 
-        for d in info.find_all('a', class_='image'):
-            url = d['href']
-            request.urlretrieve(url, f"./static/images/{data['Name']}.png")
+        # download image of mercenary from wiki
+        filepath = f"./static/images/{data['Name']}.png"
+        # skip downloading image if there is already image in the directory
+        if not os.path.exists(filepath):
+            for d in info.find_all('a', class_='image'):
+                url = d['href']
+                request.urlretrieve(url, filepath)
 
     return data
 
