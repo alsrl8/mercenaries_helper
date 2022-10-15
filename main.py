@@ -34,9 +34,9 @@ def home(request: Request):
 
 
 @app.get("/mercenaries/", response_model=List[schemas.Mercenary])
-def read_mercenaries(db: Session = Depends(get_db)):
+def read_mercenaries(request: Request, db: Session = Depends(get_db)):
     mercenaries = crud.get_mercenaries(db)
-    return mercenaries
+    return templates.TemplateResponse('mercenaries.html', {'request': request, 'mercenaries': mercenaries})
 
 
 @app.get("/mercenary/", response_model=schemas.Mercenary)

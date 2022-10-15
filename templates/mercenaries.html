@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8"/>
+</head>
+
+<title>
+    Hearthstone Mercenary Helper
+</title>
+
+<body>
+<h2>Mercenaries</h2>
+<div class="main">
+    <table class="mercenary" border="0" width="700">
+        {% for i in range(mercenaries|length) %}
+            <tr>
+                <td>
+                    <a href="{{ '/mercenary/?id=' + (i+1)|string }}"/>
+                    <img alt="" src="{{ url_for('static', path ='images/' + mercenaries[i].name + '.png') }}" width="400" height="520">
+                </td>
+            </tr>
+        {% endfor%}
+    </table>
+</div>
+</body>
