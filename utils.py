@@ -19,6 +19,14 @@ def read_all_mercenary_names_from_wiki():
         mercenary_names.append(mercenary_name)
     return mercenary_names
 
+def read_equipment_from_wiki_by_mercenary_id(mercenary_id):
+    url = 'https://hearthstone.fandom.com/wiki/Special:RunQuery/Mercs/Equipment?pfRunQueryFormName=Mercs%2FEquipment&MEQ%5Bname%5D=&MEQ%5BdbfId%5D=&MEQ%5Bid%5D=&MEQ%5Btext%5D=&MEQ%5BtextAdvanced%5D%5Bis_checkbox%5D=true&MEQ%5Bcollapsed%5D=False&MEQ%5BoriginalPage%5D=&MEQ%5Blayout%5D=Image&MEQ%5Bwidth%5D=&MEQ%5Bsorts%5D%5Bis_list%5D=1&MEQ%5Bmap_field%5D%5Bsorts%5D=true&MEQ%5Blimit%5D=500&MEQ%5Bshows%5D%5B1%5D=Tier&MEQ%5Bshows%5D%5Bis_list%5D=1&MEQ%5Bshows2%5D%5Bis_list%5D=1&MEQ%5Bshows3%5D%5Bis_list%5D=1&MEQ%5Bshows4%5D%5B0%5D=SQL+Where&MEQ%5Bshows4%5D%5Bis_list%5D=1&MEQ%5Btier%5D%5B4%5D=4&MEQ%5Btier%5D%5Bis_list%5D=1&MEQ%5Bwhere%5D=cargo__MercenaryEquipment.mercenaryId+%3D+' + f'{mercenary_id}' + '&wpRunQuery=&pf_free_text='
+    page = requests.get(url)
+    soup = BeautifulSoup(page.content, 'html.parser')
+    print(soup)
+
+    pass
+
 
 def read_all_mercenary_names_from_local():
     mercenary_names = []

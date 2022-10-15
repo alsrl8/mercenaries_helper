@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8"/>
+</head>
+
+<title>
+    Hearthstone Mercenary Helper
+</title>
+
+<body>
+<h2>Mercenary</h2>
+<div class="main">
+<table class="mercenary">
+    <tr>
+        <th rowspan="2"><img alt="" src="{{ url_for('static', path =path) }}" ></th>
+        <td>
+            <b>name</b>
+        </td>
+        <td>
+            {{ name }}
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <b>role</b>
+        </td>
+        <td>
+            {{ role }}
+        </td>
+    </tr>
+</table>
+</div>
+</body>
