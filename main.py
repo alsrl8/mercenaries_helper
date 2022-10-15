@@ -44,7 +44,14 @@ def read_mercenary(request: Request, id: int = 0, name: str = '', db: Session = 
     mercenary = crud.get_mercenary(db=db, id=id, name=name)
     if not mercenary:
         mercenary = schemas.Mercenary()
-    return templates.TemplateResponse('mercenary.html', {'request': request, 'name': mercenary.name, 'role': mercenary.role, 'path': f'images/{mercenary.name}.webp'})
+    data = {'request': request,
+            'name': mercenary.name,
+            'role': mercenary.role,
+            'rarity': mercenary.rarity,
+            'minion_type': mercenary.minion_type,
+            'faction': mercenary.faction,
+            'path': f'images/{mercenary.name}.png'}
+    return templates.TemplateResponse('mercenary.html', context=data)
 
 
 @app.post("/mercenaries/", response_model=schemas.Mercenary)

@@ -13,7 +13,7 @@
 <div class="main">
 <table class="mercenary">
     <tr>
-        <th rowspan="2"><img alt="" src="{{ url_for('static', path =path) }}" ></th>
+        <th rowspan="5"><img alt="" src="{{ url_for('static', path =path) }}" ></th>
         <td>
             <b>name</b>
         </td>
@@ -27,6 +27,30 @@
         </td>
         <td>
             {{ role }}
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <b>rarity</b>
+        </td>
+        <td>
+            {{ rarity }}
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <b>minion type</b>
+        </td>
+        <td>
+            {{ minion_type }}
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <b>faction</b>
+        </td>
+        <td>
+            {{ faction }}
         </td>
     </tr>
 </table>
