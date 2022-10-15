@@ -63,7 +63,7 @@ def input_all_mercenaries():
                                        minion_type=mercenary['Minion type'],
                                        faction=mercenary['Faction']
                                        )
-        find_mercenary = crud.get_mercenary_by_name(db=SessionLocal(), name=name)
+        find_mercenary = crud.get_mercenary(db=SessionLocal(), name=name)
         if not find_mercenary:
             crud.create_mercenary(db=SessionLocal(), mercenary=db_mercenary)
 
