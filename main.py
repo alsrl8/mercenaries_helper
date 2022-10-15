@@ -1,17 +1,23 @@
 import argparse
 from typing import List
 
-from fastapi import FastAPI, Depends
+from fastapi import FastAPI, Depends, Request
+from fastapi.responses import HTMLResponse
+from fastapi.templating import Jinja2Templates
+from fastapi.staticfiles import StaticFiles
 from sqlalchemy.orm import Session
 
 import utils
-from utils import read_all_mercenary_names_from_local, read_mercenary_from_local
 from sql_app import crud, models, schemas
 from sql_app.database import SessionLocal, engine
 from sql_app.schemas import MercenaryCreate
+from utils import read_all_mercenary_names_from_local, read_mercenary_from_local
 
 models.Base.metadata.create_all(bind=engine)
 app = FastAPI()
+app.mount('/static', StaticFiles(directory='static'), name='static')
+
+templates = Jinja2Templates(directory='templates')
 
 
 # Dependency
@@ -23,6 +29,11 @@ def get_db():
         db.close()
 
 
+@app.get('/', response_class=HTMLResponse)
+def home(request: Request):
+    return templates.TemplateResponse('home.html', {'request': request})
+
+
 @app.get("/mercenaries/", response_model=List[schemas.Mercenary])
 def read_mercenaries(db: Session = Depends(get_db)):
     mercenaries = crud.get_mercenaries(db)
@@ -30,9 +41,11 @@ def read_mercenaries(db: Session = Depends(get_db)):
 
 
 @app.get("/mercenary/", response_model=schemas.Mercenary)
-def read_mercenary(id: int = 0, name: str = '', db: Session = Depends(get_db)):
+def read_mercenary(request: Request, id: int = 0, name: str = '', db: Session = Depends(get_db)):
     mercenary = crud.get_mercenary(db=db, id=id, name=name)
-    return mercenary if mercenary else schemas.Mercenary()
+    if not mercenary:
+        mercenary = schemas.Mercenary()
+    return templates.TemplateResponse('mercenary.html', {'request': request, 'name': mercenary.name, 'role': mercenary.role, 'path': f'images/{mercenary.name}.webp'})
 
 
 @app.post("/mercenaries/", response_model=schemas.Mercenary)
