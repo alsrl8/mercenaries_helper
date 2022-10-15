@@ -7,7 +7,7 @@ def get_mercenaries(db: Session):
     return db.query(models.Mercenary).all()
 
 
-def get_mercenary(db: Session, id: int, name: str):
+def get_mercenary(db: Session, id: int = 0, name: str = ''):
     if id and name:
         return db.query(models.Mercenary).filter(models.Mercenary.id == id).filter(models.Mercenary.name == name).first()
     elif id:
