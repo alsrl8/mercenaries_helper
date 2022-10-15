@@ -2,6 +2,7 @@
 
 <head>
     <meta charset="utf-8"/>
+    <link href="../static/styles/style.css" rel="stylesheet" type="text/css">
 </head>
 
 <title>
@@ -11,48 +12,48 @@
 <body>
 <h2>Mercenary</h2>
 <div class="main">
-<table class="mercenary">
-    <tr>
-        <th rowspan="5"><img alt="" src="{{ url_for('static', path =path) }}" ></th>
-        <td>
-            <b>name</b>
-        </td>
-        <td>
-            {{ name }}
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <b>role</b>
-        </td>
-        <td>
-            {{ role }}
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <b>rarity</b>
-        </td>
-        <td>
-            {{ rarity }}
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <b>minion type</b>
-        </td>
-        <td>
-            {{ minion_type }}
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <b>faction</b>
-        </td>
-        <td>
-            {{ faction }}
-        </td>
-    </tr>
-</table>
+    <table class="mercenary" border="0" width="550">
+        <tr>
+            <th rowspan="5"><img alt="" src="{{ url_for('static', path =path) }}" width="200" height="260"></th>
+            <td width="200">
+                <p>name</p>
+            </td>
+            <td>
+                {{ name }}
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>role</p>
+            </td>
+            <td>
+                {{ role }}
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>rarity</p>
+            </td>
+            <td>
+                {{ rarity }}
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>minion type</p>
+            </td>
+            <td>
+                {{ minion_type }}
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>faction</p>
+            </td>
+            <td>
+                {{ faction }}
+            </td>
+        </tr>
+    </table>
 </div>
 </body>
