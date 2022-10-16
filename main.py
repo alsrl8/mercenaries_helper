@@ -69,7 +69,6 @@ def create_equipment(request: Request):
 
 @app.post("/add_equipment/", response_model=schemas.Equipment)
 def create_equipment(mercenary_id: int = Form(), equipment_name: str = Form(), desc: str = Form(), db: Session = Depends(get_db)):
-    print(f'{mercenary_id=}')
     equipment = schemas.EquipmentCreate(mercenary_id=mercenary_id, name=equipment_name, desc=desc)
     db_equipment = crud.create_equipment(db, equipment)
     return db_equipment
