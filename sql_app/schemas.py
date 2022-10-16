@@ -1,12 +1,13 @@
 from pydantic import BaseModel
+from sql_app.enums import Role, Rarity, MinionType, Faction
 
 
 class MercenaryBase(BaseModel):
     name: str = ''
-    role: str = ''
-    rarity: str = ''
-    minion_type: str = ''
-    faction: str = ''
+    role: Role = Role.PROTECTOR
+    rarity: Rarity = Rarity.RARE
+    minion_type: MinionType = MinionType.NONE
+    faction: Faction = Faction.NONE
 
 
 class MercenaryCreate(MercenaryBase):
