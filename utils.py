@@ -42,8 +42,7 @@ def write_all_mercenary_names():
 
 
 def read_mercenary_from_wiki(mercenary_name):
-    BASE_URL = "https://hearthstone.fandom.com/wiki/Mercenaries/"
-    url = BASE_URL + mercenary_name
+    url = "https://hearthstone.fandom.com/wiki/Mercenaries/" + mercenary_name
     page = requests.get(url)
     soup = BeautifulSoup(page.content, 'html.parser')
     mercenary_info = soup.find_all(class_='merc-infobox-flex')
@@ -71,6 +70,50 @@ def read_mercenary_from_wiki(mercenary_name):
             for d in info.find_all('a', class_='image'):
                 url = d['href']
                 request.urlretrieve(url, filepath)
+
+    return data
+
+
+def read_ability_names_from_wiki(mercenary_name):
+    url = "https://hearthstone.fandom.com/wiki/Mercenaries/" + mercenary_name
+    page = requests.get(url)
+    soup = BeautifulSoup(page.content, 'html.parser')
+    ability_info = soup.find_all(class_='ability-infobox-flex')
+
+    ability_names = []
+    for info in ability_info:
+        ability_name = info.find('div', class_='title').text
+        ability_names.append(ability_name)
+    return ability_names
+
+
+def read_ability_from_wiki(ability_name):
+    url = "https://hearthstone.fandom.com/wiki/Mercenaries/" + ability_name
+    page = requests.get(url)
+    soup = BeautifulSoup(page.content, 'html.parser')
+    ability_info = soup.find_all(class_='ability-infobox-flex')
+
+    data = {
+        'Name': ability_name,
+        'Card type': None,
+        'Speed': None,
+        'Cooldown': None,
+        'Text': None
+    }
+
+    for d in ability_info[0].find_all('li'):
+        key, val = d.text.strip().split(': ')
+        if key in data:
+            data[key] = val
+
+    if data['Card type'] == 'Equipment':
+        data['Text'] = ability_info[0].find('div', class_='text').text.split('\n')[0]
+
+    filepath = './static/images/abilities/' if data['Card type'] == 'Ability' else './static/images/equipments/'
+    filepath += f'{ability_name}.png'
+    if not os.path.exists(filepath):
+        for url in ability_info[0].find('div', class_='card-image').find_all('a'):
+            request.urlretrieve(url['href'], filepath)
 
     return data
 
