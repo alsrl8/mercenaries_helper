@@ -65,7 +65,7 @@ def read_mercenary_from_wiki(mercenary_name):
                 data[key] = val
 
         # download image of mercenary from wiki
-        filepath = f"./static/images/{data['Name']}.png"
+        filepath = f"./static/images/mercenaries/{data['Name']}.png"
         # skip downloading image if there is already image in the directory
         if not os.path.exists(filepath):
             for d in info.find_all('a', class_='image'):

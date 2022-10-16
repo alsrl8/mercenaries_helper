@@ -20,7 +20,7 @@
                 {% if r * 5 + c < mercenaries|length %}
                 <td>
                     <a href="{{ '/mercenary/?id=' + (r * 5 + c + 1)|string }}"/>
-                    <img class="lazyload" alt="" src="{{ url_for('static', path ='images/' + mercenaries[r * 5 + c].name + '.png') }}" width="400" height="520">
+                    <img class="lazyload" alt="" src="{{ url_for('static', path ='images/mercenaries/' + mercenaries[r * 5 + c].name + '.png') }}" width="400" height="520">
                 </td>
                 {% endif %}
                 {% endfor %}
