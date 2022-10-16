@@ -56,12 +56,6 @@ def read_mercenary(request: Request, id: int = 0, name: str = '', db: Session = 
     return templates.TemplateResponse('mercenary.html', context=data)
 
 
-@app.post("/mercenaries/", response_model=schemas.Mercenary)
-def create_mercenary(mercenary: schemas.MercenaryCreate, db: Session = Depends(get_db)):
-    db_mercenary = crud.create_mercenary(db, mercenary)
-    return db_mercenary
-
-
 @app.get("/add_equipment/")
 def create_equipment(request: Request):
     return templates.TemplateResponse('add_equipment.html', {'request': request})
