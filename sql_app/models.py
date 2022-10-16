@@ -13,8 +13,10 @@ class Mercenary(Base):
     minion_type = Column(String)
     faction = Column(String)
 
+
 class Equipment(Base):
     __tablename__ = "equipments"
 
     id = Column(Integer, primary_key=True, index=True)
     name = Column(String, unique=True, index=True)
+    desc = Column(String)
