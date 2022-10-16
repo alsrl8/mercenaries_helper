@@ -68,7 +68,7 @@ def create_equipment(mercenary_id: int = Form(), equipment_name: str = Form(), d
     return db_equipment
 
 
-def input_all_mercenaries():
+def store_all_mercenaries():
     mercenary_names = utils.read_all_mercenary_names_from_local()
     for name in mercenary_names:
         mercenary = utils.read_mercenary_from_local(name)
@@ -100,7 +100,7 @@ def main(args):
         utils.write_all_mercenaries()
     if args.init:
         print(f'Inserting mercenaries into database')
-        input_all_mercenaries()
+        store_all_mercenaries()
 
 
 if __name__ == '__main__':
