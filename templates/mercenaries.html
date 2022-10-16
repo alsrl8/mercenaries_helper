@@ -12,12 +12,18 @@
 <h2>Mercenaries</h2>
 <div class="main">
     <table class="mercenary" border="0" width="700">
-        {% for i in range(mercenaries|length) %}
+        {% set num_col = 5 %}
+        {% set num_row = (mercenaries|length) // num_col + 1 %}
+        {% for r in range(num_row) %}
             <tr>
+                {% for c in range(5) %}
+                {% if r * 5 + c < mercenaries|length %}
                 <td>
-                    <a href="{{ '/mercenary/?id=' + (i+1)|string }}"/>
-                    <img class="lazyload" alt="" src="{{ url_for('static', path ='images/' + mercenaries[i].name + '.png') }}" width="400" height="520">
+                    <a href="{{ '/mercenary/?id=' + (r * 5 + c + 1)|string }}"/>
+                    <img class="lazyload" alt="" src="{{ url_for('static', path ='images/' + mercenaries[r * 5 + c].name + '.png') }}" width="400" height="520">
                 </td>
+                {% endif %}
+                {% endfor %}
             </tr>
         {% endfor%}
     </table>
