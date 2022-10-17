@@ -50,7 +50,7 @@ def read_mercenary(request: Request, id: int = 0, name: str = '', db: Session = 
             'rarity': mercenary.rarity,
             'minion_type': mercenary.minion_type,
             'faction': mercenary.faction,
-            'path': f'images/{mercenary.name}.png',
+            'path': f'images/mercenaries/{mercenary.name}.png',
             'equipments': mercenary.equipments
             }
     return templates.TemplateResponse('mercenary.html', context=data)
