@@ -10,7 +10,7 @@ def get_mercenaries(db: Session):
 def get_mercenary(db: Session, id: int = 0, name: str = ''):
     if not id and not name:
         return None
-    data = db.query(models.Mercenary).join(models.Equipment).filter(models.Mercenary.id == models.Equipment.owner_id)
+    data = db.query(models.Mercenary).outerjoin(models.Equipment)
     if id:
         data = data.filter(models.Mercenary.id == id)
     if name:
