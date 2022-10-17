@@ -1,0 +1,9 @@
+Name: Vanessa VanCleef
+Card type: Mercenary
+Role: Protector
+Rarity: Epic
+Minion type: Pirate
+Faction: None
+mercenaryId: 238
+equipments: [{'Name': 'Dreadblades 4', 'Card type': 'Equipment', 'Text': 'Burgle Barrage is (4) Speed faster and always Combos.'}, {'Name': 'Extra Pockets 4', 'Card type': 'Equipment', 'Text': 'Battlecry: Steal 4 Attack from an enemy opposite this.'}, {'Name': 'Blade Catcher 4', 'Card type': 'Equipment', 'Text': 'Passive: Whenever this Merc is Attackedsteal 4 Attack from the Attacker.'}]
+abilities: [{'Name': 'Burgle Barrage 5', 'Card type': 'Ability', 'Speed': '7', 'Cooldown': None, 'Spell school': None, 'Text': 'Attack an enemy. Combo:\xa0Steal\xa05\xa0Attack from them first.'}, {'Name': 'Makeshift Weaponry 5', 'Card type': 'Ability', 'Speed': '7', 'Cooldown': None, 'Spell school': None, 'Text': 'Deal 12 damage to all enemies. (Improved by Stolen Attack)'}, {'Name': 'Shifting Satchel 5', 'Card type': 'Ability', 'Speed': '5', 'Cooldown': '1', 'Spell school': None, 'Text': "Deal 16 damage to an enemy. Give +1 Cooldown to an ability they didn't use this turn."}]

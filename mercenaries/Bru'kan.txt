@@ -1,0 +1,9 @@
+Name: Bru'kan
+Card type: Mercenary
+Role: Caster
+Rarity: Rare
+Minion type: Troll
+Faction: Horde
+mercenaryId: 21
+equipments: [{'Name': 'Crackling Band 4', 'Card type': 'Equipment', 'Text': 'Lightning Bolt deals 4 more damage.'}, {'Name': 'Timberfrost Totem 4', 'Card type': 'Equipment', 'Text': 'Muddy Footing slows (4) Speed more.'}, {'Name': 'Lightning Rod 4', 'Card type': 'Equipment', 'Text': 'Chain Lightning repeats on 2 additional enemies, but\xa0has\xa0+1\xa0Cooldown.'}]
+abilities: [{'Name': 'Lightning Bolt 5', 'Card type': 'Ability', 'Speed': '6', 'Cooldown': None, 'Spell school': 'Nature', 'Text': 'Deal 10 damage. Gain +3 Nature Damage'}, {'Name': 'Muddy Footing 5', 'Card type': 'Ability', 'Speed': '4', 'Cooldown': None, 'Spell school': 'Nature', 'Text': 'Deal 10 damage to a character. Its next ability is (6) Speed slower.'}, {'Name': 'Chain Lightning 5', 'Card type': 'Ability', 'Speed': '6', 'Cooldown': '1', 'Spell school': 'Nature', 'Text': 'Deal 16 damage to an enemy. Repeat this on 1 additional adjacent enemy.'}]

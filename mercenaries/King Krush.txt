@@ -1,0 +1,9 @@
+Name: King Krush
+Card type: Mercenary
+Role: Fighter
+Rarity: Epic
+Minion type: Beast
+Faction: None
+mercenaryId: 43
+equipments: [{'Name': 'Fresh Meat 4', 'Card type': 'Equipment', 'Text': 'Terrify gives an additional +4 Attack.'}, {'Name': 'Rocky Carapace 4', 'Card type': 'Equipment', 'Text': 'Devilsaur has +10 Health.'}, {'Name': 'Flaming Claws 4', 'Card type': 'Equipment', 'Text': 'Passive: +8 Attack.'}]
+abilities: [{'Name': 'Apex Predator 5', 'Card type': 'Ability', 'Speed': '5', 'Cooldown': None, 'Spell school': None, 'Text': 'Attack the lowest  Health enemy.  Deathblow: Gain +5 Health and repeat this.'}, {'Name': 'Terrify 5', 'Card type': 'Ability', 'Speed': '4', 'Cooldown': '1', 'Spell school': None, 'Text': 'Gain +5 Attack for each of your Beasts. Attack\xa0a\xa0random\xa0enemy.'}, {'Name': 'Devilsaur 5', 'Card type': 'Ability', 'Speed': '5', 'Cooldown': None, 'Spell school': None, 'Text': 'Charge'}]

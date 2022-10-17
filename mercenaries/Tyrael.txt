@@ -1,0 +1,9 @@
+Name: Tyrael
+Card type: Mercenary
+Role: Fighter
+Rarity: Legendary
+Minion type: None
+Faction: None
+mercenaryId: 311
+equipments: [{'Name': "El'druin 4", 'Card type': 'Equipment', 'Text': 'Divine Bladestrike deals 5 more damage.'}, {'Name': 'Blinding Gauntlets 4', 'Card type': 'Equipment', 'Text': 'Holy Judgement also gives the enemy -5 Attack permanently.'}, {'Name': 'Crown of Purity 4', 'Card type': 'Equipment', 'Text': 'Passive: Your characters have +5\xa0Fel\xa0Resistance.'}]
+abilities: [{'Name': 'Divine Bladestrike 5', 'Card type': 'Ability', 'Speed': '5', 'Cooldown': None, 'Spell school': 'Holy', 'Text': 'Attack an enemy. Holy Combo: Deal 15 damage to them.'}, {'Name': 'Holy Judgement 5', 'Card type': 'Ability', 'Speed': '5', 'Cooldown': '1', 'Spell school': 'Holy', 'Text': 'Deal 10 damage to an enemy. Holy Combo: Freeze them.'}, {'Name': 'Angelic Protection 5', 'Card type': 'Ability', 'Speed': '5', 'Cooldown': None, 'Spell school': 'Holy', 'Text': 'Gain Taunt for 2 turns. Holy Combo: Other friendly characters take 10 less damage next turn.'}]

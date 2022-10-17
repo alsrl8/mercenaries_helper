@@ -1,0 +1,9 @@
+Name: Fathom-Lord Karathress
+Card type: Mercenary
+Role: Protector
+Rarity: Rare
+Minion type: Naga
+Faction: None
+mercenaryId: 295
+equipments: [{'Name': 'Fathom Lure 4', 'Card type': 'Equipment', 'Text': 'Passive: After a friendly Fathom Guard Attacks, restore 12 Health to this merc.'}, {'Name': 'Hull Breaker 4', 'Card type': 'Equipment', 'Text': 'Cataclysmic Bolt deals 20 damage to adjacent enemies, but has +1 Cooldown.'}, {'Name': "Tidewalker's Brooch 4", 'Card type': 'Equipment', 'Text': 'Blessing of the Tides affects all your Naga and summoned minions, but has +2 Cooldown.'}]
+abilities: [{'Name': 'Tidal Strike 5', 'Card type': 'Ability', 'Speed': '6', 'Cooldown': None, 'Spell school': None, 'Text': 'Attack an enemy and summon a 8/16 Fathom Guard. Frost Combo: Summon a second Fathom Guard.'}, {'Name': 'Cataclysmic Bolt 5', 'Card type': 'Ability', 'Speed': '6', 'Cooldown': None, 'Spell school': 'Nature', 'Text': 'Deal 22 damage to the lowest Health enemy.'}, {'Name': 'Blessing of the Tides 5', 'Card type': 'Ability', 'Speed': '4', 'Cooldown': '1', 'Spell school': 'Frost', 'Text': 'Gain +5 Attack for each friendly Naga. If this Merc has less than 40 Health, gain +10 Attack instead.'}]

@@ -1,0 +1,9 @@
+Name: N'Zoth
+Card type: Mercenary
+Role: Caster
+Rarity: Legendary
+Minion type: Old God
+Faction: None
+mercenaryId: 341
+equipments: [{'Name': 'Evolving Might 4', 'Card type': 'Equipment', 'Text': 'Spawn of N\'Zoth gains "Deathrattle: Give a random friendly character +5/+5."'}, {'Name': 'Corrupted Neurons 4', 'Card type': 'Equipment', 'Text': "Gift of N'Zoth also gives the Minion +8 Health."}, {'Name': 'Eternal Torment 4', 'Card type': 'Equipment', 'Text': 'Passive: At the start of each turn, deal 4 Shadow damage to all enemies.'}]
+abilities: [{'Name': "Spawn of N'Zoth 5", 'Card type': 'Ability', 'Speed': '5', 'Cooldown': None, 'Spell school': None, 'Text': 'Charge. Immune while Attacking.'}, {'Name': "Gift of N'Zoth 5", 'Card type': 'Ability', 'Speed': '6', 'Cooldown': None, 'Spell school': 'Shadow', 'Text': "Give a Minion +5 Attack and gain control of it. It Attacks a random enemy. Old Gods' abilities Refresh (2)."}, {'Name': 'Corrupted Viscera 5', 'Card type': 'Ability', 'Speed': '2', 'Cooldown': '5', 'Spell school': 'Shadow', 'Text': 'Destroy your Minions. For each, deal damage equal to its Attack to all enemies and restore 10 Health to this Merc.'}]

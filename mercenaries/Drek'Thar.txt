@@ -1,0 +1,9 @@
+Name: Drek'Thar
+Card type: Mercenary
+Role: Caster
+Rarity: Legendary
+Minion type: Orc
+Faction: Horde
+mercenaryId: 293
+equipments: [{'Name': 'Glacial Blade 4', 'Card type': 'Equipment', 'Text': 'Passive: +6 Attack. After this Merc Attacks a character, Freeze them.'}, {'Name': "Drek'Thar's Spellbook 4", 'Card type': 'Equipment', 'Text': 'Passive: Your characters have +5\xa0Arcane\xa0Resistance.'}, {'Name': 'Shimmerweed Potion 4', 'Card type': 'Equipment', 'Text': 'Battlecry: Give your characters +10 Health.'}]
+abilities: [{'Name': 'Blood Frenzy 5', 'Card type': 'Ability', 'Speed': '5', 'Cooldown': None, 'Spell school': None, 'Text': 'Give your Orcs +6 Attack until the end of the turn. Attack a random enemy. If you have Fel\xa0Corruption, Attack increases by +1.'}, {'Name': 'Spirit Guide 5', 'Card type': 'Ability', 'Speed': '3', 'Cooldown': None, 'Spell school': None, 'Text': 'Taunt. Battlecry: If you have Shamanism, gain Divine Shield and Rush.'}, {'Name': 'Fel Corruption 5', 'Card type': 'Ability', 'Speed': '7', 'Cooldown': '1', 'Spell school': 'Fel', 'Text': 'Deal 19 damage to all enemies.  Deal 5 damage to your other characters. (After a friendly Orc dies, this transforms into Shamanism 5.)'}]

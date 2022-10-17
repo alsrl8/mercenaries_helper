@@ -1,0 +1,9 @@
+Name: Lokholar the Ice Lord
+Card type: Mercenary
+Role: Protector
+Rarity: Rare
+Minion type: Elemental
+Faction: None
+mercenaryId: 251
+equipments: [{'Name': 'Icy Focus 4', 'Card type': 'Equipment', 'Text': 'Hail Storm repeats 4 more times.'}, {'Name': 'Frigid Winds 4', 'Card type': 'Equipment', 'Text': 'Passive: After an enemy acts, gain +4 Frost Damage until the end of turn.'}, {'Name': 'Shroud of the Ice Lord 4', 'Card type': 'Equipment', 'Text': 'Passive: Friendly Elementals have +20 Health.'}]
+abilities: [{'Name': 'Hail Storm 5', 'Card type': 'Ability', 'Speed': '5', 'Cooldown': None, 'Spell school': 'Frost', 'Text': 'Deal 3 damage to a random enemy. Repeat 5 times.'}, {'Name': 'Frost Shock 5', 'Card type': 'Ability', 'Speed': '9', 'Cooldown': None, 'Spell school': 'Frost', 'Text': 'Deal 10 damage to an enemy. Their next ability gives them +5 Frost Weakness for that turn.'}, {'Name': 'Snowball 5', 'Card type': 'Ability', 'Speed': '7', 'Cooldown': '1', 'Spell school': 'Frost', 'Text': 'Deal 10 damage. Damage increases by +5 each time another Frost ability is cast. Resets after use.'}]

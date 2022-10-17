@@ -1,0 +1,9 @@
+Name: Leeroy Jenkins
+Card type: Mercenary
+Role: Fighter
+Rarity: Legendary
+Minion type: Human
+Faction: Alliance
+mercenaryId: 284
+equipments: [{'Name': 'Even Bigger Sword 4', 'Card type': 'Equipment', 'Text': 'Wild Swing grants an additional +8 Attack.'}, {'Name': 'Heals! 4', 'Card type': 'Equipment', 'Text': 'Passive: Restore 8 Health to this Merc whenever Health is restored to another one of your characters.'}, {'Name': 'Ninja-Looting 4', 'Card type': 'Equipment', 'Text': 'Passive: Gain +6 Attack whenever an enemy dies.'}]
+abilities: [{'Name': 'Wild Swing 5', 'Card type': 'Ability', 'Speed': '7', 'Cooldown': None, 'Spell school': None, 'Text': 'Gain +8 Attack for 2 turns. Attack a random enemy.'}, {'Name': 'Get Chicken 5', 'Card type': 'Ability', 'Speed': '2', 'Cooldown': None, 'Spell school': None, 'Text': 'Gain +10 Health and become Immune while Attacking next turn.'}, {'Name': 'Leeeeeroooy Jenkiiins! 5', 'Card type': 'Ability', 'Speed': None, 'Cooldown': '1', 'Spell school': None, 'Text': 'Attack all enemies, ignoring Taunt. All characters act immediately, in a random order.'}]

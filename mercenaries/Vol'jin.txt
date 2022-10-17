@@ -1,0 +1,9 @@
+Name: Vol'jin
+Card type: Mercenary
+Role: Caster
+Rarity: Epic
+Minion type: Troll
+Faction: Horde
+mercenaryId: 62
+equipments: [{'Name': 'Static Seahorse 4', 'Card type': 'Equipment', 'Text': 'Shadow Shock deals 5 more damage.'}, {'Name': "Glaive of Vol'jin 4", 'Card type': 'Equipment', 'Text': 'Shadow Surge deals 4 more damage.'}, {'Name': 'Ring of Haste 4', 'Card type': 'Equipment', 'Text': 'Passive: Your Shadow abilities are (3) Speed faster.'}]
+abilities: [{'Name': 'Shadow Shock 5', 'Card type': 'Ability', 'Speed': '6', 'Cooldown': None, 'Spell school': 'Shadow', 'Text': 'Deal 12 damage to an enemy. Its next ability is (5) Speed slower.'}, {'Name': 'Shadow Surge 5', 'Card type': 'Ability', 'Speed': '5', 'Cooldown': '1', 'Spell school': 'Shadow', 'Text': 'Deal 10 damage to all enemies. Shadow Combo: Deal 16 damage instead.'}, {'Name': 'Curse of Weakness 5', 'Card type': 'Ability', 'Speed': '4', 'Cooldown': '1', 'Spell school': 'Shadow', 'Text': 'Give all enemies +6 Shadow Weaknessthis turn. Deal 8 damage to\xa0them.'}]

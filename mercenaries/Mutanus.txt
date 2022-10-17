@@ -1,0 +1,9 @@
+Name: Mutanus
+Card type: Mercenary
+Role: Fighter
+Rarity: Epic
+Minion type: Murloc
+Faction: None
+mercenaryId: 56
+equipments: [{'Name': 'Iridescent Necklace 4', 'Card type': 'Equipment', 'Text': 'Scaly Taunt makes this Merc take 3 less damage and is Immune to Critical Damage this turn.'}, {'Name': 'Pearlescent Scales 4', 'Card type': 'Equipment', 'Text': 'Passive: After a Murloc dies, gain +2/+10.'}, {'Name': 'Earthen Armor 4', 'Card type': 'Equipment', 'Text': 'Passive: +5/+10.'}]
+abilities: [{'Name': 'Devouring Attack 5', 'Card type': 'Ability', 'Speed': '5', 'Cooldown': None, 'Spell school': None, 'Text': 'Attack an enemy. Deathblow: Gain its Attack.'}, {'Name': 'Scaly Taunt 5', 'Card type': 'Ability', 'Speed': '1', 'Cooldown': None, 'Spell school': None, 'Text': 'Gain Taunt and this takes 5 less damage this turn.'}, {'Name': 'Devour 5', 'Card type': 'Ability', 'Speed': '4', 'Cooldown': '2', 'Spell school': None, 'Text': 'Eat your lowest Health Murloc and gain its stats.'}]

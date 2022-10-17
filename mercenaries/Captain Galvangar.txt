@@ -1,0 +1,9 @@
+Name: Captain Galvangar
+Card type: Mercenary
+Role: Fighter
+Rarity: Epic
+Minion type: Orc
+Faction: Horde
+mercenaryId: 250
+equipments: [{'Name': 'Fury of the Frost Wolf 4', 'Card type': 'Equipment', 'Text': 'Passive: Friendly characters have +5 Attack.'}, {'Name': "Drek'Thar's Boon 4", 'Card type': 'Equipment', 'Text': 'Fatal Strike also applies Bleed (10).'}, {'Name': 'Deafening Howl 4', 'Card type': 'Equipment', 'Text': 'Frightening Shout deals 5 more damage.'}]
+abilities: [{'Name': 'Rending Cleave 5', 'Card type': 'Ability', 'Speed': '5', 'Cooldown': None, 'Spell school': None, 'Text': 'Attack an enemy. If it has not acted this turn, apply Bleed (12) to it and adjacent enemies.'}, {'Name': 'Fatal Strike 5', 'Card type': 'Ability', 'Speed': '3', 'Cooldown': None, 'Spell school': None, 'Text': "Deal 8 damage to an enemy. It can't heal for 2 turns."}, {'Name': 'Frightening Shout 5', 'Card type': 'Ability', 'Speed': '6', 'Cooldown': '1', 'Spell school': None, 'Text': 'Deal 10 damage to all enemies. If they have acted the ability they cast gains +3 Cooldown.'}]

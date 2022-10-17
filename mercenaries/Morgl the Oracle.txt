@@ -1,0 +1,9 @@
+Name: Morgl the Oracle
+Card type: Mercenary
+Role: Caster
+Rarity: Rare
+Minion type: Murloc
+Faction: None
+mercenaryId: 41
+equipments: [{'Name': "Morgl's Mitt 4", 'Card type': 'Equipment', 'Text': 'Murloc Missile buffs all friendly characters.'}, {'Name': 'Spiky Pufferfish 4', 'Card type': 'Equipment', 'Text': 'Fishy Barrage deals 4 more damage.'}, {'Name': 'Dousing Rod 4', 'Card type': 'Equipment', 'Text': 'Passive: After one of your Murloc takes 20 or more damage at once, restore 8 Health to it.'}]
+abilities: [{'Name': 'Murloc Missile 5', 'Card type': 'Ability', 'Speed': '4', 'Cooldown': None, 'Spell school': 'Nature', 'Text': 'Deal 14 damage. Give your Murlocs +6 Health.'}, {'Name': 'Fishy Barrage 5', 'Card type': 'Ability', 'Speed': '7', 'Cooldown': '1', 'Spell school': 'Nature', 'Text': 'Deal 12 damage to a random enemy. Repeat for each of your other Murlocs.'}, {'Name': 'Healing Wave 5', 'Card type': 'Ability', 'Speed': '5', 'Cooldown': None, 'Spell school': 'Nature', 'Text': 'Restore 15 Health to a character and 10 Health to your Murlocs.'}]

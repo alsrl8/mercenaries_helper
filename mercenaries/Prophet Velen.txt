@@ -1,0 +1,9 @@
+Name: Prophet Velen
+Card type: Mercenary
+Role: Caster
+Rarity: Epic
+Minion type: Draenei
+Faction: Alliance
+mercenaryId: 5
+equipments: [{'Name': 'Tome of Inspiration 4', 'Card type': 'Equipment', 'Text': 'Holy Blast restores 5 more Health to your characters.'}, {'Name': 'Blessed Shard 4', 'Card type': 'Equipment', 'Text': 'Splitting Light deals 4 more damage.'}, {'Name': 'Potion of Light 4', 'Card type': 'Equipment', 'Text': 'Deathrattle: Restore 40 Health to your characters.'}]
+abilities: [{'Name': 'Holy Blast 5', 'Card type': 'Ability', 'Speed': '7', 'Cooldown': None, 'Spell school': 'Holy', 'Text': 'Deal 12 damage. Restore 6 Health to your characters.'}, {'Name': 'Splitting Light 5', 'Card type': 'Ability', 'Speed': '6', 'Cooldown': '1', 'Spell school': 'Holy', 'Text': 'Deal 15 damage to an enemy. Holy Combo:\xa0Also\xa0damages its neighbors.'}, {'Name': "Velen's Blessing 5", 'Card type': 'Ability', 'Speed': '4', 'Cooldown': '1', 'Spell school': 'Holy', 'Text': 'Gain +3 Holy Damage. Your next Holy ability casts twice.'}]

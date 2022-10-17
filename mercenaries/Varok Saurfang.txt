@@ -1,0 +1,9 @@
+Name: Varok Saurfang
+Card type: Mercenary
+Role: Fighter
+Rarity: Epic
+Minion type: Orc
+Faction: Horde
+mercenaryId: 52
+equipments: [{'Name': 'Saronite Stompers 4', 'Card type': 'Equipment', 'Text': 'Mobilizing Strike gives +4/+4 more.'}, {'Name': "Berserker's Blade 4", 'Card type': 'Equipment', 'Text': 'Whirlwind deals 4 more damage to enemies.'}, {'Name': 'Serrated Shield 4', 'Card type': 'Equipment', 'Text': 'Passive: +5/+12.'}]
+abilities: [{'Name': 'Mobilizing Strike 5', 'Card type': 'Ability', 'Speed': '6', 'Cooldown': None, 'Spell school': None, 'Text': 'Attack an enemy. Give all your damaged Orcs\xa0+3/+5.'}, {'Name': 'Whirlwind 5', 'Card type': 'Ability', 'Speed': '3', 'Cooldown': '1', 'Spell school': None, 'Text': 'Deal 10 damage to enemies and 1 damage to your characters.'}, {'Name': 'Bladehand Berserker 5', 'Card type': 'Ability', 'Speed': '4', 'Cooldown': '1', 'Spell school': None, 'Text': 'Whenever a character takes damage, gain +3\xa0Attack.'}]

@@ -1,0 +1,9 @@
+Name: Murloc Holmes
+Card type: Mercenary
+Role: Protector
+Rarity: Legendary
+Minion type: Murloc
+Faction: None
+mercenaryId: 421
+equipments: [{'Name': 'Trusty Sidekick 4', 'Card type': 'Equipment', 'Text': 'Battlecry: Summon a 12/30 Watfin who Attacks enemies who damage your Murloc Holmes.'}, {'Name': 'Paid Up Front 4', 'Card type': 'Equipment', 'Text': "Battlecry: Gain +4/+4 and this Merc's abilities Refresh: (1)."}, {'Name': 'Suspect Everyone 4', 'Card type': 'Equipment', 'Text': 'Passive: After an enemy casts a 4, 5, or 6 Speed ability, deal 8 damage to them.'}]
+abilities: [{'Name': 'Hot On The Case 5', 'Card type': 'Ability', 'Speed': '9', 'Cooldown': None, 'Spell school': 'Fire', 'Text': 'Gain +5 Attack and Attack an enemy. It takes Critical Damageafter it acts next turn.'}, {'Name': 'Elementary! 5', 'Card type': 'Ability', 'Speed': '3', 'Cooldown': '1', 'Spell school': 'Nature', 'Text': 'Give a character Divine Shield. If they lose it this turn, they gain +5/+10 and Attackthe enemies opposite\xa0them.'}, {'Name': 'And The Killer Is! 5', 'Card type': 'Ability', 'Speed': '4', 'Cooldown': '1', 'Spell school': None, 'Text': 'Deal 16 damage to an enemy. Make a prediction for a bonus.'}]

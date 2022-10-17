@@ -1,0 +1,9 @@
+Name: Ysera
+Card type: Mercenary
+Role: Fighter
+Rarity: Legendary
+Minion type: Dragon
+Faction: None
+mercenaryId: 329
+equipments: [{'Name': "Ysera's Vengeance 4", 'Card type': 'Equipment', 'Text': 'Verdant Breath deals 5 more damage.'}, {'Name': 'Dream Infusion 4', 'Card type': 'Equipment', 'Text': 'Passive: After one of your characters dies, restore 7 Health to your Dragons.'}, {'Name': 'Emerald Majesty 4', 'Card type': 'Equipment', 'Text': 'Ysera Awakens also restores 15 Health to this Merc.'}]
+abilities: [{'Name': 'Verdant Breath 5', 'Card type': 'Ability', 'Speed': '6', 'Cooldown': None, 'Spell school': 'Nature', 'Text': 'Deal 12 damage to an enemy. Restore that much Health to another friendly Dragon.'}, {'Name': 'Emerald Dream 5', 'Card type': 'Ability', 'Speed': '5', 'Cooldown': '1', 'Spell school': 'Nature', 'Text': 'Choose a Dream card to cast.'}, {'Name': 'Emerald Oracle 5', 'Card type': 'Ability', 'Speed': '4', 'Cooldown': '1', 'Spell school': 'Nature', 'Text': 'Restore 20 Health to a Merc. Choose One:Their next ability is (5) Speed faster or return them to the bench.'}]

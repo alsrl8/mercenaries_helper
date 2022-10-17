@@ -1,0 +1,9 @@
+Name: The Lich King
+Card type: Mercenary
+Role: Protector
+Rarity: Legendary
+Minion type: Human
+Faction: Alliance
+mercenaryId: 99
+equipments: [{'Name': 'Frostmourne 4', 'Card type': 'Equipment', 'Text': "Frostbite slows the target's neighbors as well."}, {'Name': 'Void Treads 4', 'Card type': 'Equipment', 'Text': 'Death Coil always restores 10 Health to this Merc.'}, {'Name': 'Helm of Domination 4', 'Card type': 'Equipment', 'Text': 'Passive: After an enemy casts an ability (7) Speed or higher, deal 10 Frost damage to them.'}]
+abilities: [{'Name': 'Frostbite 5', 'Card type': 'Ability', 'Speed': '5', 'Cooldown': None, 'Spell school': 'Frost', 'Text': 'Attack an enemy. The ability it cast this turn is permanently (5) Speed slower.'}, {'Name': 'Death Coil 5', 'Card type': 'Ability', 'Speed': '5', 'Cooldown': None, 'Spell school': 'Shadow', 'Text': 'Deal 18 damage to an enemy, or restore 30 Health to a friendly character.'}, {'Name': 'Frostshield 5', 'Card type': 'Ability', 'Speed': '2', 'Cooldown': '1', 'Spell school': 'Frost', 'Text': 'Gain Taunt this turn. After an enemy Attacks this Merc, Freeze it until the end of next turn.'}]

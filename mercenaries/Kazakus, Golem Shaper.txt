@@ -1,0 +1,9 @@
+Name: Kazakus, Golem Shaper
+Card type: Mercenary
+Role: Caster
+Rarity: Rare
+Minion type: Troll
+Faction: Horde
+mercenaryId: 155
+equipments: [{'Name': 'Mageroyal 4', 'Card type': 'Equipment', 'Text': 'Shadow Claws deals 4 more damage.'}, {'Name': 'Kingsblood 4', 'Card type': 'Equipment', 'Text': 'Passive: Your Golems are (4) Speed faster.'}, {'Name': 'Wildvine 4', 'Card type': 'Equipment', 'Text': 'Battlecry: Give friendly characters +4/4.'}]
+abilities: [{'Name': 'Shadow Claws 5', 'Card type': 'Ability', 'Speed': '6', 'Cooldown': None, 'Spell school': 'Shadow', 'Text': 'Deal 6 damage to a random enemy. Repeat for each of your Golems destroyed this game.'}, {'Name': 'Build-A-Golem 5', 'Card type': 'Ability', 'Speed': '4', 'Cooldown': None, 'Spell school': 'Shadow', 'Text': 'Choose a Golem. Summon it.'}, {'Name': 'True Shape 5', 'Card type': 'Ability', 'Speed': '8', 'Cooldown': None, 'Spell school': 'Shadow', 'Text': 'Become a Dragon. Destroy your Golems and gain their stats. (Transforms into Reshape 5.)'}]

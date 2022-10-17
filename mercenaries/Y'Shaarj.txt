@@ -1,0 +1,9 @@
+Name: Y'Shaarj
+Card type: Mercenary
+Role: Protector
+Rarity: Legendary
+Minion type: Old God
+Faction: None
+mercenaryId: 344
+equipments: [{'Name': "Mark of Y'Shaarj 4", 'Card type': 'Equipment', 'Text': 'Defiled Attack borrows an extra 5 Attack.'}, {'Name': "Heart of Y'Shaarj 4", 'Card type': 'Equipment', 'Text': 'Passive: Whenever this Merc is Attacked, gain +5 Attack.'}, {'Name': "Idol of Y'Shaarj 4", 'Card type': 'Equipment', 'Text': 'Rage Unbound gives an extra +8 Attack.'}]
+abilities: [{'Name': 'Defiled Attack 5', 'Card type': 'Ability', 'Speed': '6', 'Cooldown': None, 'Spell school': 'Shadow', 'Text': 'Borrow 5 Attack from all friendly characters this turn. Attack an enemy. Deathblow: Repeat this.'}, {'Name': "Strength of Y'Shaarj 5", 'Card type': 'Ability', 'Speed': '1', 'Cooldown': None, 'Spell school': 'Shadow', 'Text': "Gain Taunt and take 6 less damage this turn.   Old Gods' abilities Refresh: (3)."}, {'Name': 'Rage Unbound 5', 'Card type': 'Ability', 'Speed': '2', 'Cooldown': '10', 'Spell school': 'Shadow', 'Text': 'Give all your characters +20 Attack. They Attack random enemies.'}]

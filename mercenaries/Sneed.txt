@@ -1,0 +1,9 @@
+Name: Sneed
+Card type: Mercenary
+Role: Protector
+Rarity: Epic
+Minion type: Pirate
+Faction: None
+mercenaryId: 156
+equipments: [{'Name': 'Skull Dust 4', 'Card type': 'Equipment', 'Text': 'Bzzz!!! gains Bleed (10).'}, {'Name': 'Titanium Blades 4', 'Card type': 'Equipment', 'Text': 'Activate Saw gives +4 Attack and lasts 1 more turn.'}, {'Name': 'Extra Blades 4', 'Card type': 'Equipment', 'Text': 'Battlecry: Start with Activate Saw 5 active for 2 turns.'}]
+abilities: [{'Name': 'Bzzz!!! 5', 'Card type': 'Ability', 'Speed': '6', 'Cooldown': None, 'Spell school': None, 'Text': "Deal damage equal to your Attack. If Activate Saw is active also damage the target's neighbors."}, {'Name': 'Activate Saw 5', 'Card type': 'Ability', 'Speed': '3', 'Cooldown': '1', 'Spell school': None, 'Text': 'Gain +9 Attack for 2 turns. Attack a random enemy.'}, {'Name': 'Disarm 5', 'Card type': 'Ability', 'Speed': '3', 'Cooldown': '1', 'Spell school': None, 'Text': 'Attack an enemy. Give it -5 Attack permanently.'}]

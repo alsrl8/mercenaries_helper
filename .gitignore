@@ -1,4 +1,4 @@
-mercenaries/
+./mercenaries/.txt
 *.db
 __pycache__/
 *.py[cod]

@@ -1,0 +1,9 @@
+Name: Rathorian
+Card type: Mercenary
+Role: Fighter
+Rarity: Rare
+Minion type: Demon
+Faction: None
+mercenaryId: 55
+equipments: [{'Name': 'Demonic Ashes 4', 'Card type': 'Equipment', 'Text': 'Hulking Overfiend has +10 Attack.'}, {'Name': 'Soul Gem 4', 'Card type': 'Equipment', 'Text': 'Fel Command also gives +10 Health.'}, {'Name': "Demon's Mark 4", 'Card type': 'Equipment', 'Text': 'Passive: Whenever a friendly Demon Attacks, give it +5 Attack.'}]
+abilities: [{'Name': 'Blitzing Legion 5', 'Card type': 'Ability', 'Speed': '4', 'Cooldown': None, 'Spell school': 'Fel', 'Text': 'Attack an enemy. If you control another Demon,\xa0deal 7 damage to a\xa0random\xa0enemy.'}, {'Name': 'Hulking Overfiend 5', 'Card type': 'Ability', 'Speed': '6', 'Cooldown': '1', 'Spell school': None, 'Text': 'Battlecry: Attack the lowest Health enemy. Deathblow: Attack the lowest Health enemy.'}, {'Name': 'Fel Command 5', 'Card type': 'Ability', 'Speed': '5', 'Cooldown': '1', 'Spell school': 'Fel', 'Text': "Gain +5 Attack. Deal this Merc's Attack damage to an enemy."}]

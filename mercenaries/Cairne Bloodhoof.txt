@@ -1,0 +1,9 @@
+Name: Cairne Bloodhoof
+Card type: Mercenary
+Role: Protector
+Rarity: Epic
+Minion type: Tauren
+Faction: Horde
+mercenaryId: 26
+equipments: [{'Name': 'Swift Totem 4', 'Card type': 'Equipment', 'Text': "Endurance Aura makes this Merc's next ability (3) Speed faster."}, {'Name': 'Thunderous Sash 4', 'Card type': 'Equipment', 'Text': 'Earth Stomp deals 5 more damage.'}, {'Name': 'Reincarnation 4', 'Card type': 'Equipment', 'Text': 'Passive: The first time this Merc dies, return it to life at 40 Health.'}]
+abilities: [{'Name': 'Ancestral Uppercut 5', 'Card type': 'Ability', 'Speed': '6', 'Cooldown': None, 'Spell school': None, 'Text': "Attack an enemy. Restore 8 Health for each enemy that hasn't acted yet."}, {'Name': 'Endurance Aura 5', 'Card type': 'Ability', 'Speed': '3', 'Cooldown': '1', 'Spell school': None, 'Text': 'Gain Taunt for 2 turns. Your characters are (4)\xa0Speed faster this turn.'}, {'Name': 'Earth Stomp 5', 'Card type': 'Ability', 'Speed': '5', 'Cooldown': '1', 'Spell school': 'Nature', 'Text': 'Deal 10 damage to all enemies. They are (3) Speed slower next turn.'}]

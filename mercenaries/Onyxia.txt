@@ -1,0 +1,9 @@
+Name: Onyxia
+Card type: Mercenary
+Role: Caster
+Rarity: Epic
+Minion type: Dragon
+Faction: None
+mercenaryId: 291
+equipments: [{'Name': 'Razor Sharp Claws 4', 'Card type': 'Equipment', 'Text': 'Insolent Mortals gives an additional +8 Attack.'}, {'Name': 'Deeper Breath 4', 'Card type': 'Equipment', 'Text': 'Deep Breath restores 5 more Health and is (1) Speed slower.'}, {'Name': "Broodmother's Rage 4", 'Card type': 'Equipment', 'Text': 'Passive: After another friendly Dragon dies, deal 7 Fire damage to all enemies.'}]
+abilities: [{'Name': 'Insolent Mortals 5', 'Card type': 'Ability', 'Speed': '4', 'Cooldown': None, 'Spell school': None, 'Text': 'Attack an enemy. If they have Taunt, first gain +6 Attack and then block Taunt on them this turn.'}, {'Name': 'Deep Breath 5', 'Card type': 'Ability', 'Speed': '5', 'Cooldown': '1', 'Spell school': None, 'Text': 'Restore 15 Health to this Merc. Next turn, gain that much Fire Damage for 1 turn.'}, {'Name': 'Cleanse The Nest 5', 'Card type': 'Ability', 'Speed': '8', 'Cooldown': '1', 'Spell school': 'Fire', 'Text': 'Deal 15 damage to all enemies. Deathblow: Summon a 12/12 Onyxian Whelp.'}]

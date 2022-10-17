@@ -1,0 +1,9 @@
+Name: Tidemistress Athissa
+Card type: Mercenary
+Role: Protector
+Rarity: Rare
+Minion type: Naga
+Faction: None
+mercenaryId: 304
+equipments: [{'Name': 'Warlord Parjesh 4', 'Card type': 'Equipment', 'Text': 'Battlecry: Summon a 12/24 Naga with Taunt.'}, {'Name': 'Clutching Hatred 4', 'Card type': 'Equipment', 'Text': 'Riptide deals 5 more damage.'}, {'Name': 'Harpsicold 4', 'Card type': 'Equipment', 'Text': 'Passive: After this Merc takes damage, Refresh: (1) on Captive Tides.'}]
+abilities: [{'Name': 'Wave Crush 5', 'Card type': 'Ability', 'Speed': '6', 'Cooldown': None, 'Spell school': 'Frost', 'Text': 'Deal 14 damage to an enemy. If they have already acted, give them +5 Nature Weakness.'}, {'Name': 'Riptide 5', 'Card type': 'Ability', 'Speed': '3', 'Cooldown': None, 'Spell school': 'Nature', 'Text': 'Deal 10 damage to an enemy. After an enemy Attacks this turn, repeat this damage.'}, {'Name': 'Captive Tides 5', 'Card type': 'Ability', 'Speed': '7', 'Cooldown': '3', 'Spell school': 'Nature', 'Text': 'Deal 20 damage to all enemies. (Increased by 7 for each other Naga you control.)'}]

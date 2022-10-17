@@ -1,0 +1,9 @@
+Name: Cornelius Roame
+Card type: Mercenary
+Role: Protector
+Rarity: Rare
+Minion type: Human
+Faction: Alliance
+mercenaryId: 95
+equipments: [{'Name': 'Striking Gauntlets 4', 'Card type': 'Equipment', 'Text': 'Martial Mastery gives 4 more Health.'}, {'Name': 'Band of Enlightenment 4', 'Card type': 'Equipment', 'Text': 'Hold the Front restores 8 more Health.'}, {'Name': 'Shield of Dawn 4', 'Card type': 'Equipment', 'Text': 'Passive: Take\xa03\xa0less\xa0damage.'}]
+abilities: [{'Name': 'Martial Mastery 5', 'Card type': 'Ability', 'Speed': '8', 'Cooldown': None, 'Spell school': 'Holy', 'Text': "Gain +5 Health and Attack an enemy. If it's a Fighter, gain +10 Health instead."}, {'Name': 'Hold the Front 5', 'Card type': 'Ability', 'Speed': '2', 'Cooldown': None, 'Spell school': 'Holy', 'Text': 'Gain Taunt for 2 turns. Restore 14 Health to adjacent\xa0characters.'}, {'Name': 'Blessing of Sacrifice 5', 'Card type': 'Ability', 'Speed': '2', 'Cooldown': '1', 'Spell school': 'Holy', 'Text': 'Restore 10 Health to another friendly Merc. Whenever it takes damage this turn, this Merc takes it instead.'}]

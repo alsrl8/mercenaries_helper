@@ -1,0 +1,9 @@
+Name: Balinda Stonehearth
+Card type: Mercenary
+Role: Fighter
+Rarity: Legendary
+Minion type: Human
+Faction: Alliance
+mercenaryId: 249
+equipments: [{'Name': 'Lesser Fire Elemental 4', 'Card type': 'Equipment', 'Text': 'Battlecry: Summon a 10/15 Elemental that applies +3 Fire Weakness to characters it damages.'}, {'Name': 'Lesser Water Elemental 4', 'Card type': 'Equipment', 'Text': 'Battlecry: Summon a 10/15 Elemental that Freezes characters it damages.'}, {'Name': "Stormpike's Salvation 4", 'Card type': 'Equipment', 'Text': 'Passive: At the end of each turn, give all your characters +5 Health.'}]
+abilities: [{'Name': 'Flame Dart 5', 'Card type': 'Ability', 'Speed': '3', 'Cooldown': None, 'Spell school': 'Fire', 'Text': 'Deal 10 damage to a character. Give them +3\xa0Frost\xa0Weakness.'}, {'Name': 'Frost Dart 5', 'Card type': 'Ability', 'Speed': '4', 'Cooldown': None, 'Spell school': 'Frost', 'Text': 'Deal 12 damage. Give them +3 Fire Weakness.'}, {'Name': 'Frost Burn 5', 'Card type': 'Ability', 'Speed': '7', 'Cooldown': '1', 'Spell school': None, 'Text': 'Deal 11 damage to all enemies. Either gain +3 Frost Damage or +3 Fire Damage.'}]

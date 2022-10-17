@@ -1,0 +1,9 @@
+Name: Baron Geddon
+Card type: Mercenary
+Role: Caster
+Rarity: Epic
+Minion type: Elemental
+Faction: None
+mercenaryId: 22
+equipments: [{'Name': 'Molten Blade 4', 'Card type': 'Equipment', 'Text': 'Heating Up deals 7 more damage.'}, {'Name': 'Mark of Conflagration 4', 'Card type': 'Equipment', 'Text': "Inferno's Fire Combo deals 5 more damage."}, {'Name': 'Burning Bracers 4', 'Card type': 'Equipment', 'Text': 'Living Bomb deals damage twice, but has +1 Cooldown.'}]
+abilities: [{'Name': 'Heating Up 5', 'Card type': 'Ability', 'Speed': '7', 'Cooldown': None, 'Spell school': 'Fire', 'Text': 'Deal 12 damage. Your Fire abilities are (1) Speed faster next turn.'}, {'Name': 'Inferno 5', 'Card type': 'Ability', 'Speed': '6', 'Cooldown': None, 'Spell school': 'Fire', 'Text': 'Deal 8 damage to all enemies. Fire Combo: Deal another 8 damage.'}, {'Name': 'Living Bomb 5', 'Card type': 'Ability', 'Speed': '5', 'Cooldown': '1', 'Spell school': 'Fire', 'Text': 'Choose an enemy. If it takes damage this turn, deal 12 damage to it and its neighbors.'}]

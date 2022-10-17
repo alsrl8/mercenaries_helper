@@ -1,0 +1,9 @@
+Name: Gruul
+Card type: Mercenary
+Role: Protector
+Rarity: Epic
+Minion type: Gronn
+Faction: None
+mercenaryId: 25
+equipments: [{'Name': 'Burning Shot 4', 'Card type': 'Equipment', 'Text': 'Dragonslayer Shot deals 5 more damage.'}, {'Name': "Dragon's Skull 4", 'Card type': 'Equipment', 'Text': 'Passive: Your characters have +5\xa0Fire\xa0Resistance.'}, {'Name': 'Dragonclaw Fists 4', 'Card type': 'Equipment', 'Text': 'Passive: Gruul has +15 Attack while an enemy Dragon is on the battlefield.'}]
+abilities: [{'Name': 'Crazed Flurry 5', 'Card type': 'Ability', 'Speed': '7', 'Cooldown': None, 'Spell school': None, 'Text': 'Attack an enemy. If this Merc took damage this turn, gain +6 Attack first.'}, {'Name': 'Dragonslayer Shot 5', 'Card type': 'Ability', 'Speed': '4', 'Cooldown': None, 'Spell school': None, 'Text': "Deal 10 damage. If it's a Dragon, deal 25\xa0damage\xa0instead."}, {'Name': 'Dragonmaw Poacher 5', 'Card type': 'Ability', 'Speed': '3', 'Cooldown': '1', 'Spell school': None, 'Text': 'Battlecry: If your opponent controls a Dragon, gain\xa0+15/+15\xa0and\xa0Rush.'}]

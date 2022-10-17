@@ -1,0 +1,9 @@
+Name: Brann Bronzebeard
+Card type: Mercenary
+Role: Protector
+Rarity: Epic
+Minion type: Dwarf
+Faction: Alliance
+mercenaryId: 373
+equipments: [{'Name': 'Relic of Uldum 4', 'Card type': 'Equipment', 'Text': 'Your abilities give Fire\xa0Resistance instead. Passive:\xa0+7\xa0Health.'}, {'Name': "Adventurer's Pack 4", 'Card type': 'Equipment', 'Text': "Passive: Brann's abilities are (3) Speed faster. Your abilities give Shadow Resistance instead."}, {'Name': 'Extra Spirit 4', 'Card type': 'Equipment', 'Text': 'Passive: Your Explorers have +5/+12.'}]
+abilities: [{'Name': 'Trusty Whip 5', 'Card type': 'Ability', 'Speed': '5', 'Cooldown': None, 'Spell school': None, 'Text': 'Deal 12 damage to an enemy. Your characters gain\xa0+3\xa0Frost\xa0Resistance.'}, {'Name': 'Summit Campfire 5', 'Card type': 'Ability', 'Speed': '3', 'Cooldown': None, 'Spell school': 'Fire', 'Text': 'Gain +5 Frost Resistance. This turn, enemies who have acted take Critical Damage.'}, {'Name': 'The Bronzebeard Spirit 5', 'Card type': 'Ability', 'Speed': '8', 'Cooldown': '2', 'Spell school': None, 'Text': 'Restore 25 Health to an ally. If it has acted already, it repeats its ability.'}]

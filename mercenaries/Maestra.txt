@@ -1,0 +1,9 @@
+Name: Maestra
+Card type: Mercenary
+Role: Caster
+Rarity: Epic
+Minion type: Orc
+Faction: Horde
+mercenaryId: 376
+equipments: [{'Name': 'Mask of the Mummy 4', 'Card type': 'Equipment', 'Text': 'Bench: After a friendly Merc dies, summon this Merc who uses Dirty Tricks 5 immediately.'}, {'Name': 'Mask of Mimicry 4', 'Card type': 'Equipment', 'Text': 'Bench: After a friendly Merc Attacks, swap it with this Merc who uses Shifting Strike 5 immediately.'}, {'Name': 'Mask of Rage 4', 'Card type': 'Equipment', 'Text': 'Bench: After an enemy minion is summoned, swap your lowest Health Merc with this Merc who uses Sudden Betrayal 5 immediately.'}]
+abilities: [{'Name': 'Dirty Tricks 5', 'Card type': 'Ability', 'Speed': '3', 'Cooldown': None, 'Spell school': 'Shadow', 'Text': 'Deal 14 damage to the enemies across from this Merc.'}, {'Name': 'Shifting Strike 5', 'Card type': 'Ability', 'Speed': '4', 'Cooldown': '1', 'Spell school': 'Shadow', 'Text': 'Gain +7 Attack and Attack the enemies across from this Merc. Combo: Gain role advantage first.'}, {'Name': 'Sudden Betrayal 5', 'Card type': 'Ability', 'Speed': '8', 'Cooldown': '1', 'Spell school': 'Shadow', 'Text': 'Give an enemy +15 Attack this turn. Force it to deal its Attack to its neighbors.'}]

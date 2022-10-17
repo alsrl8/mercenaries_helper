@@ -1,0 +1,9 @@
+Name: Ragnaros
+Card type: Mercenary
+Role: Protector
+Rarity: Legendary
+Minion type: Elemental
+Faction: None
+mercenaryId: 20
+equipments: [{'Name': 'Molten Core 4', 'Card type': 'Equipment', 'Text': 'Magma Blast deals 5 more damage.'}, {'Name': 'Sulfuras 4', 'Card type': 'Equipment', 'Text': 'Passive: +20 Health. Your characters cannot be\xa0Frozen.'}, {'Name': 'Blazing Rune 4', 'Card type': 'Equipment', 'Text': 'Passive:+3 Fire Damage.'}]
+abilities: [{'Name': 'Magma Blast 5', 'Card type': 'Ability', 'Speed': '5', 'Cooldown': None, 'Spell school': 'Fire', 'Text': 'Deal 10 damage. Fire Combo: Deal 18 damage instead.'}, {'Name': 'DIE, INSECTS! 5', 'Card type': 'Ability', 'Speed': '10', 'Cooldown': None, 'Spell school': 'Fire', 'Text': 'Deal 22 damage to a random enemy.  It loses Stealth. Deathblow:\xa0Repeat\xa0this.'}, {'Name': 'Meteor 5', 'Card type': 'Ability', 'Speed': '8', 'Cooldown': '2', 'Spell school': 'Fire', 'Text': 'Deal 25 damage to a character and 10 damage to adjacent ones.'}]

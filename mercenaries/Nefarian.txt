@@ -1,0 +1,9 @@
+Name: Nefarian
+Card type: Mercenary
+Role: Fighter
+Rarity: Rare
+Minion type: Dragon
+Faction: None
+mercenaryId: 306
+equipments: [{'Name': 'Experimental Subjects 4', 'Card type': 'Equipment', 'Text': 'Drakonid has +8 Attack and Divine Shield.'}, {'Name': 'Chromatic Dragonflight 4', 'Card type': 'Equipment', 'Text': 'Start of Game: Give friendly Dragons +6 Attack.'}, {'Name': 'Spare Parts 4', 'Card type': 'Equipment', 'Text': 'Passive: After a Dragon dies, restore 10 Health to friendly Dragons.'}]
+abilities: [{'Name': 'Drakonid Rush 5', 'Card type': 'Ability', 'Speed': '6', 'Cooldown': None, 'Spell school': None, 'Text': 'Attack an enemy. Summon a 12/12 Dragon which also Attacks them.'}, {'Name': 'Chromatic Infusion 5', 'Card type': 'Ability', 'Speed': '3', 'Cooldown': '1', 'Spell school': 'Shadow', 'Text': 'Choose a friendly Dragon. They steal 5 Attack from each other Dragon and restore that much Health.'}, {'Name': 'Shadowflame 5', 'Card type': 'Ability', 'Speed': '7', 'Cooldown': '1', 'Spell school': 'Shadow', 'Text': 'Each of your Dragons deals 15 damage to the characters opposite them.'}]

@@ -1,0 +1,9 @@
+Name: Guff Runetotem
+Card type: Mercenary
+Role: Caster
+Rarity: Rare
+Minion type: Tauren
+Faction: Horde
+mercenaryId: 28
+equipments: [{'Name': "Bloomin' Shroom 4", 'Card type': 'Equipment', 'Text': 'Runic Slam gives +2/+5 more.'}, {'Name': 'Bramblethorn Totem 4', 'Card type': 'Equipment', 'Text': 'Battlecry: Restore 20 Health to your characters.'}, {'Name': 'Earthen Bracers 4', 'Card type': 'Equipment', 'Text': 'Ironbark gives +2/+4 more.'}]
+abilities: [{'Name': 'Runic Slam 5', 'Card type': 'Ability', 'Speed': '7', 'Cooldown': None, 'Spell school': 'Nature', 'Text': 'Attack an enemy. Deathblow: Give all Mercs on your battlefield and bench +3/+10.'}, {'Name': 'Living Brambles 5', 'Card type': 'Ability', 'Speed': '5', 'Cooldown': None, 'Spell school': 'Nature', 'Text': 'Deal 14 damage. Nature\xa0Combo:\xa0Repeat\xa0this.'}, {'Name': 'Ironbark 5', 'Card type': 'Ability', 'Speed': '3', 'Cooldown': '1', 'Spell school': 'Nature', 'Text': 'Gain Taunt this turn. After you cast a Nature ability this turn, gain +4/+12.'}]

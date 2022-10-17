@@ -1,0 +1,9 @@
+Name: Chi-Ji
+Card type: Mercenary
+Role: Caster
+Rarity: Epic
+Minion type: Beast
+Faction: None
+mercenaryId: 286
+equipments: [{'Name': 'Blazing Band 4', 'Card type': 'Equipment', 'Text': 'Blazing Song deals 4 more damage and gives an additional +2\xa0Heal\xa0Power.'}, {'Name': 'Staff of Chi-Ji 4', 'Card type': 'Equipment', 'Text': 'Inspiring Song restores 10 more Health.'}, {'Name': 'Flameheart Crystal 4', 'Card type': 'Equipment', 'Text': 'Passive: After a friendly Beast is healed give them +5 Health.'}]
+abilities: [{'Name': 'Blazing Song 5', 'Card type': 'Ability', 'Speed': '3', 'Cooldown': None, 'Spell school': 'Fire', 'Text': 'Deal 10 damage. Gain +3 Heal Power.'}, {'Name': 'Inspiring Song 5', 'Card type': 'Ability', 'Speed': '4', 'Cooldown': None, 'Spell school': 'Fire', 'Text': 'Restore 10 Health to all friendly characters.'}, {'Name': 'Firestorm 5', 'Card type': 'Ability', 'Speed': '5', 'Cooldown': '1', 'Spell school': 'Fire', 'Text': 'Deal 5 damage to all enemies. Restore 5 Health to all allies. (Damage increased by Heal\xa0Power.)'}]

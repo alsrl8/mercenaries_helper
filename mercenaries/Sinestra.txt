@@ -1,0 +1,9 @@
+Name: Sinestra
+Card type: Mercenary
+Role: Fighter
+Rarity: Rare
+Minion type: Dragon
+Faction: None
+mercenaryId: 253
+equipments: [{'Name': 'Hooked Talons 4', 'Card type': 'Equipment', 'Text': 'Wracking Swipe applies an additional Bleed (5).'}, {'Name': 'Mana Brooch 4', 'Card type': 'Equipment', 'Text': 'Mana Barrier restores 10 more Health and reduces damage taken by 5 this turn.'}, {'Name': 'Shard of Woe 4', 'Card type': 'Equipment', 'Text': 'Twilight Extinction restores 20 more Health and deals 10 more damage, but has +1\xa0Cooldown.'}]
+abilities: [{'Name': 'Wracking Swipe 5', 'Card type': 'Ability', 'Speed': '6', 'Cooldown': None, 'Spell school': None, 'Text': 'Attack an enemy. If you control another Dragon, Bleed (10).'}, {'Name': 'Mana Barrier 5', 'Card type': 'Ability', 'Speed': '2', 'Cooldown': '1', 'Spell school': 'Arcane', 'Text': 'Restore 50 Health to a Dragon, its next ability is (3) Speed slower.'}, {'Name': 'Twilight Extinction 5', 'Card type': 'Ability', 'Speed': '5', 'Cooldown': '1', 'Spell school': 'Shadow', 'Text': 'Restore 20 Health to this Merc. At the end of next turn  deal 30 damage to all enemies.'}]

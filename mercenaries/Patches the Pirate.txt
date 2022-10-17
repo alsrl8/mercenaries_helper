@@ -1,0 +1,9 @@
+Name: Patches the Pirate
+Card type: Mercenary
+Role: Caster
+Rarity: Rare
+Minion type: Pirate
+Faction: None
+mercenaryId: 374
+equipments: [{'Name': 'Hook the Crew 4', 'Card type': 'Equipment', 'Text': "Pirates summoned by Eye Matey and Eye Cap'n have +5 Health and are Immune while Attacking."}, {'Name': 'Arms Locker 4', 'Card type': 'Equipment', 'Text': 'Passive: Whenever a friendly Pirate Attacks, give it +5 Attack.'}, {'Name': "I'm In Charge Now! 4", 'Card type': 'Equipment', 'Text': 'Bench: After a friendly Pirate Merc dies, summon this Merc. Gain +3 Attack and Attack a random enemy.'}]
+abilities: [{'Name': 'Eye Matey 5', 'Card type': 'Ability', 'Speed': '7', 'Cooldown': None, 'Spell school': None, 'Text': 'Attack an enemy. Summon a 10/5 Pirate with Rush.'}, {'Name': "Eye Cap'n 5", 'Card type': 'Ability', 'Speed': '9', 'Cooldown': '1', 'Spell school': None, 'Text': 'Fill your board with 10/5 Pirates with Rush.'}, {'Name': 'Crew The Guns 5', 'Card type': 'Ability', 'Speed': '6', 'Cooldown': '1', 'Spell school': None, 'Text': 'Friendly Pirates deal 10 damage to enemies opposite them.'}]

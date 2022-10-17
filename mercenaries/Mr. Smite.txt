@@ -1,0 +1,9 @@
+Name: Mr. Smite
+Card type: Mercenary
+Role: Protector
+Rarity: Rare
+Minion type: Pirate
+Faction: None
+mercenaryId: 237
+equipments: [{'Name': "Sailor's Cap 4", 'Card type': 'Equipment', 'Text': 'Mr Smite gains an addtional +4 Attack from Smite Slam.'}, {'Name': 'Heavy Anchor 4', 'Card type': 'Equipment', 'Text': 'Overboard grants +6 Attack if the damaged friend is a Pirate.'}, {'Name': 'Sharpened Scabbard 4', 'Card type': 'Equipment', 'Text': 'Passive: Whenever another friendly Pirate\xa0Attacks, gain\xa0+4\xa0Attack.'}]
+abilities: [{'Name': 'Smite Slam 5', 'Card type': 'Ability', 'Speed': '8', 'Cooldown': None, 'Spell school': None, 'Text': 'Gain +5 Attack for each enemy with 40\xa0or\xa0less\xa0Health. Attack\xa0an\xa0enemy.'}, {'Name': 'Avast ye Matey 5', 'Card type': 'Ability', 'Speed': '2', 'Cooldown': None, 'Spell school': None, 'Text': 'Gain Taunt this turn. After an enemy Attacks this Merc, gain +5 Attack.'}, {'Name': 'Overboard 5', 'Card type': 'Ability', 'Speed': '3', 'Cooldown': '1', 'Spell school': None, 'Text': 'After another friendly character is damaged this turn, gain +10 Health and Attack a random enemy.'}]

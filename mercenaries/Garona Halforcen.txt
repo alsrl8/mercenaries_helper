@@ -1,0 +1,9 @@
+Name: Garona Halforcen
+Card type: Mercenary
+Role: Fighter
+Rarity: Rare
+Minion type: Half-Orc
+Faction: Horde
+mercenaryId: 416
+equipments: [{'Name': 'Shadowstep 4', 'Card type': 'Equipment', 'Text': 'End Of Turn: If you control another Merc, gain +4/+5 and return to the bench.'}, {'Name': 'Halforcen Legacy 4', 'Card type': 'Equipment', 'Text': 'Battlecry: If you control another Orc, gain +3/+10. Repeat for Draenei and Human.'}, {'Name': 'Knife of Indecision 4', 'Card type': 'Equipment', 'Text': 'Battlecry: Gain +15 Health and become Neutral.'}]
+abilities: [{'Name': 'Smoke and Knives 5', 'Card type': 'Ability', 'Speed': '8', 'Cooldown': None, 'Spell school': 'Shadow', 'Text': "Attack an enemy and deal 20 damage to an adjacent one. If this isn't a Fighter, become one and deal 26 instead."}, {'Name': 'Shimmering Toxin 5', 'Card type': 'Ability', 'Speed': '1', 'Cooldown': '1', 'Spell school': 'Nature', 'Text': 'Gain +10 Attack. Take 12 less damage this turn. Become a Protector. (Starts off Cooldown)'}, {'Name': 'One And The Same 5', 'Card type': 'Ability', 'Speed': None, 'Cooldown': '1', 'Spell school': None, 'Text': 'Discover a Lineage ability. Combo: Become a Caster first.'}]

@@ -1,0 +1,9 @@
+Name: Garrosh Hellscream
+Card type: Mercenary
+Role: Protector
+Rarity: Legendary
+Minion type: Orc
+Faction: Horde
+mercenaryId: 50
+equipments: [{'Name': 'Dueling Gauntlets 4', 'Card type': 'Equipment', 'Text': "If this Merc has 50 or less Health, Mak'Gora becomes a BATTLE TO THE DEATH!"}, {'Name': 'Tusks of Mannoroth 4', 'Card type': 'Equipment', 'Text': 'Horde Strength gives +8 more Health.'}, {'Name': 'Orcish Banner 4', 'Card type': 'Equipment', 'Text': 'Battle Shout also restores 15 Health to your Orcs.'}]
+abilities: [{'Name': "Mak'Gora 5", 'Card type': 'Ability', 'Speed': '5', 'Cooldown': None, 'Spell school': None, 'Text': 'Take 5 less damage this turn. Attack an enemy, it Attacks this Merc back.'}, {'Name': 'Horde Strength 5', 'Card type': 'Ability', 'Speed': '2', 'Cooldown': '1', 'Spell school': None, 'Text': 'Gain Taunt  for 2 turns. Gain +10 Health for each enemy character.'}, {'Name': 'Battle Shout 5', 'Card type': 'Ability', 'Speed': '3', 'Cooldown': '1', 'Spell school': None, 'Text': 'Give your Orcs +10 Attack this turn. Attack\xa0a\xa0random\xa0enemy.'}]

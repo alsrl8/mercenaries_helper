@@ -1,0 +1,9 @@
+Name: Zar'jira, the Sea Witch
+Card type: Mercenary
+Role: Caster
+Rarity: Epic
+Minion type: Naga
+Faction: None
+mercenaryId: 294
+equipments: [{'Name': 'Serve Chilled 4', 'Card type': 'Equipment', 'Text': "Witch's Curse deals an additional 5 damage."}, {'Name': 'Upstart Acolyte 4', 'Card type': 'Equipment', 'Text': 'Passive: +20 Health. The first time a friendly character is Frozen each turn, Freeze a random enemy.'}, {'Name': 'Ring of Sluggishness 4', 'Card type': 'Equipment', 'Text': 'Passive: Shadow abilities are (4) Speed slower.'}]
+abilities: [{'Name': "Witch's Curse 5", 'Card type': 'Ability', 'Speed': '4', 'Cooldown': None, 'Spell school': 'Shadow', 'Text': 'Deal 12 damage. If it has already acted, its Attack is permanently halved, rounded up.'}, {'Name': 'Freezing Touch 5', 'Card type': 'Ability', 'Speed': '4', 'Cooldown': '2', 'Spell school': 'Frost', 'Text': 'Freeze a character. They are Immune while Frozen. They deal 10 damage to your enemies when they lose Frozen.'}, {'Name': 'Wavethrasher 5', 'Card type': 'Ability', 'Speed': '7', 'Cooldown': '1', 'Spell school': None, 'Text': 'Charge. Has +10 Attack for each Frozen character.'}]

@@ -1,0 +1,9 @@
+Name: Valeera Sanguinar
+Card type: Mercenary
+Role: Fighter
+Rarity: Legendary
+Minion type: Blood Elf
+Faction: Horde
+mercenaryId: 17
+equipments: [{'Name': 'Shadow Dagger 4', 'Card type': 'Equipment', 'Text': 'Ambush is (3) Speed faster and gains "Deathblow: Gain Stealth."'}, {'Name': 'Hidden Paths 4', 'Card type': 'Equipment', 'Text': 'Passive: After a friendly character loses Stealth, give them +6 Attack.'}, {'Name': 'Unnatural Smoke 4', 'Card type': 'Equipment', 'Text': 'Passive: While this Merc has Stealth, friendly characters are (4) Speed faster.'}]
+abilities: [{'Name': 'Sinister Strike 5', 'Card type': 'Ability', 'Speed': '3', 'Cooldown': None, 'Spell school': None, 'Text': 'Gain +10 Attack this turn and Attack the lowest Health enemy. Combo: Gain Stealth.'}, {'Name': 'Ambush 5', 'Card type': 'Ability', 'Speed': '6', 'Cooldown': None, 'Spell school': None, 'Text': 'Deal 10 damage. If this Merc was Stealthed deal 25 instead.'}, {'Name': 'Fan of Knives 5', 'Card type': 'Ability', 'Speed': '7', 'Cooldown': None, 'Spell school': None, 'Text': 'Deal 7 damage to all enemies. Your other Mercs are (3) Speed faster next turn.'}]

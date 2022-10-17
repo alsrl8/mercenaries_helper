@@ -1,0 +1,9 @@
+Name: Jaina Proudmoore
+Card type: Mercenary
+Role: Caster
+Rarity: Legendary
+Minion type: Human
+Faction: Alliance
+mercenaryId: 97
+equipments: [{'Name': 'Frost Shards 4', 'Card type': 'Equipment', 'Text': 'Icicle deals 5 more damage.'}, {'Name': 'Frost Dust 4', 'Card type': 'Equipment', 'Text': 'Water Elemental has an additional +4/+8.'}, {'Name': 'Ice Block Talisman 4', 'Card type': 'Equipment', 'Text': 'Passive: The first time this Merc would take fatal damage, prevent it and become Immune this turn.'}]
+abilities: [{'Name': 'Icicle 5', 'Card type': 'Ability', 'Speed': '7', 'Cooldown': None, 'Spell school': 'Frost', 'Text': "Deal 14 damage to a character. If it's Frozen, deal 24 damage instead."}, {'Name': 'Ice Floes 5', 'Card type': 'Ability', 'Speed': '6', 'Cooldown': None, 'Spell school': 'Frost', 'Text': 'Deal 12 damage. Gain +3 Frost Damage.'}, {'Name': 'Water Elemental 5', 'Card type': 'Ability', 'Speed': '5', 'Cooldown': '1', 'Spell school': None, 'Text': 'Taunt. Whenever  this damages a character, Freeze them.'}]

@@ -1,0 +1,9 @@
+Name: Yu'lon
+Card type: Mercenary
+Role: Protector
+Rarity: Rare
+Minion type: Dragon
+Faction: None
+mercenaryId: 285
+equipments: [{'Name': 'Jadefire Spear 4', 'Card type': 'Equipment', 'Text': 'Jadeflame Buffet gives an additional +5\xa0Health.'}, {'Name': 'Serpent Pendant 4', 'Card type': 'Equipment', 'Text': 'Enveloping Mist gives an additional +3\xa0Nature\xa0Damage.'}, {'Name': "Pearl of Yu'lon 4", 'Card type': 'Equipment', 'Text': 'Passive: Your other Dragons take 4 less damage.'}]
+abilities: [{'Name': 'Jade Gust 5', 'Card type': 'Ability', 'Speed': '10', 'Cooldown': None, 'Spell school': 'Nature', 'Text': 'Deal 20 damage to an enemy. If they Attacked this turn, deal 40 damage instead.'}, {'Name': 'Jadeflame Buffet 5', 'Card type': 'Ability', 'Speed': '1', 'Cooldown': None, 'Spell school': 'Fire', 'Text': 'Block Taunt and Stealthon all other characters for 2 turns. Give your characters +10 Health.'}, {'Name': 'Enveloping Mist 5', 'Card type': 'Ability', 'Speed': '2', 'Cooldown': '1', 'Spell school': 'Nature', 'Text': 'Gain Taunt this turn, and +3 Nature Damage. Repeat for each other friendly Dragon.'}]

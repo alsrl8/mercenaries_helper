@@ -1,0 +1,9 @@
+Name: Maiev Shadowsong
+Card type: Mercenary
+Role: Protector
+Rarity: Legendary
+Minion type: Night Elf
+Faction: Alliance
+mercenaryId: 372
+equipments: [{'Name': 'Charged Glaive 4', 'Card type': 'Equipment', 'Text': 'Single-Minded Pursuit gains +5 more Attack.'}, {'Name': 'Eye of the Watchers 4', 'Card type': 'Equipment', 'Text': "Passive: Characters Attacked by this Merc can't heal until this Merc leaves play."}, {'Name': "Warden's Shroud 4", 'Card type': 'Equipment', 'Text': 'Passive: Your left and right-most characters take 10 less damage from Attacks.'}]
+abilities: [{'Name': 'Single-Minded Pursuit 5', 'Card type': 'Ability', 'Speed': '5', 'Cooldown': None, 'Spell school': None, 'Text': 'Gain +10 Attack and Attack an enemy. This bonus is lost if this Merc ever Attacks a different target.'}, {'Name': 'Coup de Grâce 5', 'Card type': 'Ability', 'Speed': '3', 'Cooldown': '1', 'Spell school': None, 'Text': 'Attack an enemy. Deathblow: Restore 25 Health to this Merc and gain the Role of the enemy.'}, {'Name': 'Imprison 5', 'Card type': 'Ability', 'Speed': '10', 'Cooldown': '1', 'Spell school': None, 'Text': 'Deal 10 damage to a Merc. Its abilities gain Cooldown equal to the number of their benched Mercs. Return it to the\xa0bench.'}]

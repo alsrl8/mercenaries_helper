@@ -1,0 +1,9 @@
+Name: Neeru Fireblade
+Card type: Mercenary
+Role: Caster
+Rarity: Rare
+Minion type: Orc
+Faction: Horde
+mercenaryId: 402
+equipments: [{'Name': 'Jumbo Imps 4', 'Card type': 'Equipment', 'Text': 'Wild Imp has +15 Health.'}, {'Name': 'Combustible Imps 4', 'Card type': 'Equipment', 'Text': 'Wild Imp has "Deathrattle: Deal 12 Fel damage to a random enemy."'}, {'Name': 'Demon Armor 4', 'Card type': 'Equipment', 'Text': 'Passive: Your Demons have "Immune while Attacking."'}]
+abilities: [{'Name': 'Command Demon 5', 'Card type': 'Ability', 'Speed': '5', 'Cooldown': None, 'Spell school': 'Fel', 'Text': 'Summon a Wild Imp. Deal 10 damage to an enemy. Your Imps will target it this turn, if able.'}, {'Name': 'Burning Blade Portal 5', 'Card type': 'Ability', 'Speed': '5', 'Cooldown': '2', 'Spell school': 'Fel', 'Text': 'At the end of the turn, fill your board with Wild\xa0Imps\xa05.'}, {'Name': 'Imp-losion 5', 'Card type': 'Ability', 'Speed': '6', 'Cooldown': '2', 'Spell school': 'Fel', 'Text': 'Destroy a friendly Imp. Deal 10 damage plus its Attack and Health to a random enemy 3 times.'}]

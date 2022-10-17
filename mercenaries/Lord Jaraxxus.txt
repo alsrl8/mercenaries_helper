@@ -1,0 +1,9 @@
+Name: Lord Jaraxxus
+Card type: Mercenary
+Role: Protector
+Rarity: Legendary
+Minion type: Demon
+Faction: None
+mercenaryId: 2
+equipments: [{'Name': 'Amulet of Outrage 4', 'Card type': 'Equipment', 'Text': 'Fist of Jaraxxus deals 5 more damage.'}, {'Name': 'Truestrike Gauntlets 4', 'Card type': 'Equipment', 'Text': 'Fist of Jaraxxus always targets the lowest Health enemy.'}, {'Name': 'Fel Core 4', 'Card type': 'Equipment', 'Text': 'Fel Infernal gives an additional +3\xa0Fel\xa0Damage.'}]
+abilities: [{'Name': 'Legion Burst 5', 'Card type': 'Ability', 'Speed': '8', 'Cooldown': None, 'Spell school': 'Fel', 'Text': 'Deal 14 damage. Deathblow: Cast Fist of\xa0Jaraxxus\xa05.'}, {'Name': 'Fist of Jaraxxus 5', 'Card type': 'Ability', 'Speed': '4', 'Cooldown': '1', 'Spell school': 'Fel', 'Text': 'Deal 15 damage to a random enemy. Repeat for each of your other Demons.'}, {'Name': 'Fel Infernal 5', 'Card type': 'Ability', 'Speed': '4', 'Cooldown': None, 'Spell school': None, 'Text': '+2 Fel Damage'}]

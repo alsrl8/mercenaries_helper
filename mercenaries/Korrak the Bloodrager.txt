@@ -1,0 +1,9 @@
+Name: Korrak the Bloodrager
+Card type: Mercenary
+Role: Caster
+Rarity: Legendary
+Minion type: Troll
+Faction: Horde
+mercenaryId: 296
+equipments: [{'Name': 'Winterax Strong 4', 'Card type': 'Equipment', 'Text': 'Mounting Anger increases by an additional +4 Attack after use.'}, {'Name': 'Honor Bound 4', 'Card type': 'Equipment', 'Text': 'Eat the Dead only increases when a friendly character dies, but increases by an extra +12.'}, {'Name': 'The Everliving 4', 'Card type': 'Equipment', 'Text': 'Blood Rage gains "Deathblow: Restore 20 Health."'}]
+abilities: [{'Name': 'Mounting Anger 5', 'Card type': 'Ability', 'Speed': '5', 'Cooldown': None, 'Spell school': None, 'Text': 'Gain +5 Attack this turn and Attack an enemy. (Increases by +3 after use.)'}, {'Name': 'Eat the Dead 5', 'Card type': 'Ability', 'Speed': '4', 'Cooldown': None, 'Spell school': None, 'Text': 'Gain +8 Health. Health gained increases by +8 each time a character dies. Resets after use.'}, {'Name': 'Blood Rage 5', 'Card type': 'Ability', 'Speed': '6', 'Cooldown': '2', 'Spell school': None, 'Text': "Distribute 20 damage to random enemies. (Increased by this Merc's missing Health.)"}]

@@ -1,0 +1,9 @@
+Name: C'Thun
+Card type: Mercenary
+Role: Fighter
+Rarity: Legendary
+Minion type: Old God
+Faction: None
+mercenaryId: 328
+equipments: [{'Name': "Heart of C'Thun 4", 'Card type': 'Equipment', 'Text': "Battlecry: Summon a 5/15 Tentacle of C'Thun. It gains Taunt but loses Charge."}, {'Name': "Maw of C'Thun 4", 'Card type': 'Equipment', 'Text': 'Battlecry: Gain +4 Attack. Destroy a random enemy Minion.'}, {'Name': "Body of C'Thun 4", 'Card type': 'Equipment', 'Text': 'Bench: Gain +5/+10 after you summon an Old God.'}]
+abilities: [{'Name': 'Mind Flay 5', 'Card type': 'Ability', 'Speed': '7', 'Cooldown': None, 'Spell school': 'Shadow', 'Text': "Deal this Merc's Attack damage to an enemy. Deathblow: Summon a 5/15 Tentacle of C'Thun."}, {'Name': "Tentacle of C'Thun 5", 'Card type': 'Ability', 'Speed': '5', 'Cooldown': None, 'Spell school': None, 'Text': "Charge. After this Attacks, give your C'Thun +5 Attack and Old  Gods'\xa0abilities\xa0Refresh\xa0(1)."}, {'Name': "Mask of C'Thun 5", 'Card type': 'Ability', 'Speed': '4', 'Cooldown': '10', 'Spell school': 'Shadow', 'Text': "Deal this Merc's Attack damage to all enemies. Deathblow: Restore 20 Health to friendly Old Gods."}]

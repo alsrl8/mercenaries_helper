@@ -1,0 +1,9 @@
+Name: Lorewalker Cho
+Card type: Mercenary
+Role: Caster
+Rarity: Epic
+Minion type: Pandaren
+Faction: None
+mercenaryId: 366
+equipments: [{'Name': 'Stash of Scrolls 4', 'Card type': 'Equipment', 'Text': 'Your minions take 8 less damage.'}, {'Name': 'Heart of Neutrality 4', 'Card type': 'Equipment', 'Text': 'Passive: -10 Health. Battlecry: Become Neutral.'}, {'Name': 'Cho Family Heirloom 4', 'Card type': 'Equipment', 'Text': "Battlecry: Reduce all characters' Attack by 20 this turn."}]
+abilities: [{'Name': 'Knowledge 5', 'Card type': 'Ability', 'Speed': '5', 'Cooldown': None, 'Spell school': None, 'Text': 'Tell the Tale of the Mogu, the Hozen, or the Saurok.'}, {'Name': 'Patience 5', 'Card type': 'Ability', 'Speed': '5', 'Cooldown': None, 'Spell school': None, 'Text': 'Give +5/+10 to all friendly characters who have not yet acted this turn.'}, {'Name': 'Wisdom 5', 'Card type': 'Ability', 'Speed': '1', 'Cooldown': '2', 'Spell school': None, 'Text': 'Your characters deal 5 more damage this turn.'}]

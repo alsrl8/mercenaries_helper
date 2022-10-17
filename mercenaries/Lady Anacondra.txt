@@ -1,0 +1,9 @@
+Name: Lady Anacondra
+Card type: Mercenary
+Role: Fighter
+Rarity: Rare
+Minion type: Night Elf
+Faction: Alliance
+mercenaryId: 63
+equipments: [{'Name': 'Toxic Venom 4', 'Card type': 'Equipment', 'Text': 'Passive: After you cast 3 Nature abilities, summon a 0/15 Nightmare Viper. (3 left).'}, {'Name': 'Signet of the Wilds 4', 'Card type': 'Equipment', 'Text': 'Battlecry: Summon a 0/15 Nightmare Viper.'}, {'Name': 'Snake Snacks 4', 'Card type': 'Equipment', 'Text': 'Nightmare Viper has +10 Health.'}]
+abilities: [{'Name': "Serpent's Bite 5", 'Card type': 'Ability', 'Speed': '5', 'Cooldown': None, 'Spell school': 'Nature', 'Text': 'Deal 12 damage to a character. At the end of this turn, it takes 12 damage.'}, {'Name': 'Mend Beast 5', 'Card type': 'Ability', 'Speed': '4', 'Cooldown': None, 'Spell school': 'Nature', 'Text': "Restore 15 Health to a character and this Merc. If it's a Beast, also give it +15 Health."}, {'Name': 'Nightmare Viper 5', 'Card type': 'Ability', 'Speed': '8', 'Cooldown': '1', 'Spell school': None, 'Text': "This minion's Attack is always equal to its Health."}]

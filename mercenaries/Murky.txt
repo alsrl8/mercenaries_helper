@@ -1,0 +1,9 @@
+Name: Murky
+Card type: Mercenary
+Role: Fighter
+Rarity: Epic
+Minion type: Murloc
+Faction: None
+mercenaryId: 312
+equipments: [{'Name': 'Time to Krill 4', 'Card type': 'Equipment', 'Text': 'Passive: Whenever a friendly Murloc Attacks an enemy with Taunt, give them +4 Attack.'}, {'Name': 'Slippery When Wet 4', 'Card type': 'Equipment', 'Text': 'Passive: After one of your characters loses Divine Shield or Frozen, its next ability is (3) Speed faster.'}, {'Name': 'March of the Murlocs 4', 'Card type': 'Equipment', 'Text': 'Battlecry: Summon 2 10/10 Murlocs.'}]
+abilities: [{'Name': 'Slime Time 5', 'Card type': 'Ability', 'Speed': '4', 'Cooldown': None, 'Spell school': 'Nature', 'Text': 'Deal 12 damage to an enemy. Give it Taunt until the end of the next turn.'}, {'Name': 'Bubbly Bobble 5', 'Card type': 'Ability', 'Speed': '4', 'Cooldown': '1', 'Spell school': 'Nature', 'Text': 'Restore 13 Health to an adjacent Murloc. Swap places and both gain Divine Shield. Nature Combo: Repeat this.'}, {'Name': 'Pufferfisher 5', 'Card type': 'Ability', 'Speed': '7', 'Cooldown': '1', 'Spell school': None, 'Text': "Deathrattle: Deal damage equal to this minion's Attack to 3 random enemies."}]

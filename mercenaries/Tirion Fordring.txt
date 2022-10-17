@@ -1,0 +1,9 @@
+Name: Tirion Fordring
+Card type: Mercenary
+Role: Fighter
+Rarity: Epic
+Minion type: Human
+Faction: Alliance
+mercenaryId: 4
+equipments: [{'Name': "King's Helm 4", 'Card type': 'Equipment', 'Text': 'Blessing of Kings also gives this Merc +4/+4.'}, {'Name': 'Ashbringer 4', 'Card type': 'Equipment', 'Text': 'Deathrattle: Give all  Mercs on your battlefield and bench +8/+8.'}, {'Name': "Tirion's Shield 4", 'Card type': 'Equipment', 'Text': 'Passive: +10 Health. This Merc starts the game with Divine Shield.'}]
+abilities: [{'Name': 'Divine Assault 5', 'Card type': 'Ability', 'Speed': '7', 'Cooldown': None, 'Spell school': 'Holy', 'Text': 'Attack an enemy. Deathblow: Give your characters\xa0Divine\xa0Shield.'}, {'Name': 'Blessing of Kings 5', 'Card type': 'Ability', 'Speed': '4', 'Cooldown': '2', 'Spell school': 'Holy', 'Text': 'Give a character +8/+8 and Divine Shield.'}, {'Name': 'Judgment of Humility 5', 'Card type': 'Ability', 'Speed': '2', 'Cooldown': '1', 'Spell school': 'Holy', 'Text': "Set an enemy's Attack to 1 this turn. Attack them."}]

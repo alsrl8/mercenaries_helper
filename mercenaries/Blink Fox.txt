@@ -1,0 +1,9 @@
+Name: Blink Fox
+Card type: Mercenary
+Role: Caster
+Rarity: Rare
+Minion type: Beast
+Faction: None
+mercenaryId: 100
+equipments: [{'Name': 'Arcane Fang 4', 'Card type': 'Equipment', 'Text': 'Arcane Fling deals 7 more damage.'}, {'Name': 'Mana Runes 4', 'Card type': 'Equipment', 'Text': "Mana Blink makes your characters' next ability an additional (3) Speed faster."}, {'Name': 'Tenth Tail 4', 'Card type': 'Equipment', 'Text': 'Mind Thief always steals the last enemy ability cast last turn. It has no Cooldown.'}]
+abilities: [{'Name': 'Arcane Fling 5', 'Card type': 'Ability', 'Speed': '5', 'Cooldown': None, 'Spell school': 'Arcane', 'Text': "Deal 17 damage to an enemy. If it hasn't acted yet, deal 22 instead."}, {'Name': 'Mana Blink 5', 'Card type': 'Ability', 'Speed': '10', 'Cooldown': '2', 'Spell school': 'Arcane', 'Text': "Your characters' abilities Refresh (5). Their next ability is (5) Speed faster."}, {'Name': 'Mind Thief 5', 'Card type': 'Ability', 'Speed': None, 'Cooldown': None, 'Spell school': None, 'Text': 'This is always a copy of a random enemy ability and is (5) Speed faster. (Swaps after cast.)'}]

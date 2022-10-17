@@ -1,0 +1,9 @@
+Name: Deathwing
+Card type: Mercenary
+Role: Protector
+Rarity: Legendary
+Minion type: Dragon
+Faction: None
+mercenaryId: 298
+equipments: [{'Name': 'Heart of Unliving 4', 'Card type': 'Equipment', 'Text': 'Claws of Terror deals 5 more damage.'}, {'Name': 'Resolve of Undying 4', 'Card type': 'Equipment', 'Text': 'Passive: Restore 10 Health to this Merc after a friendly Elementium Terror is destroyed.'}, {'Name': 'Demon Soul 4', 'Card type': 'Equipment', 'Text': 'Passive: +4 Fel Damage. Whenever an enemy Dragon minion is summoned, gain control of it.'}]
+abilities: [{'Name': 'Claws of Terror 5', 'Card type': 'Ability', 'Speed': '7', 'Cooldown': None, 'Spell school': 'Fire', 'Text': 'Attack an enemy. If it was damaged this turn, deal 8 damage to it and its neighbors.'}, {'Name': 'Elementium Armor 5', 'Card type': 'Ability', 'Speed': '1', 'Cooldown': None, 'Spell school': None, 'Text': 'Gain Taunt this turn. After being Attacked this turn, summon a 12/15 Elementium Terror with Bleed (3).'}, {'Name': 'Destroy All Life 5', 'Card type': 'Ability', 'Speed': '8', 'Cooldown': '1', 'Spell school': 'Fire', 'Text': 'Deal 10 damage to all characters. If any die, repeat this.'}]

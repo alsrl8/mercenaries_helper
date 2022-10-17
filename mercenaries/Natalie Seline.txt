@@ -1,0 +1,9 @@
+Name: Natalie Seline
+Card type: Mercenary
+Role: Caster
+Rarity: Epic
+Minion type: Human
+Faction: Alliance
+mercenaryId: 8
+equipments: [{'Name': 'Eye of Shadow 4', 'Card type': 'Equipment', 'Text': 'Anathema and Shadow Beam deal 4 more damage.'}, {'Name': 'Eye of Divinity 4', 'Card type': 'Equipment', 'Text': 'Benediction and Light Beam restore 8 more Health.'}, {'Name': 'Splinter of Nordrassil 4', 'Card type': 'Equipment', 'Text': 'Anathema and Benediction have no Cooldown.'}]
+abilities: [{'Name': 'Shadow Beam 5', 'Card type': 'Ability', 'Speed': '4', 'Cooldown': None, 'Spell school': 'Shadow', 'Text': 'Deal 10 damage. If you have Anathema, deal\xa016\xa0damage\xa0instead.'}, {'Name': 'Light Beam 5', 'Card type': 'Ability', 'Speed': '2', 'Cooldown': None, 'Spell school': 'Holy', 'Text': 'Restore 10 Health. If you have Benediction, restore 20 Health instead.'}, {'Name': 'Anathema 5', 'Card type': 'Ability', 'Speed': '6', 'Cooldown': '1', 'Spell school': 'Shadow', 'Text': 'Deal 14 damage to all enemies. (Transform into Benediction)'}]

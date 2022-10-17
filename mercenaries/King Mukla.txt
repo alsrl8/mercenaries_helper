@@ -1,0 +1,9 @@
+Name: King Mukla
+Card type: Mercenary
+Role: Protector
+Rarity: Epic
+Minion type: Beast
+Faction: None
+mercenaryId: 42
+equipments: [{'Name': 'Refreshing Bananas 4', 'Card type': 'Equipment', 'Text': 'Bananas give an additional +5 Health.'}, {'Name': 'Radioactive Bananas 4', 'Card type': 'Equipment', 'Text': 'Bananas give an additional +4 Attack.'}, {'Name': "Mukla's Big Brother 4", 'Card type': 'Equipment', 'Text': 'Battlecry: Summon a 12/24\xa0Beast\xa0with\xa0Taunt.'}]
+abilities: [{'Name': 'Banana Frenzy 5', 'Card type': 'Ability', 'Speed': '7', 'Cooldown': None, 'Spell school': None, 'Text': 'Give 5 Bananas randomly to your characters and Attack an enemy.'}, {'Name': 'Dinner Time 5', 'Card type': 'Ability', 'Speed': '1', 'Cooldown': '1', 'Spell school': 'Nature', 'Text': 'Eat 3 Bananas and gain Taunt this turn.'}, {'Name': 'Primal Power 5', 'Card type': 'Ability', 'Speed': '3', 'Cooldown': '1', 'Spell school': 'Nature', 'Text': 'Give a friendly Beast +15 Attack and Immune while Attacking this turn.'}]

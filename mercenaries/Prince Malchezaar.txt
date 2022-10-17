@@ -1,0 +1,9 @@
+Name: Prince Malchezaar
+Card type: Mercenary
+Role: Protector
+Rarity: Rare
+Minion type: Demon
+Faction: None
+mercenaryId: 397
+equipments: [{'Name': 'Flying Axes 4', 'Card type': 'Equipment', 'Text': "Passive: +15 Health. Battlecry: Change a random enemy Merc's Role to Protector."}, {'Name': 'Parrying Blade 4', 'Card type': 'Equipment', 'Text': "Battlecry: Permanently reduce enemy Protectors' and Casters' Attack by 10."}, {'Name': 'Three Moves Ahead 4', 'Card type': 'Equipment', 'Text': "Passive: Enemy Casters' abilities are (2) Speed slower."}]
+abilities: [{'Name': 'Party Crasher 5', 'Card type': 'Ability', 'Speed': '3', 'Cooldown': None, 'Spell school': None, 'Text': 'Attack an enemy. If it is a Protector, it takes 10 more damage this turn.'}, {'Name': 'Check Your Weapons 5', 'Card type': 'Ability', 'Speed': '5', 'Cooldown': None, 'Spell school': 'Fel', 'Text': 'Deal 18 damage to the highest Attack enemy. If it is a Fighter, its Attack is permanently halved, rounded up.'}, {'Name': 'All Realities 5', 'Card type': 'Ability', 'Speed': '3', 'Cooldown': '2', 'Spell school': 'Shadow', 'Text': 'Deal 25 damage to the next enemy who acts. If it is a Caster, set its remaining Health to 5 instead.'}]

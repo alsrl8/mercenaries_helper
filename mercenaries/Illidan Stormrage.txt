@@ -1,0 +1,9 @@
+Name: Illidan Stormrage
+Card type: Mercenary
+Role: Fighter
+Rarity: Legendary
+Minion type: Night Elf
+Faction: Alliance
+mercenaryId: 12
+equipments: [{'Name': 'Razor Fist 4', 'Card type': 'Equipment', 'Text': 'Winged Assault gains +5 more Attack.'}, {'Name': 'Warglaives of Azzinoth 4', 'Card type': 'Equipment', 'Text': 'Outcast Attack also Attacks the left-most enemy\xa0twice.'}, {'Name': 'Demon Shroud 4', 'Card type': 'Equipment', 'Text': 'Passive: Take 10 less damage while Attacking.'}]
+abilities: [{'Name': 'Winged Assault 5', 'Card type': 'Ability', 'Speed': '4', 'Cooldown': None, 'Spell school': None, 'Text': "Attack an enemy. If it's the left or right-most enemy, gain +5 Attack."}, {'Name': 'Outcast Attack 5', 'Card type': 'Ability', 'Speed': '6', 'Cooldown': '1', 'Spell school': None, 'Text': 'Attack the left and right-most enemies. Deathblow: Restore 25 Health to this Merc.'}, {'Name': 'Blade Dance 5', 'Card type': 'Ability', 'Speed': '7', 'Cooldown': '1', 'Spell school': 'Fel', 'Text': "Deal damage equal to this Merc's Attack to 3\xa0random\xa0enemies."}]

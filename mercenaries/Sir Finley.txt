@@ -1,0 +1,9 @@
+Name: Sir Finley
+Card type: Mercenary
+Role: Protector
+Rarity: Epic
+Minion type: Murloc
+Faction: None
+mercenaryId: 339
+equipments: [{'Name': 'Maxwell, Mighty Steed 4', 'Card type': 'Equipment', 'Text': 'Passive: Your Murlocs have +10 Health. Explorers have +6 Attack.'}, {'Name': 'Exploring Monocle 4', 'Card type': 'Equipment', 'Text': 'Passive: Lead the Charge also gives your Explorers Attack.'}, {'Name': "Finley's Pith Helmet 4", 'Card type': 'Equipment', 'Text': 'Passive: After a friendly character loses Divine Shield, deal 10 damage to a random enemy.'}]
+abilities: [{'Name': 'Adventure Awaits 5', 'Card type': 'Ability', 'Speed': '6', 'Cooldown': None, 'Spell school': 'Nature', 'Text': 'Gain +8 Health and Attack an enemy. If you have  more characters, gain Divine Shield first.'}, {'Name': 'Murlocology 5', 'Card type': 'Ability', 'Speed': '2', 'Cooldown': '1', 'Spell school': None, 'Text': 'Discover a dilapidated Murloc ability.'}, {'Name': 'Lead the Charge 5', 'Card type': 'Ability', 'Speed': '3', 'Cooldown': '1', 'Spell school': 'Holy', 'Text': 'Give a friendly character +12 Attack and\xa0Divine\xa0Shield. Give your Murlocs +5 Attack.'}]

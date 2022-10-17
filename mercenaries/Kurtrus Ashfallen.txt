@@ -1,0 +1,9 @@
+Name: Kurtrus Ashfallen
+Card type: Mercenary
+Role: Protector
+Rarity: Rare
+Minion type: Night Elf
+Faction: Alliance
+mercenaryId: 3
+equipments: [{'Name': 'Chaos Amulet 4', 'Card type': 'Equipment', 'Text': 'Eye Beam deals 6 more damage.'}, {'Name': 'Fel Blade 4', 'Card type': 'Equipment', 'Text': 'Eye Beam also gives +2 Fel Damage.'}, {'Name': 'Demon Guard 4', 'Card type': 'Equipment', 'Text': 'Passive: +4 Attack. This Merc always deals Critical\xa0Damageto Demons.'}]
+abilities: [{'Name': 'Demon Slayer 5', 'Card type': 'Ability', 'Speed': '3', 'Cooldown': None, 'Spell school': None, 'Text': "Attack an enemy. If it's a Demon, gain\xa0+6\xa0Attack\xa0first."}, {'Name': 'Aimless Assault 5', 'Card type': 'Ability', 'Speed': '5', 'Cooldown': '1', 'Spell school': None, 'Text': "Attack a random enemy. If it's the left or right-most enemy, gain Immune this turn."}, {'Name': 'Eye Beam 5', 'Card type': 'Ability', 'Speed': '6', 'Cooldown': '1', 'Spell school': 'Fel', 'Text': 'Deal 12 damage. Restore that much Health to this Merc.'}]

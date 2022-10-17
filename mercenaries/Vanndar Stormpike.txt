@@ -1,0 +1,9 @@
+Name: Vanndar Stormpike
+Card type: Mercenary
+Role: Protector
+Rarity: Legendary
+Minion type: Dwarf
+Faction: Alliance
+mercenaryId: 292
+equipments: [{'Name': 'The Unstoppable Force 4', 'Card type': 'Equipment', 'Text': "Passive: +6 Attack. Can't be Frozen."}, {'Name': 'The Immovable Object 4', 'Card type': 'Equipment', 'Text': 'Passive: +7 Health. Taunt.'}, {'Name': 'Avatar of Stormpike 4', 'Card type': 'Equipment', 'Text': 'Avatar also restores 15 Health to friendly Dwarves.'}]
+abilities: [{'Name': 'Thunder Strike 5', 'Card type': 'Ability', 'Speed': '7', 'Cooldown': None, 'Spell school': 'Nature', 'Text': 'Attack an enemy. If they survive deal 6 damage to them and adjacent enemies. Their next ability is (1) Speed slower.'}, {'Name': 'Push Forward 5', 'Card type': 'Ability', 'Speed': '6', 'Cooldown': None, 'Spell school': None, 'Text': 'Friendly characters with Taunt gain +5 Attack and Attack an enemy.'}, {'Name': 'Avatar 5', 'Card type': 'Ability', 'Speed': '8', 'Cooldown': '2', 'Spell school': None, 'Text': 'Gain +5 Attack (increased by Health lost). Attack an enemy.'}]
