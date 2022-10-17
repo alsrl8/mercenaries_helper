@@ -36,9 +36,10 @@ def write_all_mercenary_names():
     mercenary_names = read_all_mercenary_names_from_wiki()
     if not os.path.exists('./mercenaries/'):
         os.mkdir('./mercenaries/')
-    with open('./mercenaries/All.txt', 'w') as file:
-        for name in mercenary_names:
-            file.write(name + '\n')
+    if not os.path.exists('./mercenaries/All.txt'):
+        with open('./mercenaries/All.txt', 'w', encoding='UTF-8') as file:
+            for name in mercenary_names:
+                file.write(name + '\n')
 
 
 def read_mercenary_from_wiki(mercenary_name):
@@ -88,7 +89,7 @@ def read_ability_names_from_wiki(mercenary_name):
 
 
 def read_ability_from_wiki(ability_name):
-    url = "https://hearthstone.fandom.com/wiki/Mercenaries/" + ability_name
+    url = "https://hearthstone.fandom.com/wiki/Mercenaries/" + ability_name.replace('?', '%3F')
     page = requests.get(url)
     soup = BeautifulSoup(page.content, 'html.parser')
     ability_info = soup.find_all(class_='ability-infobox-flex')
@@ -98,19 +99,27 @@ def read_ability_from_wiki(ability_name):
         'Card type': None,
         'Speed': None,
         'Cooldown': None,
+        'Spell school': None,
         'Text': None
     }
+
+    assert len(ability_info) > 0, f'ability_name: {ability_name}, ability_info: {ability_info}'
 
     for d in ability_info[0].find_all('li'):
         key, val = d.text.strip().split(': ')
         if key in data:
             data[key] = val
+    data['Text'] = ability_info[0].find('div', class_='text').text.split('\n')[0]
 
     if data['Card type'] == 'Equipment':
-        data['Text'] = ability_info[0].find('div', class_='text').text.split('\n')[0]
+        data = {
+            'Name': data['Name'],
+            'Card type': data['Card type'],
+            'Text': data['Text']
+        }
 
     filepath = './static/images/abilities/' if data['Card type'] == 'Ability' else './static/images/equipments/'
-    filepath += f'{ability_name}.png'
+    filepath += f'{validate_filename(ability_name)}.png'
     if not os.path.exists(filepath):
         for url in ability_info[0].find('div', class_='card-image').find_all('a'):
             request.urlretrieve(url['href'], filepath)
@@ -142,14 +151,24 @@ def read_mercenary_from_local(mercenary_name):
 def write_mercenary_info(mercenary_name, info_filename=None):
     if not info_filename:
         info_filename = mercenary_name + '.txt'
-
-    data = read_mercenary_from_wiki(mercenary_name)
+    mercenary_data = read_mercenary_from_wiki(mercenary_name)
+    ability_names = read_ability_names_from_wiki(mercenary_name)
+    equipments, abilities = [], []
+    for ability_name in ability_names:
+        ability_data = read_ability_from_wiki(ability_name)
+        if ability_data['Card type'] == 'Equipment':
+            equipments.append(ability_data)
+        elif ability_data['Card type'] == 'Ability':
+            abilities.append(ability_data)
 
     if not os.path.exists('./mercenaries/'):
         os.mkdir('./mercenaries/')
-    with open('./mercenaries/' + info_filename, 'w') as file:
-        for col, val in data.items():
-            file.write(f'{col}: {val}\n')
+    if not os.path.exists('./mercenaries/' + info_filename):
+        with open('./mercenaries/' + info_filename, 'w', encoding='UTF-8') as file:
+            for col, val in mercenary_data.items():
+                file.write(f'{col}: {val}\n')
+            file.write(f'equipments: {equipments}\n')
+            file.write(f'abilities: {abilities}\n')
 
 
 def write_all_mercenaries():
@@ -157,3 +176,18 @@ def write_all_mercenaries():
     mercenary_names = read_all_mercenary_names_from_local()
     for name in mercenary_names:
         write_mercenary_info(name)
+
+
+def validate_filename(filename):
+    s = convert_colon_to_modifier_colon(filename)
+    s = s.replace('?', '')
+    s = s.replace('"', '')
+    return s
+
+
+def convert_colon_to_modifier_colon(s: str):
+    return s.replace(':', '꞉').replace('?', '')
+
+
+def convert_modifier_colon_to_colon(s: str):
+    return s.replace('꞉', ':')
