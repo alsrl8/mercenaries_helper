@@ -63,13 +63,11 @@
         </tr>
         {% for i in range(equipments|length) %}
         <tr>
-            <td width="34%">
-                <img alt="" src="{{ url_for('static', path = 'images/equipments/' + equipments[i].name + '.png') }}">
-            </td>
-            <td width="33%">
-                <p>{{ equipments[i].name }}</p>
+            <td width="50%">
+                <img alt="" src="{{ url_for('static', path = 'images/equipments/' + equipments[i].name + '.png') }}" width="100%">
             </td>
             <td>
+                {{ equipments[i].name }}<br>
                 {{ equipments[i].desc }}
             </td>
         </tr>
