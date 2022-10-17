@@ -1,9 +1,0 @@
-Name: Tess Greymane
-Card type: Mercenary
-Role: Protector
-Rarity: Rare
-Minion type: Human
-Faction: Alliance
-mercenaryId: 407
-equipments: [{'Name': 'Cloak Of Shadows 4', 'Card type': 'Equipment', 'Text': 'Yoink! and Moonlight Resolve! transform permanently. Their initial effects are improved by 6.'}, {'Name': 'Steadfast Convictions 4', 'Card type': 'Equipment', 'Text': 'Passive: +4/+8. After this deals damage to a Merc, gain Role advantage.'}, {'Name': 'Tools Of The Trade 4', 'Card type': 'Equipment', 'Text': 'Start of Game: Transform Yoink! and Moonlight Resolve! into random single use enemy abilities. Gain +15 Health.'}]
-abilities: [{'Name': 'Yoink! 5', 'Card type': 'Ability', 'Speed': '4', 'Cooldown': None, 'Spell school': 'Shadow', 'Text': 'Deal 15 damage. Transform into a one time copy of the ability the target cast this\xa0turn (if\xa0possible).'}, {'Name': 'Moonlight Resolve! 5', 'Card type': 'Ability', 'Speed': '3', 'Cooldown': None, 'Spell school': 'Arcane', 'Text': 'Restore 25 Health. Transform into a one time copy of the last enemy ability cast this turn (if possible).'}, {'Name': 'Princess Power! 5', 'Card type': 'Ability', 'Speed': None, 'Cooldown': '1', 'Spell school': None, 'Text': "Discover an enemy ability.  Cast 12 unique abilities this game to transform into  What\xa0I'm\xa0Capable Of!(12 Left)"}]

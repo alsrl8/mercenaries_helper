@@ -1,9 +1,0 @@
-Name: Aranna Starseeker
-Card type: Mercenary
-Role: Caster
-Rarity: Rare
-Minion type: Night Elf
-Faction: Alliance
-mercenaryId: 414
-equipments: [{'Name': 'Unbreakable Backpack 4', 'Card type': 'Equipment', 'Text': 'Battlecry: Gain +2 Fel, Arcane, and Nature Damage. Gain +1 more for each of your other Night Elves and Demons.'}, {'Name': 'Iambic Pentameter 4', 'Card type': 'Equipment', 'Text': 'Passive: Enemies across from this have -8 Attack.'}, {'Name': 'Glaive Land 4', 'Card type': 'Equipment', 'Text': "Battlecry: Gain +5 Health and Role advantage against this Merc's current role."}]
-abilities: [{'Name': 'Edge Cancel 5', 'Card type': 'Ability', 'Speed': '6', 'Cooldown': None, 'Spell school': None, 'Text': 'Gain +7 Attack this turn and Attack\xa0an enemy. If it has less Attack, return this to the bench.'}, {'Name': 'Felodic Intonement 5', 'Card type': 'Ability', 'Speed': '9', 'Cooldown': None, 'Spell school': 'Fel', 'Text': 'Deal 22 damage to an enemy. Set its Attack to 0 until the end of next turn.'}, {'Name': 'Aggrobatics 5', 'Card type': 'Ability', 'Speed': '2', 'Cooldown': '1', 'Spell school': 'Fel', 'Text': 'Deal 10 damage to an enemy and swap with an ally across from it. Enemy abilities targeting the Mercs swap targets (if possible).'}]

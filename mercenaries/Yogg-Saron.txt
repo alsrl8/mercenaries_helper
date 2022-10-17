@@ -1,9 +1,0 @@
-Name: Yogg-Saron
-Card type: Mercenary
-Role: Caster
-Rarity: Legendary
-Minion type: Old God
-Faction: None
-mercenaryId: 308
-equipments: [{'Name': 'Piercing Gaze 4', 'Card type': 'Equipment', 'Text': 'Lunatic Gaze deals an extra 5 damage.'}, {'Name': 'Lash of Hysteria 4', 'Card type': 'Equipment', 'Text': 'Mind Yoggle gives an extra +5 Attack.'}, {'Name': 'Awakening Roar 4', 'Card type': 'Equipment', 'Text': "Battlecry: Old Gods' abilities Refresh (4)."}]
-abilities: [{'Name': 'Lunatic Gaze 5', 'Card type': 'Ability', 'Speed': '2', 'Cooldown': None, 'Spell school': 'Shadow', 'Text': 'Deal 15 damage to an enemy, or restore 15 Health to a friendly character. Randomly swap the Speeds of their Abilities.'}, {'Name': 'Mind Yoggle 5', 'Card type': 'Ability', 'Speed': '6', 'Cooldown': None, 'Spell school': 'Shadow', 'Text': "Give a friendly character +5 Attack this turn. They Attack a random enemy. Old Gods' abilities Refresh (1)  for each Attack so far this turn."}, {'Name': 'Oh My Yogg 5', 'Card type': 'Ability', 'Speed': '15', 'Cooldown': '15', 'Spell school': 'Shadow', 'Text': 'Randomly use 5 other Abilities from Mercs in play with random targets.'}]

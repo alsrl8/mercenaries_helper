@@ -1,9 +1,0 @@
-Name: Blademaster Samuro
-Card type: Mercenary
-Role: Fighter
-Rarity: Rare
-Minion type: Orc
-Faction: Horde
-mercenaryId: 53
-equipments: [{'Name': 'Sash of Illusion 4', 'Card type': 'Equipment', 'Text': 'Mirror Image summons an extra copy of this Merc.'}, {'Name': 'Honed Blade 4', 'Card type': 'Equipment', 'Text': 'Whirling Blade deals 4 more damage.'}, {'Name': 'Burning Blade 4', 'Card type': 'Equipment', 'Text': 'Passive: Whenever this Merc Attacks, gain +2/+2.'}]
-abilities: [{'Name': 'Double Strike 5', 'Card type': 'Ability', 'Speed': '4', 'Cooldown': None, 'Spell school': None, 'Text': 'Attack an enemy. If it was damaged this turn, gain +5 Attack and Attack it again.'}, {'Name': 'Mirror Image 5', 'Card type': 'Ability', 'Speed': '3', 'Cooldown': '1', 'Spell school': None, 'Text': 'Choose an enemy. Summon a copy of this Merc that Attacks it and dies at the end of the turn.'}, {'Name': 'Whirling Blade 5', 'Card type': 'Ability', 'Speed': '5', 'Cooldown': '1', 'Spell school': None, 'Text': 'Deal 10 damage to all enemies. Gain\xa0Immune\xa0this\xa0turn.'}]

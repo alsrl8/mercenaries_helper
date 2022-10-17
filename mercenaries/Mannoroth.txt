@@ -1,9 +1,0 @@
-Name: Mannoroth
-Card type: Mercenary
-Role: Protector
-Rarity: Epic
-Minion type: Demon
-Faction: None
-mercenaryId: 54
-equipments: [{'Name': "Pit Lord's Staff 4", 'Card type': 'Equipment', 'Text': 'Terror\xa0Charge gives an additional +5 Health.'}, {'Name': 'Fel Spikes 4', 'Card type': 'Equipment', 'Text': 'Fel Lash deals 6 more damage.'}, {'Name': 'Fel-Enhanced Lungs 4', 'Card type': 'Equipment', 'Text': 'Howl of Terror also does 5 damage to all enemies.'}]
-abilities: [{'Name': 'Terror Charge 5', 'Card type': 'Ability', 'Speed': '5', 'Cooldown': None, 'Spell school': 'Fel', 'Text': 'Attack an enemy. Give your Demons +8 Health.'}, {'Name': 'Fel Lash 5', 'Card type': 'Ability', 'Speed': '4', 'Cooldown': None, 'Spell school': 'Fel', 'Text': "Deal 10 damage to an enemy. It can't heal this turn."}, {'Name': 'Howl of Terror 5', 'Card type': 'Ability', 'Speed': '2', 'Cooldown': '1', 'Spell school': 'Fel', 'Text': 'Reduce the Attack of all enemies by 15 this turn. They lose Stealth.'}]

@@ -1,9 +1,0 @@
-Name: Xyrella
-Card type: Mercenary
-Role: Caster
-Rarity: Rare
-Minion type: Draenei
-Faction: Alliance
-mercenaryId: 19
-equipments: [{'Name': 'Radiant Wand 4', 'Card type': 'Equipment', 'Text': 'Blinding Luminance deals 4 more damage and gives -4 Attack more.'}, {'Name': 'Shard of the Naaru 4', 'Card type': 'Equipment', 'Text': 'Flash Heal restores 20 more Health, but has (1) Cooldown.'}, {'Name': 'Robes of Purity 4', 'Card type': 'Equipment', 'Text': 'Atonement requires 10 less healing to\xa0upgrade.'}]
-abilities: [{'Name': 'Blinding Luminance 5', 'Card type': 'Ability', 'Speed': '3', 'Cooldown': None, 'Spell school': 'Holy', 'Text': 'Deal 10 damage to an enemy and give it -8 Attack this turn.'}, {'Name': 'Flash Heal 5', 'Card type': 'Ability', 'Speed': '4', 'Cooldown': None, 'Spell school': 'Holy', 'Text': 'Restore 15 Health.'}, {'Name': 'Atonement 5', 'Card type': 'Ability', 'Speed': '9', 'Cooldown': '1', 'Spell school': 'Holy', 'Text': 'Deal 20 damage. +3 damage each time you restore 20 Health. (20 remaining.)'}]

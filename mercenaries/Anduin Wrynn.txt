@@ -1,9 +1,0 @@
-Name: Anduin Wrynn
-Card type: Mercenary
-Role: Caster
-Rarity: Legendary
-Minion type: Human
-Faction: Alliance
-mercenaryId: 93
-equipments: [{'Name': 'Harmonic Mallet 4', 'Card type': 'Equipment', 'Text': 'Holy Nova deals 5 more damage.'}, {'Name': 'Robes of Rejuvenation 4', 'Card type': 'Equipment', 'Text': 'After a friendly Human dies, Holy Word: Salvation Refreshes (2).'}, {'Name': 'Ring of Purity 4', 'Card type': 'Equipment', 'Text': 'Passive: Whenever a friendly\xa0character\xa0is\xa0healed, gain\xa0+5\xa0Health.'}]
-abilities: [{'Name': 'Penance 5', 'Card type': 'Ability', 'Speed': '4', 'Cooldown': None, 'Spell school': 'Holy', 'Text': 'Deal 12 damage to an enemy. Restore 14 Health to a random friendly Human.'}, {'Name': 'Holy Nova 5', 'Card type': 'Ability', 'Speed': '5', 'Cooldown': '1', 'Spell school': 'Holy', 'Text': 'Deal 10 damage to all enemies. Restore 14 Health to your characters.'}, {'Name': 'Holy Word: Salvation 5', 'Card type': 'Ability', 'Speed': '3', 'Cooldown': '2', 'Spell school': 'Holy', 'Text': 'Your Humans take 10 less damage this turn.'}]

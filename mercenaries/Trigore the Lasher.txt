@@ -1,9 +1,0 @@
-Name: Trigore the Lasher
-Card type: Mercenary
-Role: Protector
-Rarity: Rare
-Minion type: Beast
-Faction: None
-mercenaryId: 71
-equipments: [{'Name': 'Infused Amber 4', 'Card type': 'Equipment', 'Text': 'Frenzied Attack deals 4 more damage.'}, {'Name': 'Razor Claw 4', 'Card type': 'Equipment', 'Text': 'Backlash gives an additional +4 Attack.'}, {'Name': 'Regenerative Scales 4', 'Card type': 'Equipment', 'Text': 'Regrow Heads restores 16 Health the turn it is cast.'}]
-abilities: [{'Name': 'Frenzied Attack 5', 'Card type': 'Ability', 'Speed': '7', 'Cooldown': None, 'Spell school': None, 'Text': 'Attack an enemy. If this took damage this turn, deal 16 damage to a random adjacent enemy.'}, {'Name': 'Backlash 5', 'Card type': 'Ability', 'Speed': '1', 'Cooldown': None, 'Spell school': None, 'Text': "Gain +5 Attack. After an enemy damages an adjacent ally this turn, deal this Merc's Attack damage to them."}, {'Name': 'Regrow Heads 5', 'Card type': 'Ability', 'Speed': '4', 'Cooldown': '1', 'Spell school': None, 'Text': 'This Merc takes Critical Damage this turn. At the end of next turn, restore this Merc to full Health.'}]

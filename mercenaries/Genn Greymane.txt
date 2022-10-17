@@ -1,9 +1,0 @@
-Name: Genn Greymane
-Card type: Mercenary
-Role: Protector
-Rarity: Epic
-Minion type: Human
-Faction: Alliance
-mercenaryId: 411
-equipments: [{'Name': 'Blood Moon 4', 'Card type': 'Equipment', 'Text': "Battlecry: Gain +7 Attack. Transform into Genn's Other Form."}, {'Name': 'Smooth Transformation 4', 'Card type': 'Equipment', 'Text': "End of Turn: Transform into Genn's Other Form and gain +8 Health."}, {'Name': 'Gilnean Strength 4', 'Card type': 'Equipment', 'Text': 'Passive: After one of your characters casts an Even-Speed Ability, restore 10 Health to them.'}]
-abilities: [{'Name': 'Blistering Bullet 5', 'Card type': 'Ability', 'Speed': '2', 'Cooldown': None, 'Spell school': 'Fire', 'Text': 'Deal 12 damage. Transform into a Worgen.'}, {'Name': 'Space Maker 5', 'Card type': 'Ability', 'Speed': '6', 'Cooldown': None, 'Spell school': 'Fire', 'Text': 'Deal 18 damage. Gain +3 Attack.'}, {'Name': 'Beastly Beauty 5', 'Card type': 'Ability', 'Speed': '4', 'Cooldown': '1', 'Spell school': None, 'Text': 'Taunt. Battlecry: Give your other Human and Worgen +4/+6.'}]

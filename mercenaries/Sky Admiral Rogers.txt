@@ -1,9 +1,0 @@
-Name: Sky Admiral Rogers
-Card type: Mercenary
-Role: Caster
-Rarity: Epic
-Minion type: Human
-Faction: Alliance
-mercenaryId: 242
-equipments: [{'Name': 'Swash Buckling Sash 4', 'Card type': 'Equipment', 'Text': 'Sky Guard gives an additional +5 Attack.'}, {'Name': "Ship's Bell 4", 'Card type': 'Equipment', 'Text': 'Master Tactician deals 4 more damage, and makes the target go last.'}, {'Name': "Scout's Spyglass 4", 'Card type': 'Equipment', 'Text': 'Passive: After this Merc Attacks, deal 4 damage to all enemies. (Deals Critical Damage to Pirates.)'}]
-abilities: [{'Name': 'Sky Guard 5', 'Card type': 'Ability', 'Speed': '5', 'Cooldown': None, 'Spell school': None, 'Text': "Gain +5 Attack and Attack an enemy. If it's a Pirate, gain Immunewhile Attacking this turn."}, {'Name': 'Master Tactician 5', 'Card type': 'Ability', 'Speed': '2', 'Cooldown': '1', 'Spell school': None, 'Text': 'Deal 12 damage to an enemy, or restore 12 Health to an ally. It goes next.'}, {'Name': 'Firing Position 5', 'Card type': 'Ability', 'Speed': '6', 'Cooldown': '1', 'Spell school': None, 'Text': 'Deal 25 damage to all enemies that have already acted.'}]

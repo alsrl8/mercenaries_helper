@@ -1,9 +1,0 @@
-Name: Millhouse Manastorm
-Card type: Mercenary
-Role: Caster
-Rarity: Rare
-Minion type: Gnome
-Faction: Alliance
-mercenaryId: 14
-equipments: [{'Name': 'Arcane Powder 4', 'Card type': 'Equipment', 'Text': 'Arcane Explosion deals 5 more damage and enemies lose Stealth.'}, {'Name': 'Mana Rod 4', 'Card type': 'Equipment', 'Text': 'Arcane Bolt gains +4 Arcane Damage more, but\xa0has\xa0+1\xa0Cooldown.'}, {'Name': 'Ley Line Wand 4', 'Card type': 'Equipment', 'Text': 'Greater Arcane Missiles targets the lowest Health enemy.'}]
-abilities: [{'Name': 'Arcane Explosion 5', 'Card type': 'Ability', 'Speed': '4', 'Cooldown': None, 'Spell school': 'Arcane', 'Text': 'Deal 8 damage to all enemies.'}, {'Name': 'Arcane Bolt 5', 'Card type': 'Ability', 'Speed': '6', 'Cooldown': None, 'Spell school': 'Arcane', 'Text': 'Deal 12 damage. Gain +3 Arcane Damage'}, {'Name': 'Greater Arcane Missiles 5', 'Card type': 'Ability', 'Speed': '9', 'Cooldown': '2', 'Spell school': 'Arcane', 'Text': 'Shoot three missiles at random enemies that deal 20 damage each.'}]

@@ -1,9 +1,0 @@
-Name: Rokara
-Card type: Mercenary
-Role: Fighter
-Rarity: Rare
-Minion type: Orc
-Faction: Horde
-mercenaryId: 11
-equipments: [{'Name': 'Frostwolf Talisman 4', 'Card type': 'Equipment', 'Text': 'Tribal Warfare gives an additional +4 Attack.'}, {'Name': 'Helm of Inspiration 4', 'Card type': 'Equipment', 'Text': 'Offensive Rally gives an additional +2/+4.'}, {'Name': 'Ancestral Armor 4', 'Card type': 'Equipment', 'Text': 'Passive: +20 Health.'}]
-abilities: [{'Name': 'Tribal Warfare 5', 'Card type': 'Ability', 'Speed': '6', 'Cooldown': None, 'Spell school': None, 'Text': 'Attack an enemy. If you control another Orc, gain +5 Attack first.'}, {'Name': 'Offensive Rally 5', 'Card type': 'Ability', 'Speed': '2', 'Cooldown': '1', 'Spell school': None, 'Text': 'Whenever a friendly character Attacks this turn,\xa0give\xa0it\xa0+5/+10.'}, {'Name': 'Orc Onslaught 5', 'Card type': 'Ability', 'Speed': '5', 'Cooldown': '1', 'Spell school': None, 'Text': 'Deal 12 damage. Repeat for each other Orc you control.'}]

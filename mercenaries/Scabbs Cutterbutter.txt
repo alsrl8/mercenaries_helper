@@ -1,9 +1,0 @@
-Name: Scabbs Cutterbutter
-Card type: Mercenary
-Role: Fighter
-Rarity: Rare
-Minion type: Gnome
-Faction: Alliance
-mercenaryId: 7
-equipments: [{'Name': 'SI:7 Contract 4', 'Card type': 'Equipment', 'Text': "Tactical Strike's Combo effect deals 8\xa0more\xa0damage."}, {'Name': 'Paring Knife 4', 'Card type': 'Equipment', 'Text': 'Wicked Stab deals 5 more damage.'}, {'Name': 'Honing Rod 4', 'Card type': 'Equipment', 'Text': 'Shadow Blade gives +10 Attack first.'}]
-abilities: [{'Name': 'Tactical Strike 5', 'Card type': 'Ability', 'Speed': '4', 'Cooldown': None, 'Spell school': None, 'Text': 'Attack an enemy. Combo: Deal 10 damage to it as well.'}, {'Name': 'Wicked Stab 5', 'Card type': 'Ability', 'Speed': '9', 'Cooldown': '1', 'Spell school': None, 'Text': 'Choose to deal 10, 15, or 20 damage. (Casts\xa0at\xa0different\xa0Speeds.)'}, {'Name': 'Shadow Blade 5', 'Card type': 'Ability', 'Speed': '2', 'Cooldown': '1', 'Spell school': None, 'Text': 'Attack an enemy then gain Stealth.'}]

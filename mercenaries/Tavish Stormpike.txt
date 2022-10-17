@@ -1,9 +1,0 @@
-Name: Tavish Stormpike
-Card type: Mercenary
-Role: Fighter
-Rarity: Rare
-Minion type: Dwarf
-Faction: Alliance
-mercenaryId: 44
-equipments: [{'Name': 'High Power Rounds 4', 'Card type': 'Equipment', 'Text': 'Aimed Shot deals 5 more damage.'}, {'Name': 'Hunting Shroud 4', 'Card type': 'Equipment', 'Text': 'The Bear Trap Bear has +5 Attack and Rush.'}, {'Name': 'Rigged Wiring 4', 'Card type': 'Equipment', 'Text': "Passive: +10 Health. Your Traps last until they're triggered."}]
-abilities: [{'Name': 'Aimed Shot 5', 'Card type': 'Ability', 'Speed': '7', 'Cooldown': None, 'Spell school': None, 'Text': 'Deal 10 damage. If this Merc has not been damaged this turn, deal 20 instead.'}, {'Name': 'Explosive Trap 5', 'Card type': 'Ability', 'Speed': '2', 'Cooldown': '1', 'Spell school': 'Fire', 'Text': 'The first time this Merc is damaged this turn, deal 16 damage to all enemies.'}, {'Name': 'Bear Trap 5', 'Card type': 'Ability', 'Speed': '2', 'Cooldown': '1', 'Spell school': None, 'Text': 'The first time this Merc is damaged this turn, summon a 15/20 Beast with Taunt.'}]

@@ -1,9 +1,0 @@
-Name: Thrall
-Card type: Mercenary
-Role: Protector
-Rarity: Legendary
-Minion type: Orc
-Faction: Horde
-mercenaryId: 49
-equipments: [{'Name': 'Ornate Warhorn 4', 'Card type': 'Equipment', 'Text': "Warchief's Command deals 5 more damage."}, {'Name': 'Ring of Strength 4', 'Card type': 'Equipment', 'Text': 'Passive: Whenever a friendly Orc is Attacked, give\xa0them\xa0+8\xa0Health.'}, {'Name': 'Doomhammer 4', 'Card type': 'Equipment', 'Text': 'Passive: +4 Attack and Windfury.'}]
-abilities: [{'Name': 'For The Horde 5', 'Card type': 'Ability', 'Speed': '6', 'Cooldown': None, 'Spell school': None, 'Text': 'Give your Orcs +5 Attack. Attack an enemy.'}, {'Name': 'Lightning Storm 5', 'Card type': 'Ability', 'Speed': '6', 'Cooldown': None, 'Spell school': 'Nature', 'Text': 'Deal 10 damage to all enemies. They lose Stealth.'}, {'Name': "Warchief's Command 5", 'Card type': 'Ability', 'Speed': '8', 'Cooldown': '1', 'Spell school': 'Nature', 'Text': 'Deal 12 damage to an enemy. Your left-most character\xa0Attacks\xa0it.'}]

@@ -1,9 +1,0 @@
-Name: Alexstrasza
-Card type: Mercenary
-Role: Protector
-Rarity: Legendary
-Minion type: Dragon
-Faction: None
-mercenaryId: 23
-equipments: [{'Name': "Alexstrasza's Brooch 4", 'Card type': 'Equipment', 'Text': 'Dragon Breath deals or restores 5 more.'}, {'Name': 'Dragonflight Talisman 4', 'Card type': 'Equipment', 'Text': "Dragonqueen's Gambit restores Health to this Merc equal to the damage dealt."}, {'Name': 'Amulet of Swiftness 4', 'Card type': 'Equipment', 'Text': "Dragonqueen's Gambit is (4) Speed faster."}]
-abilities: [{'Name': 'Dragon Breath 5', 'Card type': 'Ability', 'Speed': '6', 'Cooldown': None, 'Spell school': 'Fire', 'Text': 'Deal 14 damage to an enemy, or restore 20 Health to a friendly character.'}, {'Name': 'Flame Buffet 5', 'Card type': 'Ability', 'Speed': '5', 'Cooldown': '1', 'Spell school': 'Fire', 'Text': 'Deal 16 damage to an enemy. If you control another Dragon, also damage its neighbors.'}, {'Name': "Dragonqueen's Gambit 5", 'Card type': 'Ability', 'Speed': '5', 'Cooldown': '1', 'Spell school': 'Fire', 'Text': 'Deal damage to an enemy equal to their Attack.'}]
