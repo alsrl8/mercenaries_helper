@@ -90,6 +90,20 @@ def read_ability_names_from_wiki(mercenary_name):
     return ability_names
 
 
+def read_all_abilities_from_wiki(ability_names):
+    equipments, abilities = dict(), dict()
+    equipment_cnt, ability_cnt = 0, 0
+    for ability_name in ability_names:
+        ability_data = read_ability_from_wiki(ability_name)
+        if ability_data['Card type'] == 'Equipment':
+            equipments[equipment_cnt] = ability_data
+            equipment_cnt += 1
+        elif ability_data['Card type'] == 'Ability':
+            abilities[ability_cnt] = ability_data
+            ability_cnt += 1
+    return equipments, abilities
+
+
 def read_ability_from_wiki(ability_name):
     url = "https://hearthstone.fandom.com/wiki/Mercenaries/" + ability_name.replace('?', '%3F')
     page = requests.get(url)
@@ -130,50 +144,25 @@ def read_ability_from_wiki(ability_name):
 
 
 def read_mercenary_from_local(mercenary_name):
-    data = {
-        'Name': mercenary_name,
-        'Card type': None,
-        'Role': None,
-        'Rarity': None,
-        'Minion type': None,
-        'Faction': None,
-        'mercenaryId': None,
-        # 'equipments': None,
-        # 'abilities': None
-    }
-    with open(f'./mercenaries/{mercenary_name}.txt', 'r') as file:
-        while True:
-            s = file.readline()
-            if not s:
-                break
-            s = s.split(': ')
-            key = s[0]
-            if key in data:
-                data[key] = s[1].rstrip()
+    with open(f'./mercenaries/{mercenary_name}.json', 'r') as file:
+        data = json.load(file)
     return data
 
 
 def write_mercenary_info(mercenary_name, info_filename=None):
     if not info_filename:
-        info_filename = mercenary_name + '.txt'
+        info_filename = mercenary_name + '.json'
     mercenary_data = read_mercenary_from_wiki(mercenary_name)
     ability_names = read_ability_names_from_wiki(mercenary_name)
-    equipments, abilities = [], []
-    for ability_name in ability_names:
-        ability_data = read_ability_from_wiki(ability_name)
-        if ability_data['Card type'] == 'Equipment':
-            equipments.append(ability_data)
-        elif ability_data['Card type'] == 'Ability':
-            abilities.append(ability_data)
+    equipments, abilities = read_all_abilities_from_wiki(ability_names)
+    mercenary_data['Equipments'] = equipments
+    mercenary_data['Abilities'] = abilities
 
     if not os.path.exists('./mercenaries/'):
         os.mkdir('./mercenaries/')
     if not os.path.exists('./mercenaries/' + info_filename):
         with open('./mercenaries/' + info_filename, 'w', encoding='UTF-8') as file:
-            for col, val in mercenary_data.items():
-                file.write(f'{col}: {val}\n')
-            file.write(f'equipments: {equipments}\n')
-            file.write(f'abilities: {abilities}\n')
+            json.dump(mercenary_data, file, indent=4)
 
 
 def write_all_mercenaries():
