@@ -92,9 +92,6 @@ def store_all_mercenaries():
                 new_equipment = schemas.Equipment(name='', text='', id=0, owner_id=create_mercenary.id)
                 crud.update_equipment(db=SessionLocal(), name=equipment['Name'], new_equipment=new_equipment)
 
-                find_equipment = crud.get_equipment(db=SessionLocal(), name=equipment['Name'])
-                print(f'{find_equipment.owner_id=}')
-
 
 def str2bool(v):
     if isinstance(v, bool):
