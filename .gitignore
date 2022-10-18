@@ -1,4 +1,5 @@
 mercenaries/*.txt
+mercenaries/*.json
 *.db
 __pycache__/
 *.py[cod]
