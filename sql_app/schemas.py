@@ -5,11 +5,11 @@ from typing import List
 
 class EquipmentBase(BaseModel):
     name: str
-    desc: str
+    text: str
 
 
 class EquipmentCreate(EquipmentBase):
-    mercenary_id: int
+    pass
 
 
 class Equipment(EquipmentBase):

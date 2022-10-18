@@ -22,7 +22,7 @@ class Equipment(Base):
 
     id = Column(Integer, primary_key=True, index=True)
     name = Column(String, unique=True, index=True)
-    desc = Column(String)
+    text = Column(String)
     owner_id = Column(Integer, ForeignKey("mercenaries.id"))
 
     owner = relationship("Mercenary", back_populates="equipments")
