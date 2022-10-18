@@ -11,8 +11,7 @@ from sqlalchemy.orm import Session
 import utils
 from sql_app import crud, models, schemas
 from sql_app.database import SessionLocal, engine
-from sql_app.schemas import MercenaryCreate
-from sql_app.enums import Role, Rarity, MinionType, Faction
+from sql_app.schemas import MercenaryCreate, EquipmentCreate
 
 models.Base.metadata.create_all(bind=engine)
 app = FastAPI()
@@ -75,14 +74,26 @@ def store_all_mercenaries():
     for name in tqdm(mercenary_names):
         mercenary = utils.read_mercenary_from_local(name)
         db_mercenary = MercenaryCreate(name=mercenary['Name'],
-                                       role=Role(mercenary['Role']),
+                                       role=mercenary['Role'],
                                        rarity=mercenary['Rarity'],
                                        minion_type=mercenary['Minion type'],
                                        faction=mercenary['Faction']
                                        )
         find_mercenary = crud.get_mercenary(db=SessionLocal(), name=name)
         if not find_mercenary:
-            crud.create_mercenary(db=SessionLocal(), mercenary=db_mercenary)
+            equipments = mercenary['Equipments']
+            for equipment in equipments:
+                find_equipment = crud.get_equipment(db=SessionLocal(), name=equipment['Name'])
+                if not find_equipment:
+                    db_equipment = EquipmentCreate(name=equipment['Name'], text=equipment['Text'])
+                    crud.create_equipment(db=SessionLocal(), equipment=db_equipment)
+            create_mercenary = crud.create_mercenary(db=SessionLocal(), mercenary=db_mercenary)
+            for equipment in equipments:
+                new_equipment = schemas.Equipment(name='', text='', id=0, owner_id=create_mercenary.id)
+                crud.update_equipment(db=SessionLocal(), name=equipment['Name'], new_equipment=new_equipment)
+
+                find_equipment = crud.get_equipment(db=SessionLocal(), name=equipment['Name'])
+                print(f'{find_equipment.owner_id=}')
 
 
 def str2bool(v):
