@@ -1,5 +1,6 @@
 import argparse
 from typing import List
+from tqdm import tqdm
 
 from fastapi import FastAPI, Depends, Request, Body, Form
 from fastapi.responses import HTMLResponse
@@ -11,6 +12,7 @@ import utils
 from sql_app import crud, models, schemas
 from sql_app.database import SessionLocal, engine
 from sql_app.schemas import MercenaryCreate
+from sql_app.enums import Role, Rarity, MinionType, Faction
 
 models.Base.metadata.create_all(bind=engine)
 app = FastAPI()
@@ -70,10 +72,10 @@ def create_equipment(mercenary_id: int = Form(), equipment_name: str = Form(), d
 
 def store_all_mercenaries():
     mercenary_names = utils.read_all_mercenary_names_from_local()
-    for name in mercenary_names:
+    for name in tqdm(mercenary_names):
         mercenary = utils.read_mercenary_from_local(name)
         db_mercenary = MercenaryCreate(name=mercenary['Name'],
-                                       role=mercenary['Role'],
+                                       role=Role(mercenary['Role']),
                                        rarity=mercenary['Rarity'],
                                        minion_type=mercenary['Minion type'],
                                        faction=mercenary['Faction']

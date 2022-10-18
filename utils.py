@@ -2,6 +2,8 @@ from urllib import request
 import requests
 from bs4 import BeautifulSoup
 import os
+from tqdm import tqdm
+import json
 
 
 def read_all_mercenary_names_from_wiki():
@@ -135,16 +137,19 @@ def read_mercenary_from_local(mercenary_name):
         'Rarity': None,
         'Minion type': None,
         'Faction': None,
-        'mercenaryId': None
+        'mercenaryId': None,
+        # 'equipments': None,
+        # 'abilities': None
     }
     with open(f'./mercenaries/{mercenary_name}.txt', 'r') as file:
         while True:
             s = file.readline()
             if not s:
                 break
-            key, val = s.rstrip().split(": ")
+            s = s.split(': ')
+            key = s[0]
             if key in data:
-                data[key] = val
+                data[key] = s[1].rstrip()
     return data
 
 
@@ -174,8 +179,9 @@ def write_mercenary_info(mercenary_name, info_filename=None):
 def write_all_mercenaries():
     write_all_mercenary_names()
     mercenary_names = read_all_mercenary_names_from_local()
-    for name in mercenary_names:
+    for name in tqdm(mercenary_names):
         write_mercenary_info(name)
+        print(f'mercenary: {name}')
 
 
 def validate_filename(filename):
