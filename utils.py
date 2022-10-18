@@ -91,16 +91,13 @@ def read_ability_names_from_wiki(mercenary_name):
 
 
 def read_all_abilities_from_wiki(ability_names):
-    equipments, abilities = dict(), dict()
-    equipment_cnt, ability_cnt = 0, 0
+    equipments, abilities = [], []
     for ability_name in ability_names:
         ability_data = read_ability_from_wiki(ability_name)
         if ability_data['Card type'] == 'Equipment':
-            equipments[equipment_cnt] = ability_data
-            equipment_cnt += 1
+            equipments.append(ability_data)
         elif ability_data['Card type'] == 'Ability':
-            abilities[ability_cnt] = ability_data
-            ability_cnt += 1
+            abilities.append(ability_data)
     return equipments, abilities
 
 
