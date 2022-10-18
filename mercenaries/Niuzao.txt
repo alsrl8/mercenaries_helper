@@ -1,9 +1,0 @@
-Name: Niuzao
-Card type: Mercenary
-Role: Protector
-Rarity: Rare
-Minion type: Beast
-Faction: None
-mercenaryId: 283
-equipments: [{'Name': 'Bullish Belt 4', 'Card type': 'Equipment', 'Text': 'Bullish Fortitude reduces damage taken by 5 more, but has +1\xa0Cooldown.'}, {'Name': 'Helm of Niuzao 4', 'Card type': 'Equipment', 'Text': 'Passive: -2/+16. After an enemy Attacks this Merc, deal 5 damage to them.'}, {'Name': 'Talisman of the Ox 4', 'Card type': 'Equipment', 'Text': 'Passive: After a friendly character loses Divine Shield, give them +6 Health.'}]
-abilities: [{'Name': 'Headbutt 5', 'Card type': 'Ability', 'Speed': '7', 'Cooldown': None, 'Spell school': None, 'Text': 'Attack an enemy. If it has higher Attack than this Merc, deal 16 damage to it instead.'}, {'Name': 'Bullish Fortitude 5', 'Card type': 'Ability', 'Speed': '2', 'Cooldown': '1', 'Spell school': None, 'Text': 'Gain Taunt and your other characters take 5 less damage for 2 turns.'}, {'Name': 'Blessing of the Ox 5', 'Card type': 'Ability', 'Speed': '3', 'Cooldown': '1', 'Spell school': 'Arcane', 'Text': 'Each time a friendly character is damaged this turn, give them Divine Shield'}]

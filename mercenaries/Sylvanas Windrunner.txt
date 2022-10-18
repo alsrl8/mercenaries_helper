@@ -1,9 +1,0 @@
-Name: Sylvanas Windrunner
-Card type: Mercenary
-Role: Fighter
-Rarity: Legendary
-Minion type: Undead
-Faction: Horde
-mercenaryId: 15
-equipments: [{'Name': 'Soul Jar 4', 'Card type': 'Equipment', 'Text': 'Reclaimed Souls gives +4 more Attack.'}, {'Name': 'Mourneblade 4', 'Card type': 'Equipment', 'Text': 'Passive: +5 Attack.'}, {'Name': 'Death Volley 4', 'Card type': 'Equipment', 'Text': "Deathrattle: Deal damage\xa0equal to this Merc's\xa0Attack to all\xa0enemies."}]
-abilities: [{'Name': 'Banshee Bolt 5', 'Card type': 'Ability', 'Speed': '4', 'Cooldown': None, 'Spell school': 'Shadow', 'Text': "Deal damage equal to this Merc's Attack."}, {'Name': 'Reclaimed Souls 5', 'Card type': 'Ability', 'Speed': '10', 'Cooldown': '1', 'Spell school': 'Shadow', 'Text': 'Gain +5 Attack for each friendly character that died this game.'}, {'Name': 'For the Queen 5', 'Card type': 'Ability', 'Speed': '5', 'Cooldown': '2', 'Spell school': 'Shadow', 'Text': 'Choose an enemy. Adjacent enemies Attack it.'}]

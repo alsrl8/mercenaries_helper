@@ -1,9 +1,0 @@
-Name: Captain Hooktusk
-Card type: Mercenary
-Role: Caster
-Rarity: Epic
-Minion type: Pirate
-Faction: None
-mercenaryId: 309
-equipments: [{'Name': 'Jolly Roger 4', 'Card type': 'Equipment', 'Text': 'Turnabout Strike gives +4 more Health and affects all friendly Pirates.'}, {'Name': "Captain's Pride 4", 'Card type': 'Equipment', 'Text': 'Battlecry: Gain +3 Attack and become a Fighter.'}, {'Name': 'Prop Knife 4', 'Card type': 'Equipment', 'Text': 'Cutthroat Negotiations also restores 20 Health if used on a friendly character.'}]
-abilities: [{'Name': 'Turnabout Strike 5', 'Card type': 'Ability', 'Speed': '6', 'Cooldown': None, 'Spell school': None, 'Text': 'Gain +11 Health. Swap Roles with an enemy and Attack it.'}, {'Name': 'Shiver Their Timbers 5', 'Card type': 'Ability', 'Speed': '8', 'Cooldown': None, 'Spell school': None, 'Text': "Deal 18 damage to an enemy. If it's a Fighter, deal 25 instead. (Ability swaps to Protector after use .)"}, {'Name': 'Cutthroat Negotiations 5', 'Card type': 'Ability', 'Speed': '2', 'Cooldown': None, 'Spell school': None, 'Text': "Change a Merc's Role to Protector. Apply Bleed (6) to them. (Ability swaps to Caster after use.)"}]

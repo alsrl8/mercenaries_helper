@@ -1,9 +1,0 @@
-Name: Long'xin
-Card type: Mercenary
-Role: Caster
-Rarity: Legendary
-Minion type: Dragon
-Faction: None
-mercenaryId: 254
-equipments: [{'Name': 'Bottle of Infinite Stars 4', 'Card type': 'Equipment', 'Text': 'Among the Stars gives 4 more Health and also grants Health to your Dragons.'}, {'Name': 'Kun-Lai Crystal 4', 'Card type': 'Equipment', 'Text': 'Among the Stars starts off Cooldown. Passive: +8 Nature Resistance.'}, {'Name': 'Band of Bursting Novas 4', 'Card type': 'Equipment', 'Text': 'Battlecry: Gain +3 Arcane Damage for each of your Beasts and Dragons that has died this game.'}]
-abilities: [{'Name': 'Celestial Breath 5', 'Card type': 'Ability', 'Speed': '7', 'Cooldown': '0', 'Spell school': 'Arcane', 'Text': 'Deal 19 damage to an enemy. Any excess continues to the left or right.'}, {'Name': 'Starfire Blessing 5', 'Card type': 'Ability', 'Speed': '2', 'Cooldown': '1', 'Spell school': 'Arcane', 'Text': 'For two turns, gain  +3\xa0Arcane\xa0Damage and "After this Merc is damaged, deal 14 damage to a random enemy."'}, {'Name': 'Among the Stars 5', 'Card type': 'Ability', 'Speed': '1', 'Cooldown': '1', 'Spell school': 'Arcane', 'Text': 'Give an ally +13 Health and swap places with it. Enemy abilities targetting the Mercs swap\xa0targets\xa0(if\xa0possible).'}]

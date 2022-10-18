@@ -1,9 +1,0 @@
-Name: Yrel
-Card type: Mercenary
-Role: Fighter
-Rarity: Epic
-Minion type: Draenei
-Faction: Alliance
-mercenaryId: 367
-equipments: [{'Name': 'Hammer of the Naaru 4', 'Card type': 'Equipment', 'Text': 'Passive: Whenever a friendly character Attacks, it gains +4 Attack this turn.'}, {'Name': 'Libram of Wisdom 4', 'Card type': 'Equipment', 'Text': 'End of Turn: If you have used 2 or more Holy abilities, gain +2\xa0Holy\xa0Damage and +2\xa0Healing\xa0Power.'}, {'Name': 'Light of Karabor 4', 'Card type': 'Equipment', 'Text': 'Passive: Your characters have +5\xa0Shadow\xa0Resistance.'}]
-abilities: [{'Name': "Vindicator's Fury 5", 'Card type': 'Ability', 'Speed': '5', 'Cooldown': None, 'Spell school': 'Holy', 'Text': 'Attack an enemy. Deathblow: Deal 15 damage to all enemies.'}, {'Name': 'Radiant Light 5', 'Card type': 'Ability', 'Speed': '2', 'Cooldown': None, 'Spell school': 'Holy', 'Text': 'Gain +6/+6. Whenever another friendly character uses a Holy ability this turn, they gain +6/+6.'}, {'Name': 'Wrath of the Lightbound 5', 'Card type': 'Ability', 'Speed': '8', 'Cooldown': '2', 'Spell school': 'Holy', 'Text': 'Deal 10 damage to all enemies. Then deal 15 damage to all characters who have not used a Holy ability this turn.'}]

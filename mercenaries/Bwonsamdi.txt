@@ -1,9 +1,0 @@
-Name: Bwonsamdi
-Card type: Mercenary
-Role: Fighter
-Rarity: Epic
-Minion type: Troll
-Faction: Horde
-mercenaryId: 408
-equipments: [{'Name': 'Arena Contender 4', 'Card type': 'Equipment', 'Text': "Battlecry: This Merc's abilities Refresh: (2). Deathrattle: Your abilities Refresh: (2)."}, {'Name': 'New Client 4', 'Card type': 'Equipment', 'Text': 'Deathrattle: Resurrect another one of your Mercs that died this game with up to 24 Health.'}, {'Name': 'Spirit Of The Dead 4', 'Card type': 'Equipment', 'Text': 'Passive: After one of your characters dies, restore 7 Health to your Trolls.'}]
-abilities: [{'Name': 'Soul Subjugation 5', 'Card type': 'Ability', 'Speed': '9', 'Cooldown': None, 'Spell school': 'Shadow', 'Text': 'Deal 28 damage. Deals 3 less damage for each time this was damaged this turn.'}, {'Name': 'Irrefusable Deal 5', 'Card type': 'Ability', 'Speed': '1', 'Cooldown': None, 'Spell school': 'Shadow', 'Text': "Choose one of Bwonsamdi's Deals. Increase the Cooldown of this ability by 1."}, {'Name': 'Binding Contract 5', 'Card type': 'Ability', 'Speed': '2', 'Cooldown': '2', 'Spell school': 'Shadow', 'Text': 'Deal 12 damage to an enemy. If this dies this turn, deal 90 more.'}]

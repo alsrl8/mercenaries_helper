@@ -1,9 +1,0 @@
-Name: Varian Wrynn
-Card type: Mercenary
-Role: Protector
-Rarity: Epic
-Minion type: Human
-Faction: Alliance
-mercenaryId: 9
-equipments: [{'Name': 'Shalamayne 4', 'Card type': 'Equipment', 'Text': 'Passive: +7 Attack.'}, {'Name': 'Bounding Boots 4', 'Card type': 'Equipment', 'Text': 'Heroic Leap deals 5 more damage.'}, {'Name': 'War Banner 4', 'Card type': 'Equipment', 'Text': 'Retaliation gives an additional +2/+10.'}]
-abilities: [{'Name': 'Splitting Strike 5', 'Card type': 'Ability', 'Speed': '6', 'Cooldown': None, 'Spell school': None, 'Text': 'Attack an enemy. Deathblow: Give your Humans +15\xa0Attack.'}, {'Name': 'Heroic Leap 5', 'Card type': 'Ability', 'Speed': '4', 'Cooldown': '1', 'Spell school': None, 'Text': 'Deal 14 damage to an enemy. Your other Humans in play and bench are permanently (1)\xa0Speed\xa0faster.'}, {'Name': 'Retaliation 5', 'Card type': 'Ability', 'Speed': '2', 'Cooldown': None, 'Spell school': None, 'Text': 'After an enemy Attacks this turn, Gain +5/+5 and Attack it.'}]

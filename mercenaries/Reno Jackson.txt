@@ -1,9 +1,0 @@
-Name: Reno Jackson
-Card type: Mercenary
-Role: Caster
-Rarity: Legendary
-Minion type: Human
-Faction: Alliance
-mercenaryId: 377
-equipments: [{'Name': "Explorer's Hat 4", 'Card type': 'Equipment', 'Text': "Dazzlin' Flexin' deals 10 more damage and affects all enemies, but has +2 Cooldown."}, {'Name': "We're Rich! 4", 'Card type': 'Equipment', 'Text': 'Battlecry: If you control two other Explorers, restore 100 health to your characters.'}, {'Name': 'Treasure Inspector 4', 'Card type': 'Equipment', 'Text': "Deathrattle: Cast a random one of Reno's Looted Powers! Twice!"}]
-abilities: [{'Name': 'Gatling Wand 5', 'Card type': 'Ability', 'Speed': '3', 'Cooldown': None, 'Spell school': 'Arcane', 'Text': 'Deal 11 damage to a random enemy. Gain +3 damage each time you take 20 damage. (20 remaining.)'}, {'Name': "Dazzlin' Flexin' 5", 'Card type': 'Ability', 'Speed': '2', 'Cooldown': None, 'Spell school': 'Arcane', 'Text': 'Deal 7 damage to an enemy and gain Taunt. Their next ability targets this Merc (if possible).'}, {'Name': "That's My Treasure! 5", 'Card type': 'Ability', 'Speed': '5', 'Cooldown': '1', 'Spell school': None, 'Text': 'Restore 15-25 health to this\xa0Merc. Deal damage equal to the amount healed to a random enemy.'}]

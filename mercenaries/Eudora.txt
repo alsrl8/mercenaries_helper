@@ -1,9 +1,0 @@
-Name: Eudora
-Card type: Mercenary
-Role: Fighter
-Rarity: Epic
-Minion type: Pirate
-Faction: None
-mercenaryId: 236
-equipments: [{'Name': 'Shrapnel Shot 4', 'Card type': 'Equipment', 'Text': 'Cannons deal 5 more damage.'}, {'Name': 'Primed Armaments 4', 'Card type': 'Equipment', 'Text': 'Battlecry: Summon a 0/18 Cannon.'}, {'Name': 'Briny Bracers 4', 'Card type': 'Equipment', 'Text': 'Passive: +2/+10.'}]
-abilities: [{'Name': "Coup d'Etat 5", 'Card type': 'Ability', 'Speed': '4', 'Cooldown': None, 'Spell school': None, 'Text': "Attack an enemy. If it's the left or right most enemy, fire Eudora's Cannons at it."}, {'Name': 'Prepare the Cannons 5', 'Card type': 'Ability', 'Speed': '7', 'Cooldown': '1', 'Spell school': None, 'Text': 'Summon a 0/18 Cannon to the left or right of this Merc. (Starts\xa0off\xa0Cooldown.)'}, {'Name': 'Covering Fire 5', 'Card type': 'Ability', 'Speed': '7', 'Cooldown': '1', 'Spell school': None, 'Text': 'Restore 12 Health to a friendly Merc and return them to your bench. Fire\xa0all\xa0your\xa0cannons.'}]

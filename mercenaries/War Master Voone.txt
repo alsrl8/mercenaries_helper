@@ -1,9 +1,0 @@
-Name: War Master Voone
-Card type: Mercenary
-Role: Fighter
-Rarity: Epic
-Minion type: Troll
-Faction: Horde
-mercenaryId: 57
-equipments: [{'Name': "Dragon's Mark 4", 'Card type': 'Equipment', 'Text': 'Fire Breath deals 4 more damage.'}, {'Name': 'Wyrm Claws 4', 'Card type': 'Equipment', 'Text': 'Evasive Wyrm has +5 Attack and Windfury.'}, {'Name': 'Dragon Rune Axe 4', 'Card type': 'Equipment', 'Text': 'Passive: After a friendly Dragon Attacks an enemy, deal 10 damage to the enemy.'}]
-abilities: [{'Name': 'Axe Throw 5', 'Card type': 'Ability', 'Speed': '4', 'Cooldown': None, 'Spell school': None, 'Text': 'Deal 10 damage to an enemy and one of its neighbors. They lose Stealth'}, {'Name': 'Fire Breath 5', 'Card type': 'Ability', 'Speed': '6', 'Cooldown': '1', 'Spell school': 'Fire', 'Text': 'Deal 10 damage.  Repeat for each Dragon you control.'}, {'Name': 'Evasive Wyrm 5', 'Card type': 'Ability', 'Speed': '7', 'Cooldown': '1', 'Spell school': None, 'Text': 'Divine Shield, Charge'}]

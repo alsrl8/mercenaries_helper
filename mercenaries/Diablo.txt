@@ -1,9 +1,0 @@
-Name: Diablo
-Card type: Mercenary
-Role: Fighter
-Rarity: Legendary
-Minion type: Demon
-Faction: None
-mercenaryId: 102
-equipments: [{'Name': 'Magma Horns 4', 'Card type': 'Equipment', 'Text': 'Apocalypse deals 6 more damage.'}, {'Name': 'Claws of Terror 4', 'Card type': 'Equipment', 'Text': 'Passive: +5 Attack. Doom\xa0Charge slows the enemy by (3)\xa0Speed\xa0more.'}, {'Name': 'Black Soulstone 4', 'Card type': 'Equipment', 'Text': 'Passive: After a character dies, this Merc gains\xa0+10\xa0Health.'}]
-abilities: [{'Name': 'Doom Charge 5', 'Card type': 'Ability', 'Speed': '6', 'Cooldown': None, 'Spell school': None, 'Text': 'Attack an enemy. Its next ability is (5) Speed slower.'}, {'Name': 'Fire Stomp 5', 'Card type': 'Ability', 'Speed': '6', 'Cooldown': '1', 'Spell school': 'Fire', 'Text': "Deal 6 damage to all enemies. Repeat for each enemy that hasn't acted yet."}, {'Name': 'Apocalypse 5', 'Card type': 'Ability', 'Speed': '6', 'Cooldown': '1', 'Spell school': 'Fire', 'Text': 'Choose an enemy to take Critical Damage from all Roles this turn. Deal 12 damage to them.'}]

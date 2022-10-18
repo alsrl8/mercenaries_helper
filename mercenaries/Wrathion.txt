@@ -1,9 +1,0 @@
-Name: Wrathion
-Card type: Mercenary
-Role: Fighter
-Rarity: Epic
-Minion type: Human
-Faction: Alliance
-mercenaryId: 252
-equipments: [{'Name': 'Chimera of Fear 4', 'Card type': 'Equipment', 'Text': 'Creeping Madness also makes the enemy (4) Speed slower.'}, {'Name': 'Black Dragon Scales 4', 'Card type': 'Equipment', 'Text': 'Tail Swipe also applies Bleed (10).'}, {'Name': 'Horn of Wrathion 4', 'Card type': 'Equipment', 'Text': 'True Form has no cooldown and also grants +6 Attack.'}]
-abilities: [{'Name': 'Creeping Madness 5', 'Card type': 'Ability', 'Speed': '4', 'Cooldown': None, 'Spell school': 'Fel', 'Text': 'Attack an enemy. Next turn they must use a different ability or take 25 damage.'}, {'Name': 'Tail Swipe 5', 'Card type': 'Ability', 'Speed': '6', 'Cooldown': None, 'Spell school': 'Shadow', 'Text': 'Deal 15 damage to an enemy. Deal 5 damage to all enemies to the right or left of it.'}, {'Name': 'True Form 5', 'Card type': 'Ability', 'Speed': '3', 'Cooldown': '2', 'Spell school': None, 'Text': 'Become a Dragon. Gain +0 Health (increased by damage dealt by this Merc). (Transform\xa0into\xa0Fel\xa0Reign\xa05.)'}]

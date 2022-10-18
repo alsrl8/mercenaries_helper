@@ -1,9 +1,0 @@
-Name: Khadgar
-Card type: Mercenary
-Role: Caster
-Rarity: Epic
-Minion type: Human
-Faction: Alliance
-mercenaryId: 409
-equipments: [{'Name': "Bakin' Bacon 4", 'Card type': 'Equipment', 'Text': 'Start of Game: Upgrade Hearthfire. Khadgar gains +8 Health.'}, {'Name': 'Bitter Chill 4', 'Card type': 'Equipment', 'Text': 'Start of Game:  Upgrade Blizzard and it Refreshes (1),'}, {'Name': 'Boon of Atiesh 4', 'Card type': 'Equipment', 'Text': 'Archmage Khadgar has an extra +3 Fire, Frost, and Arcane Damage.'}]
-abilities: [{'Name': 'Arcane Surge 5', 'Card type': 'Ability', 'Speed': '6', 'Cooldown': None, 'Spell school': 'Arcane', 'Text': 'Deal 16 damage. Upgrade Blizzard to Root all enemies.'}, {'Name': 'Blizzard 5', 'Card type': 'Ability', 'Speed': '5', 'Cooldown': '1', 'Spell school': 'Frost', 'Text': 'Deal 14 damage to all enemies. Upgrade Hearthfire to grant +5 Attack.'}, {'Name': 'Hearthfire 5', 'Card type': 'Ability', 'Speed': '2', 'Cooldown': None, 'Spell school': 'Fire', 'Text': 'Give your characters +12 Health. Upgrade Arcane Surge to be (2) Speed.'}]

@@ -1,9 +1,0 @@
-Name: Varden Dawngrasp
-Card type: Mercenary
-Role: Caster
-Rarity: Rare
-Minion type: Blood Elf
-Faction: Horde
-mercenaryId: 38
-equipments: [{'Name': 'Potion of Ice 4', 'Card type': 'Equipment', 'Text': 'Flurry deals 4 more damage.'}, {'Name': 'Band of Frost 4', 'Card type': 'Equipment', 'Text': 'Passive: After you Freeze an enemy, gain +3\xa0Frost\xa0Damage.'}, {'Name': 'Chilling Amulet 4', 'Card type': 'Equipment', 'Text': 'Deathrattle: Deal 14 Frost damage to all enemies and Freeze a random enemy.'}]
-abilities: [{'Name': 'Flurry 5', 'Card type': 'Ability', 'Speed': '5', 'Cooldown': None, 'Spell school': 'Frost', 'Text': 'Shoot three missiles at random enemies that deal 7 damage each and slow for (2) Speed next turn.'}, {'Name': 'Cold Snap 5', 'Card type': 'Ability', 'Speed': '6', 'Cooldown': '1', 'Spell school': 'Frost', 'Text': 'Deal 8 damage to all enemies. Deathblow: Freezeall enemies.'}, {'Name': 'Ice Lance 5', 'Card type': 'Ability', 'Speed': '5', 'Cooldown': '2', 'Spell school': 'Frost', 'Text': 'Freeze a character this turn. If it was already Frozen, deal\xa025\xa0damage\xa0instead.'}]
