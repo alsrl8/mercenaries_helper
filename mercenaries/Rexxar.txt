@@ -1,9 +1,0 @@
-Name: Rexxar
-Card type: Mercenary
-Role: Fighter
-Rarity: Legendary
-Minion type: Half-Orc
-Faction: Horde
-mercenaryId: 1
-equipments: [{'Name': 'Swiftfeather Bow 4', 'Card type': 'Equipment', 'Text': 'Kill Command is (4) Speed faster.'}, {'Name': "Huntsman's Rifle 4", 'Card type': 'Equipment', 'Text': "Passive: At the start of each turn, deal 10 damage to all enemies if you've summoned all 3 Animal Companions this game."}, {'Name': "Mama Bear's Claws 4", 'Card type': 'Equipment', 'Text': 'Passive: Whenever you summon a Beast, give it +4/+4.'}]
-abilities: [{'Name': 'Kill Command 5', 'Card type': 'Ability', 'Speed': '5', 'Cooldown': None, 'Spell school': None, 'Text': 'Deal 10 damage. If you control a Beast, deal\xa016\xa0damage\xa0instead.'}, {'Name': 'Animal Companion 5', 'Card type': 'Ability', 'Speed': '4', 'Cooldown': None, 'Spell school': None, 'Text': 'Choose\xa0a Beast\xa0Companion. Summon it.'}, {'Name': 'Explosive Shot 5', 'Card type': 'Ability', 'Speed': '5', 'Cooldown': '1', 'Spell school': 'Fire', 'Text': 'Deal 20 damage to an enemy and 12 to adjacent ones.'}]

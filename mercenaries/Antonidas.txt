@@ -1,9 +1,0 @@
-Name: Antonidas
-Card type: Mercenary
-Role: Caster
-Rarity: Epic
-Minion type: Human
-Faction: Alliance
-mercenaryId: 98
-equipments: [{'Name': 'Cindercore Staff 4', 'Card type': 'Equipment', 'Text': 'Fireball deals 4 more damage.'}, {'Name': 'Circlet of Flame 4', 'Card type': 'Equipment', 'Text': 'Flamestrike deals 5 more damage.'}, {'Name': 'Searing Pendant 4', 'Card type': 'Equipment', 'Text': 'Fireball Storm casts Fireball at 2 random enemies, but has +1 Cooldown.'}]
-abilities: [{'Name': 'Fireball 5', 'Card type': 'Ability', 'Speed': '4', 'Cooldown': None, 'Spell school': 'Fire', 'Text': 'Deal 12 damage.'}, {'Name': 'Flamestrike 5', 'Card type': 'Ability', 'Speed': '7', 'Cooldown': '1', 'Spell school': 'Fire', 'Text': 'Deal 14 damage to all enemies.'}, {'Name': 'Fireball Storm 5', 'Card type': 'Ability', 'Speed': '7', 'Cooldown': '1', 'Spell school': 'Fire', 'Text': "Cast Fireball 5 at 1 random enemy. Repeat for each Fire ability you've cast this turn."}]

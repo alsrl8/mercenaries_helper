@@ -1,9 +1,0 @@
-Name: Cookie, the Cook
-Card type: Mercenary
-Role: Caster
-Rarity: Rare
-Minion type: Murloc
-Faction: None
-mercenaryId: 149
-equipments: [{'Name': 'Seasoned Pan 4', 'Card type': 'Equipment', 'Text': 'Fish Feast gives +5 Attack as well.'}, {'Name': 'Iron Ladle 4', 'Card type': 'Equipment', 'Text': "Cookie's Cooking restores an additional 5 Health."}, {'Name': 'Appetizers 4', 'Card type': 'Equipment', 'Text': 'Start of Game: Give friendly characters +9 Health.'}]
-abilities: [{'Name': 'Fish Feast 5', 'Card type': 'Ability', 'Speed': '2', 'Cooldown': None, 'Spell school': 'Nature', 'Text': 'Deal 10 damage to an enemy. Deathblow: Give +15 Health to all friendly characters.'}, {'Name': "Cookie's Cooking 5", 'Card type': 'Ability', 'Speed': '5', 'Cooldown': '1', 'Spell school': 'Nature', 'Text': 'Bleed (10) to all enemies. Restore 10 Health to friendly Murlocs and Pirates.'}, {'Name': 'Go Fish! 5', 'Card type': 'Ability', 'Speed': '4', 'Cooldown': '1', 'Spell school': 'Nature', 'Text': 'Summon a random fish for your opponent, with a Deathrattle that benefits you.'}]

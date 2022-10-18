@@ -1,9 +1,0 @@
-Name: Malfurion Stormrage
-Card type: Mercenary
-Role: Protector
-Rarity: Legendary
-Minion type: Night Elf
-Faction: Alliance
-mercenaryId: 64
-equipments: [{'Name': 'Forest Medallion 4', 'Card type': 'Equipment', 'Text': 'Entangling Roots also slows the enemies next ability by (4) Speed.'}, {'Name': 'Briarthorn 4', 'Card type': 'Equipment', 'Text': "Archdruid's Call deals 5 more damage."}, {'Name': 'Liferoot Staff 4', 'Card type': 'Equipment', 'Text': 'Passive: Whenever you cast a Nature ability, restore 6 Health to your characters.'}]
-abilities: [{'Name': 'Cenarion Surge 5', 'Card type': 'Ability', 'Speed': '4', 'Cooldown': None, 'Spell school': 'Nature', 'Text': "Deal 10 damage. Your character's Nature abilities are (3) Speed faster next turn."}, {'Name': 'Entangling Roots 5', 'Card type': 'Ability', 'Speed': '5', 'Cooldown': '1', 'Spell school': 'Nature', 'Text': 'Deal 16 damage to an enemy and Root it.'}, {'Name': "Archdruid's Call 5", 'Card type': 'Ability', 'Speed': '8', 'Cooldown': '1', 'Spell school': 'Nature', 'Text': 'Choose One - Deal 12 damage to all enemies; or restore 24 Health to your characters.'}]

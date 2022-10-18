@@ -1,9 +1,0 @@
-Name: Baine Bloodhoof
-Card type: Mercenary
-Role: Protector
-Rarity: Rare
-Minion type: Tauren
-Faction: Horde
-mercenaryId: 371
-equipments: [{'Name': 'Totemic Mastery 4', 'Card type': 'Equipment', 'Text': 'Battlecry: Summon a 0/10 Grounding Totem.'}, {'Name': 'Herbal Ancestry 4', 'Card type': 'Equipment', 'Text': 'Chain Heal repeats on 2 additional friendly characters, but has +1\xa0Cooldown.'}, {'Name': "Chieftain's Feather 4", 'Card type': 'Equipment', 'Text': 'Passive: +7 Health. +4 Heal Power.'}]
-abilities: [{'Name': 'Mulgore Might 5', 'Card type': 'Ability', 'Speed': '7', 'Cooldown': None, 'Spell school': None, 'Text': 'Attack an enemy and gain +2 Heal Power. Nature\xa0Combo: Restore 15 Health to this Merc.'}, {'Name': 'Chain Heal 5', 'Card type': 'Ability', 'Speed': '3', 'Cooldown': '1', 'Spell school': 'Nature', 'Text': 'Restore 20 Health to a friendly character. Repeat this on up to 2 damaged adjacent characters.'}, {'Name': "Earthmother's Fury 5", 'Card type': 'Ability', 'Speed': '10', 'Cooldown': '2', 'Spell school': 'Nature', 'Text': 'Deal 25 damage to all enemies. Deathblow: Set the Cooldown on all enemy abilities to their original value.'}]

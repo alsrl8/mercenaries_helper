@@ -1,9 +1,0 @@
-Name: Lord Slitherspear
-Card type: Mercenary
-Role: Fighter
-Rarity: Rare
-Minion type: Naga
-Faction: None
-mercenaryId: 305
-equipments: [{'Name': 'Unleashed Eel 4', 'Card type': 'Equipment', 'Text': 'Naga summoned by Slithering Rage gain +5 Attack.'}, {'Name': 'Fishy Cauldron 4', 'Card type': 'Equipment', 'Text': 'Passive: +4 Attack. This Merc always deals Critical\xa0Damageto Murlocs.'}, {'Name': 'Sharp Idea 4', 'Card type': 'Equipment', 'Text': 'Passive: After an enemy minion is summoned, Refresh (2) Enough of this Trash!'}]
-abilities: [{'Name': 'Slithering Rage 5', 'Card type': 'Ability', 'Speed': '6', 'Cooldown': None, 'Spell school': None, 'Text': 'Attack an enemy. Summon a 10/18 Naga with Divine Shield and Rush.'}, {'Name': 'You Lift Bro? 5', 'Card type': 'Ability', 'Speed': '5', 'Cooldown': None, 'Spell school': None, 'Text': 'Gain +5 Attack. If you control another Naga, gain +5 more Attack. Attack an enemy.'}, {'Name': 'Enough of this Trash! 5', 'Card type': 'Ability', 'Speed': '4', 'Cooldown': '2', 'Spell school': None, 'Text': 'Destroy a minion without triggering its Deathrattle. Deal damage equal to its Attack to all enemies.'}]

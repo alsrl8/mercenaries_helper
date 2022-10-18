@@ -1,9 +1,0 @@
-Name: Uther Lightbringer
-Card type: Mercenary
-Role: Protector
-Rarity: Legendary
-Minion type: Human
-Faction: Alliance
-mercenaryId: 94
-equipments: [{'Name': 'Lightbringer 4', 'Card type': 'Equipment', 'Text': 'Hammer of Justice deals 4 more damage and slows the target by (2) Speed more.'}, {'Name': 'Gleaming Pauldrons 4', 'Card type': 'Equipment', 'Text': 'Avenging Wrath deals 8\xa0more\xa0damage.'}, {'Name': 'Libram of Sacrifice 4', 'Card type': 'Equipment', 'Text': 'Deathrattle: Give your characters Divine Shield.'}]
-abilities: [{'Name': 'Hammer of Justice 5', 'Card type': 'Ability', 'Speed': '5', 'Cooldown': None, 'Spell school': 'Holy', 'Text': 'Deal 15 damage to an enemy. Its next ability is (3) Speed slower.'}, {'Name': 'Blessing of Protection 5', 'Card type': 'Ability', 'Speed': '1', 'Cooldown': None, 'Spell school': 'Holy', 'Text': 'Restore 14 Health to a friendly character and give them Taunt this turn.'}, {'Name': 'Avenging Wrath 5', 'Card type': 'Ability', 'Speed': '8', 'Cooldown': '1', 'Spell school': 'Holy', 'Text': "Deal 14 damage to a random enemy. Repeat for each Holy ability you've cast this turn."}]

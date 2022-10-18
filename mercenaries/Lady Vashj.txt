@@ -1,9 +1,0 @@
-Name: Lady Vashj
-Card type: Mercenary
-Role: Fighter
-Rarity: Epic
-Minion type: Naga
-Faction: None
-mercenaryId: 289
-equipments: [{'Name': 'Icy Grasp 4', 'Card type': 'Equipment', 'Text': 'Passive: Your Naga take 4 less damage until they act each turn.'}, {'Name': "Witch's Mantle 4", 'Card type': 'Equipment', 'Text': 'Passive: Enemies affected by Bleed receive 5 less healing.'}, {'Name': 'Fel Cauldron 4', 'Card type': 'Equipment', 'Text': 'Reflex Shot gains +4 Fel Damage.'}]
-abilities: [{'Name': 'Electrify 5', 'Card type': 'Ability', 'Speed': '5', 'Cooldown': None, 'Spell school': 'Nature', 'Text': 'Deal 22 damage to an enemy. Damage is reduced by the speed of their action this turn.'}, {'Name': "Handmaiden's Poison 5", 'Card type': 'Ability', 'Speed': '4', 'Cooldown': None, 'Spell school': 'Nature', 'Text': 'Deal 5 damage to an enemy. Bleed (10).'}, {'Name': 'Reflex Shot 5', 'Card type': 'Ability', 'Speed': '5', 'Cooldown': '1', 'Spell school': 'Fel', 'Text': 'Deal 12 damage to all enemies. If they have already acted, deal Critical Damage.'}]

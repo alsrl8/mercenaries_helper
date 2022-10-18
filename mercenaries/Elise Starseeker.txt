@@ -1,9 +1,0 @@
-Name: Elise Starseeker
-Card type: Mercenary
-Role: Fighter
-Rarity: Epic
-Minion type: Night Elf
-Faction: Alliance
-mercenaryId: 383
-equipments: [{'Name': 'Talon Trinket 4', 'Card type': 'Equipment', 'Text': 'Starseeker also gives +5 Attack.'}, {'Name': 'Oasis Canteen 4', 'Card type': 'Equipment', 'Text': 'Passive: Give your Explorers +4/+4 at the end of each turn.'}, {'Name': "Monkey's Paw 4", 'Card type': 'Equipment', 'Text': 'Start of Game: Advance the Quest for the Golden Monkey 2 steps. Elise loses 20 Health.'}]
-abilities: [{'Name': 'Starseeker 5', 'Card type': 'Ability', 'Speed': '6', 'Cooldown': None, 'Spell school': 'Nature', 'Text': 'Gain +8 Health and Attack an enemy. Nature Combo: Deal damage equal to your Attack instead.'}, {'Name': 'Guiding Path 5', 'Card type': 'Ability', 'Speed': '3', 'Cooldown': '1', 'Spell school': 'Nature', 'Text': 'Restore 13 health to all friendly characters. Advance the Golden Monkey one step.'}, {'Name': 'Quest for the Golden Monkey 5', 'Card type': 'Ability', 'Speed': '1', 'Cooldown': None, 'Spell school': None, 'Text': 'Advance through a series of\xa05\xa0abilities to uncover the\xa0Golden Monkey! (Transforms\xa0at\xa0Start\xa0of\xa0Game)'}]

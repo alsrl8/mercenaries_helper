@@ -1,9 +1,0 @@
-Name: Grommash Hellscream
-Card type: Mercenary
-Role: Protector
-Rarity: Legendary
-Minion type: Orc
-Faction: Horde
-mercenaryId: 6
-equipments: [{'Name': 'Gorehowl 4', 'Card type': 'Equipment', 'Text': 'Blood\xa0Fervor\xa0also\xa0restores 20\xa0Health\xa0on\xa0Deathblow.'}, {'Name': 'Halting Sash 4', 'Card type': 'Equipment', 'Text': 'Staggering Slam deals 5 more damage.'}, {'Name': 'Bloodthirst Amulet 4', 'Card type': 'Equipment', 'Text': 'Battlefury gives +4 Attack more.'}]
-abilities: [{'Name': 'Blood Fervor 5', 'Card type': 'Ability', 'Speed': '8', 'Cooldown': None, 'Spell school': None, 'Text': 'Attack an enemy. Deathblow: Gain +15 Attack.'}, {'Name': 'Staggering Slam 5', 'Card type': 'Ability', 'Speed': '2', 'Cooldown': None, 'Spell school': None, 'Text': 'Deal 10 damage to an enemy. Its next ability is (6) Speed slower.'}, {'Name': 'Battlefury 5', 'Card type': 'Ability', 'Speed': '6', 'Cooldown': '1', 'Spell school': None, 'Text': 'Gain +8 Attack. Attack an enemy and one of its neighbors.'}]

@@ -1,9 +1,0 @@
-Name: Xuen
-Card type: Mercenary
-Role: Fighter
-Rarity: Epic
-Minion type: Beast
-Faction: None
-mercenaryId: 282
-equipments: [{'Name': 'Spear of Xuen 4', 'Card type': 'Equipment', 'Text': "Equalizing Strike sets this Merc's Attack to an additional 4 higher than the target."}, {'Name': 'Celestial Chestplate 4', 'Card type': 'Equipment', 'Text': 'Pounce also steals 5 Attack from a random enemy.'}, {'Name': 'Charged Gauntlets 4', 'Card type': 'Equipment', 'Text': 'Tiger Lightning gives an additional +4 Attack.'}]
-abilities: [{'Name': 'Equalizing Strike 5', 'Card type': 'Ability', 'Speed': '5', 'Cooldown': None, 'Spell school': None, 'Text': "Choose an enemy. Set this Merc's Attack to 5 higher than the target and Attack them."}, {'Name': 'Pounce 5', 'Card type': 'Ability', 'Speed': '4', 'Cooldown': None, 'Spell school': None, 'Text': 'Borrow 5 Attack from all friendly characters for 2 turns. Attack an enemy.'}, {'Name': 'Tiger Lightning 5', 'Card type': 'Ability', 'Speed': '6', 'Cooldown': '1', 'Spell school': 'Nature', 'Text': "Deal this Merc's Attack damage to a random enemy. Deathblow: Gain +5 Attack and repeat this."}]

@@ -1,9 +1,0 @@
-Name: Edwin, Defias Kingpin
-Card type: Mercenary
-Role: Fighter
-Rarity: Legendary
-Minion type: Pirate
-Faction: None
-mercenaryId: 159
-equipments: [{'Name': 'Black Flag 4', 'Card type': 'Equipment', 'Text': 'Passive: Your other Pirates are (4) Speed faster.'}, {'Name': 'Round of Drinks 4', 'Card type': 'Equipment', 'Text': 'Assisted Strike is (3) Speed faster and always has Immune while Attacking.'}, {'Name': 'Even Shares 4', 'Card type': 'Equipment', 'Text': "Kingpin's Bounty restores 15 more Health and affects all friendly characters."}]
-abilities: [{'Name': "Assassin's Blade 5", 'Card type': 'Ability', 'Speed': '5', 'Cooldown': None, 'Spell school': None, 'Text': "Attack an enemy. If it hasn't acted yet this turn, gain +10 Health and Attack it again."}, {'Name': 'Assisted Strike 5', 'Card type': 'Ability', 'Speed': '5', 'Cooldown': '1', 'Spell school': None, 'Text': 'Gain +5 Attack for each friendly Pirate and Attack a random enemy. Combo: Gain Immune while Attacking this turn.'}, {'Name': "Kingpin's Bounty 5", 'Card type': 'Ability', 'Speed': '4', 'Cooldown': '1', 'Spell school': None, 'Text': 'Deal 10 damage to an enemy. Repeat for each other Pirate\xa0you\xa0control. Deathblow:\xa0Restore\xa025\xa0Health.'}]

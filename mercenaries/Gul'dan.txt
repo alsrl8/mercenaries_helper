@@ -1,9 +1,0 @@
-Name: Gul'dan
-Card type: Mercenary
-Role: Caster
-Rarity: Legendary
-Minion type: Orc
-Faction: Horde
-mercenaryId: 60
-equipments: [{'Name': 'Blood of Mannoroth 4', 'Card type': 'Equipment', 'Text': 'Rain of Destruction deals 4 more damage.'}, {'Name': 'Amulet of Souls 4', 'Card type': 'Equipment', 'Text': 'Siphon Life deals an additional 4 damage.'}, {'Name': 'Staff of Chaos 4', 'Card type': 'Equipment', 'Text': 'Passive: After an Orc   or Demon dies, gain +4 Fel Damage.'}]
-abilities: [{'Name': 'Fel Bolt 5', 'Card type': 'Ability', 'Speed': '10', 'Cooldown': None, 'Spell school': 'Fel', 'Text': 'Deal 20 damage.'}, {'Name': 'Rain of Destruction 5', 'Card type': 'Ability', 'Speed': '8', 'Cooldown': None, 'Spell school': 'Fel', 'Text': "Deal 14 damage to a random enemy. Repeat for each Fel ability you've cast this turn."}, {'Name': 'Siphon Life 5', 'Card type': 'Ability', 'Speed': '6', 'Cooldown': '1', 'Spell school': 'Shadow', 'Text': 'Deal 12 damage. Restore that much Health to all friendly Orcs and Demons.'}]

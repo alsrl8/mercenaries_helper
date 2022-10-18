@@ -1,9 +1,0 @@
-Name: Nemsy Necrofizzle
-Card type: Mercenary
-Role: Caster
-Rarity: Rare
-Minion type: Gnome
-Faction: Alliance
-mercenaryId: 403
-equipments: [{'Name': 'Bog Moss 4', 'Card type': 'Equipment', 'Text': 'Boggy gains "Adjacent characters take 7 less damage."'}, {'Name': 'Fishing Lure 4', 'Card type': 'Equipment', 'Text': 'Boggy gains +10 Health and "After this is Attacked, Attack a random enemy."'}, {'Name': '"Fresh" Peaches 4', 'Card type': 'Equipment', 'Text': 'Boggy gains: "At the end of the turn, give your Taunt characters +12\xa0Health."'}]
-abilities: [{'Name': 'Boggy Blast 5', 'Card type': 'Ability', 'Speed': '7', 'Cooldown': None, 'Spell school': 'Nature', 'Text': 'Deal 15 damage. Summon a 10/25 Boggy with Taunt. If you already have Boggy, give it +15 Health instead.'}, {'Name': 'Erupting Fungus 5', 'Card type': 'Ability', 'Speed': '4', 'Cooldown': None, 'Spell school': 'Nature', 'Text': 'Choose a friendly character. After it survives damage this turn, it deals 18 damage to a random enemy.'}, {'Name': 'Bogonomics 5', 'Card type': 'Ability', 'Speed': '3', 'Cooldown': None, 'Spell school': 'Nature', 'Text': 'Give a friendly character +5/+10 and Taunt. If you have Boggy, give it +5/+5.'}]

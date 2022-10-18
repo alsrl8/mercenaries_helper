@@ -1,9 +1,0 @@
-Name: Brightwing
-Card type: Mercenary
-Role: Caster
-Rarity: Epic
-Minion type: Dragon
-Faction: None
-mercenaryId: 24
-equipments: [{'Name': "Brightwing's Necklace 4", 'Card type': 'Equipment', 'Text': 'Battlecry: Give the lowest Health Merc on your Bench +15 Health.'}, {'Name': "Pixie's Pouch 4", 'Card type': 'Equipment', 'Text': 'Pixie Dust restores 8 more Health.'}, {'Name': "Brightwing's Ring 4", 'Card type': 'Equipment', 'Text': 'Bench: After a friendly Merc dies, summon this and cast Faerie Breath 5 at a random enemy immediately .'}]
-abilities: [{'Name': 'Faerie Breath 5', 'Card type': 'Ability', 'Speed': '3', 'Cooldown': None, 'Spell school': 'Nature', 'Text': 'Deal 12 damage. Give your lowest Health Merc on your bench +3/+10.'}, {'Name': 'Pixie Dust 5', 'Card type': 'Ability', 'Speed': '4', 'Cooldown': '1', 'Spell school': 'Nature', 'Text': 'Restore 18 Health to all your characters.'}, {'Name': 'Phase Shift 5', 'Card type': 'Ability', 'Speed': '4', 'Cooldown': '1', 'Spell school': 'Nature', 'Text': 'Restore 25 Health to this Merc. If you control another Merc, return this to the bench.'}]

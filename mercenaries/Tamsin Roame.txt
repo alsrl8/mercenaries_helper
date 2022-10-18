@@ -1,9 +1,0 @@
-Name: Tamsin Roame
-Card type: Mercenary
-Role: Caster
-Rarity: Rare
-Minion type: Undead
-Faction: Horde
-mercenaryId: 45
-equipments: [{'Name': 'Shadow Rune 4', 'Card type': 'Equipment', 'Text': 'Shadow Bolt deals 4 more damage.'}, {'Name': 'Void Stone 4', 'Card type': 'Equipment', 'Text': 'Void Consumer has +4/+8.'}, {'Name': 'Last Rites 4', 'Card type': 'Equipment', 'Text': 'Deathrattle: Summon a 25/25 Void Guard with Taunt.'}]
-abilities: [{'Name': 'Shadow Bolt 5', 'Card type': 'Ability', 'Speed': '5', 'Cooldown': None, 'Spell school': 'Shadow', 'Text': 'Deal 13 damage.'}, {'Name': 'Void Consumer 5', 'Card type': 'Ability', 'Speed': '4', 'Cooldown': '1', 'Spell school': None, 'Text': 'Taunt. After you cast a Shadow ability, gain +3/+5.'}, {'Name': 'Veil of Shadows 5', 'Card type': 'Ability', 'Speed': '2', 'Cooldown': '1', 'Spell school': 'Shadow', 'Text': "Gain +5 Shadow Damage. Enemies can't heal this turn."}]

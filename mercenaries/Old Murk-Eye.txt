@@ -1,9 +1,0 @@
-Name: Old Murk-Eye
-Card type: Mercenary
-Role: Fighter
-Rarity: Rare
-Minion type: Murloc
-Faction: None
-mercenaryId: 40
-equipments: [{'Name': 'Bubble Wand 4', 'Card type': 'Equipment', 'Text': 'Finvasion also gives this Merc +5 Attack and Divine Shield.'}, {'Name': "Navigator's Amulet 4", 'Card type': 'Equipment', 'Text': 'Felfin Navigator gives +5/+5 more.'}, {'Name': 'Primordial Fin 4', 'Card type': 'Equipment', 'Text': 'Giantfin gains +8 Attack and Divine Shield.'}]
-abilities: [{'Name': 'Finvasion 5', 'Card type': 'Ability', 'Speed': '5', 'Cooldown': None, 'Spell school': None, 'Text': 'Attack an enemy. Your other Murlocs Attack it.'}, {'Name': 'Felfin Navigator 5', 'Card type': 'Ability', 'Speed': '4', 'Cooldown': '1', 'Spell school': None, 'Text': 'Battlecry: Give your other Murlocs +5/+5.'}, {'Name': 'Giantfin 5', 'Card type': 'Ability', 'Speed': '5', 'Cooldown': '1', 'Spell school': None, 'Text': 'Charge'}]

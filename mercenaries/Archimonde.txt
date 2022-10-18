@@ -1,9 +1,0 @@
-Name: Archimonde
-Card type: Mercenary
-Role: Caster
-Rarity: Epic
-Minion type: Demon
-Faction: None
-mercenaryId: 398
-equipments: [{'Name': 'The Infernal Codex 4', 'Card type': 'Equipment', 'Text': 'Finger of Death gains "Deathblow: Gain +4 Fel Damage."'}, {'Name': 'Edict of Argus 4', 'Card type': 'Equipment', 'Text': "Doomfire's Fel Weakness is permanent."}, {'Name': "Archimonde's Gold Coin 4", 'Card type': 'Equipment', 'Text': 'Passive: After a Demon dies, restore 10 Health to friendly Demons.'}]
-abilities: [{'Name': 'Finger of Death 5', 'Card type': 'Ability', 'Speed': '4', 'Cooldown': None, 'Spell school': 'Fel', 'Text': 'Deal 12 damage. Gain +3 Fel Damage.'}, {'Name': 'Rain of Chaos 5', 'Card type': 'Ability', 'Speed': '6', 'Cooldown': '1', 'Spell school': 'Fel', 'Text': 'Deal 18 damage to all enemies.Your Fel abilities are (3) Speed faster next turn.'}, {'Name': 'Doomfire 5', 'Card type': 'Ability', 'Speed': '3', 'Cooldown': '1', 'Spell school': 'Fel', 'Text': 'Give all enemies +5 Fel Weakness this turn. Deal 10 damage to them after they act.'}]

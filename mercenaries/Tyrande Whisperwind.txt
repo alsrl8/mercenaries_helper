@@ -1,9 +1,0 @@
-Name: Tyrande Whisperwind
-Card type: Mercenary
-Role: Fighter
-Rarity: Epic
-Minion type: Night Elf
-Faction: Alliance
-mercenaryId: 69
-equipments: [{'Name': "Elune's Charm 4", 'Card type': 'Equipment', 'Text': 'Arcane Shot deals 15 more damage if the enemy has already acted.'}, {'Name': 'Verdant Recurve 4', 'Card type': 'Equipment', 'Text': 'Arcane Salvo deals 4 more damage.'}, {'Name': 'Band of the Wilds 4', 'Card type': 'Equipment', 'Text': "Elune's Grace also affects Nature abilities."}]
-abilities: [{'Name': 'Arcane Shot 5', 'Card type': 'Ability', 'Speed': '7', 'Cooldown': None, 'Spell school': 'Arcane', 'Text': 'Deal 14 damage to an enemy.'}, {'Name': 'Arcane Salvo 5', 'Card type': 'Ability', 'Speed': '5', 'Cooldown': None, 'Spell school': 'Arcane', 'Text': 'Deal 12 damage to two random enemies. If any die, repeat this.'}, {'Name': "Elune's Grace 5", 'Card type': 'Ability', 'Speed': '4', 'Cooldown': '1', 'Spell school': 'Arcane', 'Text': 'Your next Arcane ability casts twice and is permanently (3) Speed faster.'}]

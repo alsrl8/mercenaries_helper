@@ -1,9 +1,0 @@
-Name: Cariel Roame
-Card type: Mercenary
-Role: Protector
-Rarity: Rare
-Minion type: Human
-Faction: Alliance
-mercenaryId: 18
-equipments: [{'Name': 'Hammer of Dawn 4', 'Card type': 'Equipment', 'Text': "Crusader's Blow restores Health to your other characters as well."}, {'Name': 'Tome of Judgement 4', 'Card type': 'Equipment', 'Text': 'Seal of Light gives an additional +4 Attack.'}, {'Name': 'Tome of Light 4', 'Card type': 'Equipment', 'Text': 'Passive: While this Merc has Taunt, it has +12 Attack.'}]
-abilities: [{'Name': "Crusader's Blow 5", 'Card type': 'Ability', 'Speed': '6', 'Cooldown': None, 'Spell school': 'Holy', 'Text': 'Attack an enemy. Deathblow: Restore 60 Health to this Merc.'}, {'Name': 'Taunt 5', 'Card type': 'Ability', 'Speed': '1', 'Cooldown': None, 'Spell school': None, 'Text': 'Restore 12 Health to this Merc and gain Tauntfor\xa03\xa0turns.'}, {'Name': 'Seal of Light 5', 'Card type': 'Ability', 'Speed': '4', 'Cooldown': '1', 'Spell school': 'Holy', 'Text': 'Choose a friendly character. Give it +6 Attack and restore 15 Health.'}]

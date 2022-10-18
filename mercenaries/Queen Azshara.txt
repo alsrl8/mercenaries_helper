@@ -1,9 +1,0 @@
-Name: Queen Azshara
-Card type: Mercenary
-Role: Caster
-Rarity: Legendary
-Minion type: Naga
-Faction: None
-mercenaryId: 290
-equipments: [{'Name': "Xal'atath 4", 'Card type': 'Equipment', 'Text': 'Passive: Whenever you cast a Shadow ability, restore 6 Health to your characters.'}, {'Name': 'Tidestone of Golganneth 4', 'Card type': 'Equipment', 'Text': 'Passive: This Merc has +1/+6 for each other friendly Naga in play or on your Bench.'}, {'Name': "Sharas'dal, The Queen's Scepter 4", 'Card type': 'Equipment', 'Text': 'Passive: The first time this Merc dies, steal 6 health from all Characters in play and return to life.'}]
-abilities: [{'Name': 'Shifting Tides 5', 'Card type': 'Ability', 'Speed': '10', 'Cooldown': None, 'Spell school': 'Arcane', 'Text': 'Deal 18 damage. (Damage increased by +3 for each Spell School cast\xa0this game.)'}, {'Name': 'Mage Paramount 5', 'Card type': 'Ability', 'Speed': None, 'Cooldown': '1', 'Spell school': 'Arcane', 'Text': 'Gain +3 Spell Damage.Whenever an enemy casts an ability, gain +4 Resistanceto its Spell School this turn.'}, {'Name': 'Vainglorious Rebuke 5', 'Card type': 'Ability', 'Speed': '3', 'Cooldown': '1', 'Spell school': 'Shadow', 'Text': 'Deal 10 damage to all enemies. (Damage is increased by Speed.) This slows by (2) Speed this turn whenever another ability is cast.'}]

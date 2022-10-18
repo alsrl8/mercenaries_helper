@@ -1,9 +1,0 @@
-Name: Medivh
-Card type: Mercenary
-Role: Protector
-Rarity: Legendary
-Minion type: Human
-Faction: Alliance
-mercenaryId: 35
-equipments: [{'Name': 'Unstable Runes 4', 'Card type': 'Equipment', 'Text': 'Battlecry: Summon a 0/10 Arcane Ward with "Counter the first ability used each turn."'}, {'Name': "Medivh's Locket 4", 'Card type': 'Equipment', 'Text': 'After you summon a minion, give it +4 Arcane Damage.'}, {'Name': 'Staff of Atiesh 4', 'Card type': 'Equipment', 'Text': 'Start of Game: Give friendly Casters +5/+10.'}]
-abilities: [{'Name': 'Arcane Rift 5', 'Card type': 'Ability', 'Speed': '5', 'Cooldown': None, 'Spell school': 'Arcane', 'Text': 'Deal 12 damage. Your next Arcane ability this turn deals Critical\xa0Damage.'}, {'Name': 'Mage Guard 5', 'Card type': 'Ability', 'Speed': '3', 'Cooldown': None, 'Spell school': 'Arcane', 'Text': 'Give a friendly character +15 Health and Taunt this turn. After it is Attacked this turn, it gains +3 Arcane Damage.'}, {'Name': 'Summon Raven Familiar 5', 'Card type': 'Ability', 'Speed': '6', 'Cooldown': '1', 'Spell school': None, 'Text': 'Summon a Raven Familiar with "+10 Spell Resistance" and the "Birds of a Feather 5" ability.'}]
