@@ -15,6 +15,7 @@ class Mercenary(Base):
     faction = Column(String)
 
     equipments = relationship("Equipment", back_populates="owner")
+    abilities = relationship("Ability", back_populates="owner")
 
 
 class Equipment(Base):
@@ -26,3 +27,17 @@ class Equipment(Base):
     owner_id = Column(Integer, ForeignKey("mercenaries.id"))
 
     owner = relationship("Mercenary", back_populates="equipments")
+
+
+class Ability(Base):
+    __tablename__ = "abilities"
+
+    id = Column(Integer, primary_key=True, index=True)
+    name = Column(String, unique=True, index=True)
+    speed = Column(Integer)
+    cooldown = Column(Integer)
+    spell_school = Column(String)
+    text = Column(String)
+    owner_id = Column(Integer, ForeignKey("mercenaries.id"))
+
+    owner = relationship("Mercenary", back_populates="abilities")
