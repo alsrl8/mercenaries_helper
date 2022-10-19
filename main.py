@@ -11,7 +11,7 @@ from sqlalchemy.orm import Session
 import utils
 from sql_app import crud, models, schemas
 from sql_app.database import SessionLocal, engine
-from sql_app.schemas import MercenaryCreate, EquipmentCreate
+from sql_app.schemas import MercenaryCreate, EquipmentCreate, AbilityCreate
 
 models.Base.metadata.create_all(bind=engine)
 app = FastAPI()
@@ -87,10 +87,24 @@ def store_all_mercenaries():
                 if not find_equipment:
                     db_equipment = EquipmentCreate(name=equipment['Name'], text=equipment['Text'])
                     crud.create_equipment(db=SessionLocal(), equipment=db_equipment)
+            abilities = mercenary['Abilities']
+            for ability in abilities:
+                find_ability = crud.get_ability(db=SessionLocal(), name=ability['Name'])
+                if not find_ability:
+                    db_ability = AbilityCreate(name=ability['Name'],
+                                               speed=ability['Speed'],
+                                               cooldown=ability['Cooldown'],
+                                               spell_school=ability['Spell school'],
+                                               text=ability['Text']
+                                               )
+                    crud.create_ability(db=SessionLocal(), ability=db_ability)
             create_mercenary = crud.create_mercenary(db=SessionLocal(), mercenary=db_mercenary)
             for equipment in equipments:
-                new_equipment = schemas.Equipment(name='', text='', id=0, owner_id=create_mercenary.id)
+                new_equipment = schemas.Equipment(id=0, name='', text='', owner_id=create_mercenary.id)
                 crud.update_equipment(db=SessionLocal(), name=equipment['Name'], new_equipment=new_equipment)
+            for ability in abilities:
+                new_ability = schemas.Ability(id=0, name='', speed=0, cooldown=0, spell_school='', text='', owner_id=create_mercenary.id)
+                crud.update_ability(db=SessionLocal(), name=ability['Name'], new_ability=new_ability)
 
 
 def str2bool(v):
