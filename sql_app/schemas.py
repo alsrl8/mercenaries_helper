@@ -1,13 +1,13 @@
 from pydantic import BaseModel
 from sql_app.enums import Role, Rarity, MinionType, Faction
-from typing import List
+from typing import List, Optional
 
 
 class AbilityBase(BaseModel):
     name: str
-    speed: int
-    cooldown: int
-    spell_school: str
+    speed: Optional[int] = 0
+    cooldown: Optional[int] = 0
+    spell_school: Optional[str] = ''
     text: str
 
 
