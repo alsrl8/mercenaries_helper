@@ -1,12 +1,12 @@
 import argparse
 from typing import List
-from tqdm import tqdm
 
-from fastapi import FastAPI, Depends, Request, Body, Form
+from fastapi import FastAPI, Depends, Request, Form
 from fastapi.responses import HTMLResponse
-from fastapi.templating import Jinja2Templates
 from fastapi.staticfiles import StaticFiles
+from fastapi.templating import Jinja2Templates
 from sqlalchemy.orm import Session
+from tqdm import tqdm
 
 import utils
 from sql_app import crud, models, schemas
@@ -52,7 +52,8 @@ def read_mercenary(request: Request, id: int = 0, name: str = '', db: Session = 
             'minion_type': mercenary.minion_type,
             'faction': mercenary.faction,
             'path': f'images/mercenaries/{mercenary.name}.png',
-            'equipments': mercenary.equipments
+            'equipments': mercenary.equipments,
+            'abilities': mercenary.abilities
             }
     return templates.TemplateResponse('mercenary.html', context=data)
 

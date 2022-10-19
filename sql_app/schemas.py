@@ -47,6 +47,7 @@ class MercenaryBase(BaseModel):
     minion_type: MinionType = MinionType.NONE
     faction: Faction = Faction.NONE
     equipments: List[Equipment] = []
+    abilities: List[Ability] = []
 
 
 class MercenaryCreate(MercenaryBase):
