@@ -53,3 +53,14 @@ class Faction(str, Enum):
     ALLIANCE = 'Alliance'
     HORDE = 'Horde'
     NONE = 'None'
+
+
+class SpellSchool(str, Enum):
+    ARCANE = 'Arcane'
+    ATTACK = 'Attack'
+    FEL = 'Fel'
+    FIRE = 'Fire'
+    FROST = 'Frost'
+    HOLY = 'Holy'
+    NATURE = 'Nature'
+    SHADOW = 'Shadow'
