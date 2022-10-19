@@ -69,7 +69,26 @@
             </td>
             <td>
                 {{ equipments[i].name }}<br>
-                {{ equipments[i].desc }}
+                {{ equipments[i].text }}
+            </td>
+        </tr>
+        {% endfor %}
+    </table>
+</div>
+<div style="float: left; width: 17.5%;" class="equipment">
+    <table class="mercenary" border="1" height="520" width="100%">
+        <tr>
+            <th colspan="3">Ability</th>
+        </tr>
+        {% for i in range(abilities|length) %}
+        {% set img_path = 'images/abilities/' + abilities[i].name | replace(':', '꞉') | replace('?', '') | replace('"', '') + '.png' %}
+        <tr>
+            <td width="50%">
+                <img alt="" src="{{ url_for('static', path = img_path) }}" width="100%">
+            </td>
+            <td>
+                {{ abilities[i].name }}<br>
+                {{ abilities[i].text }}
             </td>
         </tr>
         {% endfor %}
