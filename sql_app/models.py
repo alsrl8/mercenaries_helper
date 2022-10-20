@@ -41,3 +41,33 @@ class Ability(Base):
     owner_id = Column(Integer, ForeignKey("mercenaries.id"))
 
     owner = relationship("Mercenary", back_populates="abilities")
+
+
+class Boss:
+    __tablename__ = "bosses"
+
+    id = Column(Integer, primary_key=True, index=True)
+    name = Column(String, unique=True, index=True)
+
+    bounties = relationship("Bounty", back_populates="boss")
+
+
+class Zone:
+    __tablename__ = "zones"
+
+    id = Column(Integer, primary_key=True, index=True)
+    name = Column(String, unique=True, index=True)
+
+    bounties = relationship("Bounty", back_populates="zone")
+
+
+class Bounty:
+    __tablename__ = "bounties"
+
+    id = Column(Integer, primary_key=True, index=True)
+    name = Column(String, unique=True, index=True)
+    zone_id = Column(Integer, ForeignKey("zones.id"))
+    boss_id = Column(Integer, ForeignKey("bosses.id"))
+
+    zone = relationship("Zone", back_populates="bounties")
+    boss = relationship("Boss", back_populates="bounties")
