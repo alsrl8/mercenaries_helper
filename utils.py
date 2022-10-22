@@ -260,8 +260,9 @@ def write_bounty_info(bounty_name, links):
 def write_all_bounties():
     write_all_bounty_names()
     data = read_all_bounty_names_with_links_from_local()
-    for name, links in data.items():
+    for name, links in tqdm(data.items()):
         write_bounty_info(name, links)
+        print(f'bounty: {name}')
 
 
 def validate_filename(filename):
