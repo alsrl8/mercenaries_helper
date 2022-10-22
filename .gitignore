@@ -1,5 +1,6 @@
 mercenaries/*.txt
 mercenaries/*.json
+bounties/*.json
 *.db
 __pycache__/
 *.py[cod]
