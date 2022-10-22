@@ -79,7 +79,7 @@ class Bounty(BountyBase):
 
 class ZoneBase(BaseModel):
     name: str
-    bounties = List[Bounty]
+    bounties: List[Bounty] = []
 
 
 class ZoneCreate(ZoneBase):
