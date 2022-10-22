@@ -25,13 +25,8 @@ def read_all_mercenary_names_from_wiki():
 
 
 def read_all_mercenary_names_from_local():
-    mercenary_names = []
-    with open('./mercenaries/All.txt', 'r') as file:  # TODO text file 말고 json file로 대체
-        while True:
-            name = file.readline()
-            if not name:
-                break
-            mercenary_names.append(name.rstrip())
+    with open('./mercenaries/All.json', 'r') as file:
+        mercenary_names = json.load(file)
     return mercenary_names
 
 
@@ -70,9 +65,8 @@ def write_all_mercenary_names():
 
     if not os.path.exists('./mercenaries/'):
         os.mkdir('./mercenaries/')
-    with open('./mercenaries/All.txt', 'w', encoding='UTF-8') as file:
-        for name in mercenary_names:
-            file.write(name + '\n')
+    with open('./mercenaries/All.json', 'w', encoding='UTF-8') as file:
+        json.dump(mercenary_names, file, indent=4)
 
 
 def write_all_bounty_names():
