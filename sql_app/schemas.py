@@ -59,3 +59,35 @@ class Mercenary(MercenaryBase):
 
     class Config:
         orm_mode = True
+
+
+class BountyBase(BaseModel):
+    name: str
+    zone_id: int
+
+
+class BountyCreate(BountyBase):
+    pass
+
+
+class Bounty(BountyBase):
+    id: int = 0
+
+    class Config:
+        orm_mode = True
+
+
+class ZoneBase(BaseModel):
+    name: str
+    bounties = List[Bounty]
+
+
+class ZoneCreate(ZoneBase):
+    pass
+
+
+class Zone(ZoneBase):
+    id: int = 0
+
+    class Config:
+        orm_mode = True
