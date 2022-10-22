@@ -120,9 +120,12 @@ def str2bool(v):
 
 
 def main(args):
-    if args.wiki:
+    if args.mercenary:
         print(f'Scraping mercenaries from hearthstone wiki')
         utils.write_all_mercenaries()
+    if args.bounty:
+        print(f'Scraping bounties from hearthstone wiki')
+        utils.write_all_bounties()
     if args.init:
         print(f'Inserting mercenaries into database')
         store_all_mercenaries()
@@ -130,9 +133,11 @@ def main(args):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
-    parser.add_argument('--wiki', type=str2bool, default=False, required=False,
-                        help='Read text file of wiki page sources to make dataset')
+    parser.add_argument('-m', '--mercenary', type=str2bool, default=False, required=False,
+                        help='Read mercenary data from wiki page')
+    parser.add_argument('-b', '--bounty', type=str2bool, default=False, required=False,
+                        help='Read bounty data from wiki page')
     parser.add_argument('--init', type=str2bool, default=False, required=False,
-                        help='Input all mercenaries information into database')
+                        help='Input all mercenaries and bounties data into database')
 
     main(parser.parse_args())
