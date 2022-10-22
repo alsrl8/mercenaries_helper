@@ -58,6 +58,11 @@ def read_mercenary(request: Request, id: int = 0, name: str = '', db: Session = 
     return templates.TemplateResponse('mercenary.html', context=data)
 
 
+@app.get("/bounties", response_model=None)
+def read_bounties(request: Request):
+    return templates.TemplateResponse('bounties.html', {'request': request})
+
+
 @app.get("/add_equipment/")
 def create_equipment(request: Request):
     return templates.TemplateResponse('add_equipment.html', {'request': request})
