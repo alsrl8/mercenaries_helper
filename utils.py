@@ -63,14 +63,16 @@ def read_all_bounty_names_with_links_from_local():
 
 
 def write_all_mercenary_names():
-    # TODO 어차피 All.txt가 존재할 경우 덮어쓰지 않을 거라면 wiki에서 읽어오기 전에 All.txt가 있는지 먼저 판별하는 것이 나은 게 아닌지?
+    if os.path.exists('./bounties/All.json'):
+        return
+
     mercenary_names = read_all_mercenary_names_from_wiki()
+
     if not os.path.exists('./mercenaries/'):
         os.mkdir('./mercenaries/')
-    if not os.path.exists('./mercenaries/All.txt'):
-        with open('./mercenaries/All.txt', 'w', encoding='UTF-8') as file:
-            for name in mercenary_names:
-                file.write(name + '\n')
+    with open('./mercenaries/All.txt', 'w', encoding='UTF-8') as file:
+        for name in mercenary_names:
+            file.write(name + '\n')
 
 
 def write_all_bounty_names():
