@@ -43,7 +43,7 @@ class Ability(Base):
     owner = relationship("Mercenary", back_populates="abilities")
 
 
-class Zone:
+class Zone(Base):
     __tablename__ = "zones"
 
     id = Column(Integer, primary_key=True, index=True)
@@ -52,7 +52,7 @@ class Zone:
     bounties = relationship("Bounty", back_populates="zone")
 
 
-class Bounty:
+class Bounty(Base):
     __tablename__ = "bounties"
 
     id = Column(Integer, primary_key=True, index=True)
