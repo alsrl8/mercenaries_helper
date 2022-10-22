@@ -4,6 +4,7 @@ from bs4 import BeautifulSoup
 import os
 from tqdm import tqdm
 import json
+from collections import defaultdict
 
 
 def read_all_mercenary_names_from_wiki():
@@ -25,7 +26,7 @@ def read_all_mercenary_names_from_wiki():
 
 def read_all_mercenary_names_from_local():
     mercenary_names = []
-    with open('./mercenaries/All.txt', 'r') as file:
+    with open('./mercenaries/All.txt', 'r') as file:  # TODO text file 말고 json file로 대체
         while True:
             name = file.readline()
             if not name:
@@ -34,7 +35,35 @@ def read_all_mercenary_names_from_local():
     return mercenary_names
 
 
+def read_all_bounty_names_with_links_from_wiki():
+    url = 'https://hearthstone.fandom.com/wiki/Special:RunQuery/Mercs/Bounty?pfRunQueryFormName=Mercs%2FBounty&MBQ%5Bcollapsed%5D=False&MBQ%5BoriginalPage%5D=&MBQ%5Bis_heroic%5D=&MBQ%5BbountySetNames%5D=&MBQ%5BbountyNames%5D=&MBQ%5BmercenaryNames%5D=&MBQ%5BmercenaryRarities%5D=&MBQ%5Blimit%5D=&MBQ%5Blayout%5D=layout2&wpRunQuery=&pf_free_text='
+    page = requests.get(url)
+    soup = BeautifulSoup(page.content, 'html.parser')
+    bounty_info = soup.find_all('div', class_='mw-parser-output')
+    info = bounty_info[1]  # skip basic setting information
+    info = info.find_all('tr')
+    bounty_names, links = [], []
+    for idx in range(1, len(info)):  # skip column information
+        tag = info[idx].find('a')
+        bounty = tag.text
+        bounty_names.append(bounty)
+        s = str(tag)
+        offset = 'href="'
+        i = s.find(offset)
+        j = s.find('"', i + len(offset))
+        link = s[i + len(offset):j]
+        links.append(link)
+    return bounty_names, links
+
+
+def read_all_bounty_names_with_links_from_local():
+    with open('./bounties/All.json', 'r') as file:
+        data = json.load(file)
+    return data
+
+
 def write_all_mercenary_names():
+    # TODO 어차피 All.txt가 존재할 경우 덮어쓰지 않을 거라면 wiki에서 읽어오기 전에 All.txt가 있는지 먼저 판별하는 것이 나은 게 아닌지?
     mercenary_names = read_all_mercenary_names_from_wiki()
     if not os.path.exists('./mercenaries/'):
         os.mkdir('./mercenaries/')
@@ -42,6 +71,27 @@ def write_all_mercenary_names():
         with open('./mercenaries/All.txt', 'w', encoding='UTF-8') as file:
             for name in mercenary_names:
                 file.write(name + '\n')
+
+
+def write_all_bounty_names():
+    if os.path.exists('./bounties/All.json'):
+        return
+
+    bounty_names, links = read_all_bounty_names_with_links_from_wiki()
+    bounties = defaultdict(dict)
+    for name, link in zip(bounty_names, links):
+        if link.endswith('(Heroic)'):
+            bounties[name]['Heroic'] = link
+        else:
+            bounties[name]['Normal'] = link
+
+    # Incorrect link information is entered in wiki, so correct it manually
+    bounties['Neeru_Fireblade']['Normal'] = '/wiki/Mercenaries/Neeru_Fireblade_(Normal)'
+
+    if not os.path.exists('./bounties/'):
+        os.mkdir('./bounties/')
+    with open('./bounties/All.json', 'w', encoding='UTF-8') as file:
+        json.dump(bounties, file, indent=4)
 
 
 def read_mercenary_from_wiki(mercenary_name):
@@ -146,9 +196,33 @@ def read_mercenary_from_local(mercenary_name):
     return data
 
 
-def write_mercenary_info(mercenary_name, info_filename=None):
-    if not info_filename:
-        info_filename = mercenary_name + '.json'
+def read_bounty_from_wiki(bounty_name, link):
+    url = 'https://hearthstone.fandom.com/' + link
+    page = requests.get(url)
+    soup = BeautifulSoup(page.content, 'html.parser')
+    bounty_info = soup.find_all('div', class_='card-hover card-div')
+    boss_info_link = bounty_info[0].find('a')['href']
+
+    data = {
+        'Name': bounty_name,
+        'Boss Link': boss_info_link,
+        'Zone': None,
+        'Coin Loots': []
+    }
+
+    coin_loots = soup.find_all('div', class_='list-cards')[0].find_all('div', class_='card-hover card-div')
+    for coin_loot in coin_loots:
+        coin_name = coin_loot.find('a')['title']
+        data['Coin Loots'].append(coin_name)
+
+    zone = soup.find_all('span', class_='new')[0].text
+    data['Zone'] = zone
+
+    return data
+
+
+def write_mercenary_info(mercenary_name):
+    info_filename = mercenary_name + '.json'
     mercenary_data = read_mercenary_from_wiki(mercenary_name)
     ability_names = read_ability_names_from_wiki(mercenary_name)
     equipments, abilities = read_all_abilities_from_wiki(ability_names)
@@ -168,6 +242,30 @@ def write_all_mercenaries():
     for name in tqdm(mercenary_names):
         write_mercenary_info(name)
         print(f'mercenary: {name}')
+
+
+def write_bounty_info(bounty_name, links):
+    info_filename = bounty_name + '.json'
+    info_filename = convert_colon_to_modifier_colon(info_filename)
+    bounty_data = dict()
+    for difficulty in ['Normal', 'Heroic']:
+        if difficulty not in links:
+            continue
+        data = read_bounty_from_wiki(bounty_name, links[difficulty])
+        bounty_data[difficulty] = data
+
+    if not os.path.exists('./bounties'):
+        os.mkdir('./bounties')
+    if not os.path.exists('./bounties/' + info_filename):
+        with open('./bounties/' + info_filename, 'w', encoding='UTF-8') as file:
+            json.dump(bounty_data, file, indent=4)
+
+
+def write_all_bounties():
+    write_all_bounty_names()
+    data = read_all_bounty_names_with_links_from_local()
+    for name, links in data.items():
+        write_bounty_info(name, links)
 
 
 def validate_filename(filename):
