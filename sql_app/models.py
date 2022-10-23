@@ -1,4 +1,4 @@
-from sqlalchemy import Column, String, Integer, ForeignKey
+from sqlalchemy import Column, String, Integer, ForeignKey, UniqueConstraint
 from sqlalchemy.orm import relationship
 
 from .database import Base
@@ -52,11 +52,14 @@ class Zone(Base):
     bounties = relationship("Bounty", back_populates="zone")
 
 
-class Bounty(Base):
+class Bounty(Base):  # TODO difficulty column 추가
     __tablename__ = "bounties"
 
     id = Column(Integer, primary_key=True, index=True)
-    name = Column(String, unique=True, index=True)
+    name = Column(String, nullable=True, index=True)
+    difficulty = Column(String, nullable=False, index=True)
     zone_id = Column(Integer, ForeignKey("zones.id"))
 
     zone = relationship("Zone", back_populates="bounties")
+
+    __tableargs__ = UniqueConstraint('name', 'difficulty', name='_name_difficulty_uc')
