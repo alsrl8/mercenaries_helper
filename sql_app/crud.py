@@ -46,6 +46,28 @@ def get_ability(db: Session, id: int = 0, name: str = '', owner_id: int = 0):
     return data.first()
 
 
+def get_zone(db: Session, id: int = 0, name: str = ''):
+    if not id and not name:
+        return None
+    data = db.query(models.Zone)
+    if id:
+        data = data.filter(models.Zone.id == id)
+    if name:
+        data = data.filter(models.Zone.name == name)
+    return data.first()
+
+
+def get_bounty(db: Session, id: int = 0, name: str = '', difficulty: str = 'Normal'):
+    if not id and not name:
+        return None
+    data = db.query(models.Bounty)
+    if id:
+        data = data.filter(models.Bounty.id == id)
+    if name:
+        data = data.filter(models.Bounty.name == name)
+    return data.filter(models.Bounty.difficulty == difficulty).first()
+
+
 def create_mercenary(db: Session, mercenary: schemas.MercenaryCreate):
     db_mercenary = \
         models.Mercenary(name=mercenary.name,
@@ -80,6 +102,22 @@ def create_ability(db: Session, ability: schemas.AbilityCreate):
     db.commit()
     db.refresh(db_ability)
     return db_ability
+
+
+def create_zone(db: Session, zone: schemas.ZoneCreate):
+    db_zone = models.Zone(name=zone.name)
+    db.add(db_zone)
+    db.commit()
+    db.refresh(db_zone)
+    return db_zone
+
+
+def create_bounty(db: Session, bounty: schemas.BountyCreate):
+    db_bounty = models.Bounty(name=bounty.name, difficulty=bounty.difficulty, zone_id=bounty.zone_id)
+    db.add(db_bounty)
+    db.commit()
+    db.refresh(db_bounty)
+    return db_bounty
 
 
 def update_equipment(db: Session, name: str, new_equipment: schemas.Equipment):

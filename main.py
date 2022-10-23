@@ -11,7 +11,7 @@ from tqdm import tqdm
 import utils
 from sql_app import crud, models, schemas
 from sql_app.database import SessionLocal, engine
-from sql_app.schemas import MercenaryCreate, EquipmentCreate, AbilityCreate
+from sql_app.schemas import MercenaryCreate, EquipmentCreate, AbilityCreate, BountyCreate
 
 models.Base.metadata.create_all(bind=engine)
 app = FastAPI()
@@ -113,6 +113,24 @@ def store_all_mercenaries():
                 crud.update_ability(db=SessionLocal(), name=ability['Name'], new_ability=new_ability)
 
 
+def store_all_bounties():
+    bounty_names_with_links = utils.read_all_bounty_names_with_links_from_local()
+    for name in tqdm(bounty_names_with_links):
+        for difficulty in ['Normal', 'Heroic']:
+            if difficulty not in bounty_names_with_links[name]:
+                continue
+            link = bounty_names_with_links[name][difficulty]
+            bounty = utils.read_bounty_from_wiki(name, link)
+            find_zone = crud.get_zone(db=SessionLocal(), name=bounty['Zone'])
+            if not find_zone:
+                db_zone = schemas.ZoneCreate(name=bounty['Zone'])
+                find_zone = crud.create_zone(db=SessionLocal(), zone=db_zone)
+            if crud.get_bounty(db=SessionLocal(), name=name, difficulty=difficulty):
+                continue
+            db_bounty = schemas.BountyCreate(name=bounty['Name'], difficulty=difficulty, zone_id=find_zone.id)
+            crud.create_bounty(db=SessionLocal(), bounty=db_bounty)
+
+
 def str2bool(v):
     if isinstance(v, bool):
         return v
@@ -132,8 +150,9 @@ def main(args):
         print(f'Scraping bounties from hearthstone wiki')
         utils.write_all_bounties()
     if args.init:
-        print(f'Inserting mercenaries into database')
-        store_all_mercenaries()
+        print(f'Inserting mercenaries and bounties into database')
+        # store_all_mercenaries()
+        store_all_bounties()
 
 
 if __name__ == '__main__':
@@ -142,7 +161,7 @@ if __name__ == '__main__':
                         help='Read mercenary data from wiki page')
     parser.add_argument('-b', '--bounty', type=str2bool, default=False, required=False,
                         help='Read bounty data from wiki page')
-    parser.add_argument('--init', type=str2bool, default=False, required=False,
+    parser.add_argument('-i', '--init', type=str2bool, default=False, required=False,
                         help='Input all mercenaries and bounties data into database')
 
     main(parser.parse_args())
