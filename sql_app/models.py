@@ -52,7 +52,7 @@ class Zone(Base):
     bounties = relationship("Bounty", back_populates="zone")
 
 
-class Bounty(Base):  # TODO difficulty column 추가
+class Bounty(Base):
     __tablename__ = "bounties"
 
     id = Column(Integer, primary_key=True, index=True)

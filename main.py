@@ -151,7 +151,7 @@ def main(args):
         utils.write_all_bounties()
     if args.init:
         print(f'Inserting mercenaries and bounties into database')
-        # store_all_mercenaries()
+        store_all_mercenaries()
         store_all_bounties()
 
 

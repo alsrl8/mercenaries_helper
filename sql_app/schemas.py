@@ -61,7 +61,7 @@ class Mercenary(MercenaryBase):
         orm_mode = True
 
 
-class BountyBase(BaseModel):  # TODO difficulty field 추가
+class BountyBase(BaseModel):
     name: str
     difficulty: str
     zone_id: int
