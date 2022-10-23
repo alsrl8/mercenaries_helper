@@ -60,7 +60,8 @@ def read_mercenary(request: Request, id: int = 0, name: str = '', db: Session = 
 
 @app.get("/bounties", response_model=None)
 def read_bounties(request: Request):
-    return templates.TemplateResponse('bounties.html', {'request': request})
+    bounties = crud.get_bounties(db=SessionLocal())
+    return templates.TemplateResponse('bounties.html', {'request': request, 'bounties': bounties})
 
 
 @app.get("/add_equipment/")

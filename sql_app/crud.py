@@ -57,6 +57,10 @@ def get_zone(db: Session, id: int = 0, name: str = ''):
     return data.first()
 
 
+def get_bounties(db: Session):
+    return db.query(models.Bounty)
+
+
 def get_bounty(db: Session, id: int = 0, name: str = '', difficulty: str = 'Normal'):
     if not id and not name:
         return None
